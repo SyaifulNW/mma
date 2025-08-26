@@ -36,7 +36,6 @@
             margin-left: 220px;
             padding: 20px;
         }
-        
     </style>
     @stack('styles')
 </head>
@@ -122,13 +121,27 @@
                                 <span>Sprint</span>
                             </a>
                         </li>
-                        <li class="nav-item mb-2">
-                            <a class="nav-link d-flex align-items-center gap-2"
-                                href="#">
-                                <i class="fa fa-cog"></i>
-                                <span>Settings</span>
+                        <!-- Peserta -->
+                        <li class="nav-item">
+                            <a class="nav-link {{ request()->is('peserta*') ? 'active' : '' }}" href="{{ route('peserta.index') }}">
+                                <i class="fa fa-users"></i> Peserta
                             </a>
                         </li>
+
+                        <!-- Coaches -->
+                        <li class="nav-item">
+                            <a class="nav-link {{ request()->is('coach*') ? 'active' : '' }}" href="{{ route('coach.index') }}">
+                                <i class="fa fa-chalkboard-teacher"></i> Coaches
+                            </a>
+                        </li>
+
+                        <!-- Settings -->
+                        <li class="nav-item">
+                            <a class="nav-link {{ request()->is('settings*') ? 'active' : '' }}" href="{{ route('settings.index') }}">
+                                <i class="fa fa-cogs"></i> Settings
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
             </nav>
@@ -142,36 +155,37 @@
     </div>
     <style>
         .sidebar {
-    padding-top: 40px;
-    min-height: 100vh;
-    background: #1e1e2d; /* lebih gelap elegan */
-}
+            padding-top: 40px;
+            min-height: 100vh;
+            background: #1e1e2d;
+            /* lebih gelap elegan */
+        }
 
-.sidebar .nav-link {
-    color: #bbb;
-    font-size: 15px;
-    padding: 10px 15px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
+        .sidebar .nav-link {
+            color: #bbb;
+            font-size: 15px;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
 
-.sidebar .nav-link i {
-    width: 18px;
-    text-align: center;
-}
+        .sidebar .nav-link i {
+            width: 18px;
+            text-align: center;
+        }
 
-.sidebar .nav-link:hover {
-    background: #343a40;
-    color: #fff;
-    transform: translateX(5px); /* efek geser */
-}
+        .sidebar .nav-link:hover {
+            background: #343a40;
+            color: #fff;
+            transform: translateX(5px);
+            /* efek geser */
+        }
 
-.sidebar .nav-link.active {
-    background: #0d6efd;
-    color: #fff !important;
-    font-weight: bold;
-}
-
+        .sidebar .nav-link.active {
+            background: #0d6efd;
+            color: #fff !important;
+            font-weight: bold;
+        }
     </style>
 
     <!-- Scripts -->

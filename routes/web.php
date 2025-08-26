@@ -33,10 +33,24 @@ Route::get('/sprint', function () {
     return view('sprint.index');
 })->name('sprint.index');
 
+Route::get('/peserta', function () {
+    return view('peserta.index');
+})->name('peserta.index');
+
+Route::get('/coach', function () {
+    return view('coach.index');
+})->name('coach.index');
+
+Route::get('/settings', function () {
+    return view('settings.index');
+})->name('settings.index');
+
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
 
 // Task routes
 
