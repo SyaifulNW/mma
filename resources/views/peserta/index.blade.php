@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.dashboard')
 
 @section('content')
     <h1 class="mb-4">Daftar Peserta (Mentee)</h1>
@@ -7,7 +7,7 @@
         <button class="btn btn-success btn-sm"><i class="fa fa-file-excel"></i> Export Excel</button>
         <button class="btn btn-secondary btn-sm"><i class="fa fa-print"></i> Cetak</button>
         <button class="btn btn-info btn-sm"><i class="fa fa-sync"></i> Refresh</button>
-        <button class="btn btn-warning btn-sm"><i class="fa fa-plus"></i> Tambah Peserta</button>
+        <button class="btn btn-warning btn-sm"><i class="fa fa-plus"></i> Tambah Mentee</button>
     </div>
 
     <table id="pesertaTable" class="table table-striped table-hover table-bordered">

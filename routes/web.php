@@ -33,9 +33,18 @@ Route::get('/sprint', function () {
     return view('sprint.index');
 })->name('sprint.index');
 
+// Sprint my
+Route::get('/sprint/my', function () {
+    return view('sprint.my');
+})->name('sprint.my');
+
 Route::get('/peserta', function () {
     return view('peserta.index');
 })->name('peserta.index');
+
+// Batasi akses ke route ini hanya untuk role 'admin'
+
+
 
 Route::get('/coach', function () {
     return view('coach.index');
@@ -46,6 +55,27 @@ Route::get('/settings', function () {
 })->name('settings.index');
 
 
+// Admin
+Route::middleware(['auth', 'role:admin'])->get('/admin/dashboard', function () {
+    return view('dashboard.admin');
+})->name('admin.dashboard');
+
+// Coach
+Route::middleware(['auth', 'role:coach'])->get('/coach/dashboard', function () {
+    return view('dashboard.coach');
+})->name('coach.dashboard');
+
+// Peserta
+Route::middleware(['auth', 'role:peserta'])->get('/peserta/dashboard', function () {
+    return view('dashboard.peserta');
+})->name('peserta.dashboard');
+
+
+
+
+
+
+// Hanya admin/coach yang bisa akses monitoring semua peserta
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -43,109 +43,12 @@
 <body>
 
     <!-- Top Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Mastermind MBC</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}" href="{{ route('home') }}">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->is('task*') ? 'active' : '' }}" href="{{ route('task.index') }}">Tasks</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->is('sprint*') ? 'active' : '' }}" href="{{ route('sprint.index') }}">Sprints</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            {{ Auth::user()->name ?? 'User' }}
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#" onclick="event.preventDefault(); confirmLogout();">Logout</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
 
-        <!-- hidden logout form -->
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-            @csrf
-        </form>
-
-        <script>
-            function confirmLogout() {
-                if (confirm('Are you sure you want to logout?')) {
-                    document.getElementById('logout-form').submit();
-                }
-            }
-        </script>
-    </nav>
 
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
-            <nav id="sidebarMenu" class="col-md-2 d-md-block bg-dark sidebar collapse">
-                <div class="position-sticky">
-                    <ul class="nav flex-column mt-3">
-                        <li class="nav-item mb-2">
-                            <a class="nav-link d-flex align-items-center gap-2 {{ request()->is('dashboard') ? 'active' : '' }}"
-                                href="{{ route('home') }}">
-                                <i class="fa fa-chart-line"></i>
-                                <span>Dashboard</span>
-                            </a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a class="nav-link d-flex align-items-center gap-2 {{ request()->is('task*') ? 'active' : '' }}"
-                                href="{{ route('task.index') }}">
-                                <i class="fa fa-tasks"></i>
-                                <span>Task</span>
-                            </a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a class="nav-link d-flex align-items-center gap-2 {{ request()->is('sprint*') ? 'active' : '' }}"
-                                href="{{ route('sprint.index') }}">
-                                <i class="fa fa-clipboard-list"></i>
-                                <span>Sprint</span>
-                            </a>
-                        </li>
-                        <!-- Peserta -->
-                        <li class="nav-item">
-                            <a class="nav-link {{ request()->is('peserta*') ? 'active' : '' }}" href="{{ route('peserta.index') }}">
-                                <i class="fa fa-users"></i> Peserta
-                            </a>
-                        </li>
-
-                        <!-- Coaches -->
-                        <li class="nav-item">
-                            <a class="nav-link {{ request()->is('coach*') ? 'active' : '' }}" href="{{ route('coach.index') }}">
-                                <i class="fa fa-chalkboard-teacher"></i> Coaches
-                            </a>
-                        </li>
-
-                        <!-- Settings -->
-                        <li class="nav-item">
-                            <a class="nav-link {{ request()->is('settings*') ? 'active' : '' }}" href="{{ route('settings.index') }}">
-                                <i class="fa fa-cogs"></i> Settings
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-            </nav>
-
+        
 
             <!-- Main Content -->
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
