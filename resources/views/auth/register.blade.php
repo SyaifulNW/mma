@@ -1,77 +1,129 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mastermind Academy MBC - Register</title>
+  <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon_clean.ico') }}">
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+    }
+    .left-panel, .right-panel {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .left-panel {
+      background: #fff;
+      color: #333;
+      flex-direction: column;
+      padding: 40px;
+    }
+    .right-panel {
+      background: linear-gradient(135deg, #8e44ad, #2980b9);
+      color: white;
+      text-align: center;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .register-box {
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+    .logo {
+      width: 180px;
+      margin-bottom: 10px;
+    }
+    h1 { margin: 10px 0 5px; font-size: 20px; }
+    h2 { font-size: 14px; margin-bottom: 20px; color: #666; }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .btn {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      background: #27ae60;
+      color: white;
+      transition: 0.3s;
+    }
+    .btn:hover { opacity: 0.9; }
+    .kelas-img {
+      max-width: 100%;
+      max-height: 400px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      margin-bottom: 10px;
+    }
+    .quote-box { max-width: 500px; }
+    .quote { font-size: 18px; font-style: italic; margin-bottom: 10px; }
+    .quote-author { font-weight: bold; }
+    .login-link {
+      display: block;
+      margin-top: 12px;
+      font-size: 13px;
+      color: #2980b9;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .login-link:hover { text-decoration: underline; color: #1a5276; }
+  </style>
+</head>
+<body>
+  <!-- Panel Kiri (Form Register) -->
+  <div class="left-panel">
+    <div class="register-box">
+      <img src="{{ asset('img/mma.png') }}" alt="Logo Mastermind Academy" class="logo">
+      <h1>Daftar Akun Baru</h1>
+      <h2>Mastermind Academy MBC</h2>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
+      <form method="POST" action="{{ route('register') }}">
+        @csrf
+        <input id="name" type="text" name="name" placeholder="Nama Lengkap" value="{{ old('name') }}" required autofocus>
+        @error('name') <small style="color:red">{{ $message }}</small> @enderror
 
-                        <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
+        <input id="email" type="email" name="email" placeholder="Email" value="{{ old('email') }}" required>
+        @error('email') <small style="color:red">{{ $message }}</small> @enderror
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+        <input id="password" type="password" name="password" placeholder="Password" required>
+        @error('password') <small style="color:red">{{ $message }}</small> @enderror
 
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+        <input id="password-confirm" type="password" name="password_confirmation" placeholder="Konfirmasi Password" required>
 
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <button type="submit" class="btn">Register</button>
+        <a href="{{ route('login') }}" class="login-link">Sudah punya akun? Login di sini</a>
+      </form>
     </div>
-</div>
-@endsection
+  </div>
+
+  <!-- Panel Kanan (Foto + Quote) -->
+  <div class="right-panel">
+    <img src="{{ asset('img/gp11.jpg') }}" alt="Foto Kelas Mastermind" class="kelas-img">
+
+    <div class="quote-box">
+      <div class="quote">“Bersama-sama tumbuh, melahirkan pengusaha Muslim langit yang bermental juang.”</div>
+      <div class="quote-author">– Mastermind Academy</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -14,7 +14,7 @@ class AddRoleToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-        $table->string('role')->default('peserta'); // admin/master_coach/coach/peserta
+        $table->string('role')->default('coach')->change(); // admin/master_coach/coach/peserta
 
         });
     }
@@ -27,7 +27,8 @@ class AddRoleToUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            //
+                    $table->string('role')->default('peserta')->change();
+
         });
     }
 }

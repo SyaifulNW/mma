@@ -78,7 +78,7 @@
     .quote-box { max-width: 500px; }
     .quote { font-size: 18px; font-style: italic; margin-bottom: 10px; }
     .quote-author { font-weight: bold; }
-    .forgot-password {
+    .forgot-password, .register-link {
       display: block;
       margin-top: 12px;
       font-size: 13px;
@@ -86,7 +86,7 @@
       text-decoration: none;
       transition: 0.2s;
     }
-    .forgot-password:hover { text-decoration: underline; color: #1a5276; }
+    .forgot-password:hover, .register-link:hover { text-decoration: underline; color: #1a5276; }
   </style>
 </head>
 <body>
@@ -97,12 +97,14 @@
       <h1>Mastermind Academy MBC</h1>
       <h2>Growth Management System</h2>
 
+      <!-- Login Form -->
       <form method="POST" action="{{ route('login') }}">
         @csrf
         <input type="text" name="email" placeholder="Email" required>
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit" class="btn">Login</button>
         <a href="{{ route('password.request') }}" class="forgot-password">Lupa kata sandi?</a>
+        <a href="{{ route('register') }}" class="register-link">Belum punya akun? Daftar sekarang</a>
       </form>
     </div>
   </div>
@@ -118,4 +120,3 @@
   </div>
 </body>
 </html>
-

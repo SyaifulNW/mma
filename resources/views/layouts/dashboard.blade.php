@@ -77,6 +77,18 @@
                         </ul>
                     </li>
                 </ul>
+                <script>
+                    function confirmLogout() {
+                        if (confirm("Yakin ingin logout?")) {
+                            document.getElementById('logout-form').submit();
+                        }
+                    }
+                </script>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display:none;">
+                    @csrf
+                </form>
+            
             </div>
         </div>
 
@@ -122,6 +134,7 @@
                             @endif
                         </li>
 
+                        @if(auth()->check() && auth()->user()->role !== 'admin' || auth()->user()->role == 'coach' || auth()->user()->role == 'peserta')
                         <li class="nav-item mb-2">
                             <a class="nav-link d-flex align-items-center gap-2 {{ request()->is('task*') ? 'active' : '' }}"
                                 href="{{ route('task.index') }}">
@@ -129,7 +142,8 @@
                                 <span>Task</span>
                             </a>
                         </li>
-                        @if(auth()->check() && auth()->user()->role == 'coach' || auth()->user()->role == 'admin')
+                        @endif
+                        @if(auth()->check() && auth()->user()->role == 'coach')
                         <li class="nav-item mb-2">
                             <a class="nav-link d-flex align-items-center gap-2 {{ request()->is('sprint*') ? 'active' : '' }}"
                                 href="{{ route('sprint.index') }}">
@@ -139,8 +153,8 @@
                         </li>
                         @endif
 
-                    <!-- sprint.my -->
-                     @if(auth()->check() && auth()->user()->role == 'peserta')
+                        <!-- sprint.my -->
+                        @if(auth()->check() && auth()->user()->role == 'peserta')
                         <li class="nav-item mb-2">
                             <a class="nav-link d-flex align-items-center gap-2 {{ request()->is('sprint/my*') ? 'active' : '' }}"
                                 href="{{ route('sprint.my') }}">
@@ -148,13 +162,13 @@
                                 <span>My Sprint</span>
                             </a>
                         </li>
-                     @endif
+                        @endif
 
 
 
 
                         <!-- Peserta -->
-                         @if(auth()->check() && auth()->user()->role == 'coach' || auth()->user()->role == 'admin')
+                        @if(auth()->check() && auth()->user()->role == 'coach' )
                         <li class="nav-item">
                             <a class="nav-link {{ request()->is('peserta*') ? 'active' : '' }}" href="{{ route('peserta.index') }}">
                                 <i class="fa fa-users"></i> Daftar Mentee
@@ -228,5 +242,19 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap Bundle (sudah termasuk Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- DataTables -->
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+
+    <!-- Font Awesome (untuk icon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
     @stack('scripts')
 </body>
