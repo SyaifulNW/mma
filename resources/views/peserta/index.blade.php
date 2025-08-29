@@ -32,6 +32,15 @@
                 <td>081234567890</td>
                 <td>Jakarta</td>
                 <td>
+                    <button class="btn btn-sm btn-info btn-view" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#detailMenteeModal"
+                            data-nama="Yasmin"
+                            data-level="Start Up 🚀"
+                            data-wa="081234567890"
+                            data-kota="Jakarta">
+                        <i class="fa fa-eye"></i>
+                    </button>
                     <button class="btn btn-sm btn-primary btn-edit"><i class="fa fa-edit"></i></button>
                     <button class="btn btn-sm btn-danger btn-delete"><i class="fa fa-trash"></i></button>
                 </td>
@@ -43,6 +52,15 @@
                 <td>082233445566</td>
                 <td>Bandung</td>
                 <td>
+                    <button class="btn btn-sm btn-info btn-view" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#detailMenteeModal"
+                            data-nama="Linda"
+                            data-level="Stand Up 💪"
+                            data-wa="082233445566"
+                            data-kota="Bandung">
+                        <i class="fa fa-eye"></i>
+                    </button>
                     <button class="btn btn-sm btn-primary btn-edit"><i class="fa fa-edit"></i></button>
                     <button class="btn btn-sm btn-danger btn-delete"><i class="fa fa-trash"></i></button>
                 </td>
@@ -91,12 +109,51 @@
         </form>
       </div>
     </div>
+
+    <!-- Modal Detail Mentee -->
+    <div class="modal fade" id="detailMenteeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title"><i class="fa fa-info-circle"></i> Detail Mentee</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Nama Peserta</th>
+                            <td id="detailNama"></td>
+                        </tr>
+                        <tr>
+                            <th>Level</th>
+                            <td id="detailLevel"></td>
+                        </tr>
+                        <tr>
+                            <th>No WA</th>
+                            <td id="detailWA"></td>
+                        </tr>
+                        <tr>
+                            <th>Kota</th>
+                            <td id="detailKota"></td>
+                        </tr>
+                        <tr>
+                            <th>Keterangan Level</th>
+                            <td id="detailKeterangan"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 @endsection
 
 @push('scripts')
 <script>
 $(document).ready(function () {
-    // Fungsi untuk badge warna level
     function getLevelBadge(level) {
         switch(level){
             case 'Start Up 🚀': return '<span class="badge bg-secondary">'+level+'</span>';
@@ -105,6 +162,17 @@ $(document).ready(function () {
             case 'Grow Up 🌱': return '<span class="badge bg-success">'+level+'</span>';
             case 'Scale Up 🌍': return '<span class="badge bg-warning text-dark">'+level+'</span>';
             default: return level;
+        }
+    }
+
+    function getLevelDescription(level){
+        switch(level){
+            case 'Start Up 🚀': return 'Tahap mulai jalan, validasi ide.';
+            case 'Stand Up 💪': return 'Bisnis mulai tegak, punya pondasi & sistem dasar.';
+            case 'Step Up 📈': return 'Mulai naik level, tambah tim & pasar.';
+            case 'Grow Up 🌱': return 'Tumbuh lebih besar, stabil & profesional.';
+            case 'Scale Up 🌍': return 'Berkembang pesat & melipatgandakan bisnis.';
+            default: return '';
         }
     }
 
@@ -130,6 +198,15 @@ $(document).ready(function () {
         let rowIndex = $('#rowIndex').val();
 
         let aksiBtns = `
+            <button class="btn btn-sm btn-info btn-view" 
+                    data-bs-toggle="modal" 
+                    data-bs-target="#detailMenteeModal"
+                    data-nama="${nama}"
+                    data-level="${level}"
+                    data-wa="${wa}"
+                    data-kota="${kota}">
+                <i class="fa fa-eye"></i>
+            </button>
             <button class="btn btn-sm btn-primary btn-edit"><i class="fa fa-edit"></i></button>
             <button class="btn btn-sm btn-danger btn-delete"><i class="fa fa-trash"></i></button>
         `;
@@ -166,11 +243,7 @@ $(document).ready(function () {
         $('#menteeModalLabel').text('Edit Mentee');
         $('#rowIndex').val(row.index());
         $('#nama').val($(data[1]).text());
-
-        // Ambil teks level dari badge
-        let levelText = $(data[2]).text();
-        $('#level').val(levelText);
-
+        $('#level').val($(data[2]).text());
         $('#wa').val(data[3]);
         $('#kota').val(data[4]);
         $('#menteeModal').modal('show');
@@ -181,6 +254,22 @@ $(document).ready(function () {
         if(confirm('Yakin ingin menghapus data ini?')){
             table.row($(this).parents('tr')).remove().draw();
         }
+    });
+
+    // View Detail
+    $('#pesertaTable tbody').on('click', '.btn-view', function(){
+        let btn = $(this);
+        let nama = btn.data('nama');
+        let level = btn.data('level');
+        let wa = btn.data('wa');
+        let kota = btn.data('kota');
+        let keterangan = getLevelDescription(level);
+
+        $('#detailNama').text(nama);
+        $('#detailLevel').text(level);
+        $('#detailWA').text(wa);
+        $('#detailKota').text(kota);
+        $('#detailKeterangan').text(keterangan);
     });
 });
 </script>

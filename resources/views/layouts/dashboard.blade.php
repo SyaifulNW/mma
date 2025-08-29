@@ -8,35 +8,89 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        body {
-            font-size: .875rem;
-        }
+  <style>
+    /* Sidebar desktop */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 220px;
+        padding-top: 48px;
+        background: #1e1e2d;
+        box-shadow: inset -1px 0 0 rgba(0,0,0,.1);
+        transition: transform 0.3s ease;
+    }
 
+    .sidebar .nav-link {
+        color: #bbb;
+        font-size: 15px;
+        padding: 10px 15px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    .sidebar .nav-link i { width: 18px; text-align: center; }
+    .sidebar .nav-link:hover { background: #343a40; color: #fff; transform: translateX(5px); }
+    .sidebar .nav-link.active { background: #0d6efd; color: #fff !important; font-weight: bold; }
+
+    main {
+        margin-left: 220px;
+        padding: 20px;
+        transition: margin-left 0.3s ease;
+    }
+
+    /* Responsive mobile */
+    @media (max-width: 768px) {
         .sidebar {
+            transform: translateX(-100%);
             position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 100;
-            padding: 48px 0 0;
-            box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+            z-index: 1030;
+            width: 220px;
         }
-
-        .sidebar .nav-link {
-            color: #ddd;
-        }
-
-        .sidebar .nav-link.active {
-            color: #fff;
-            background-color: #0d6efd;
+        .sidebar.show {
+            transform: translateX(0);
         }
 
         main {
-            margin-left: 220px;
-            padding: 20px;
+            margin-left: 0;
+            padding: 15px;
         }
-    </style>
+
+        .navbar-toggler {
+            display: block;
+        }
+    }
+
+    /* optional overlay when sidebar open */
+    #sidebarOverlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 1025;
+    }
+    #sidebarOverlay.show { display: block; }
+</style>
+
+<div id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+<script>
+    const sidebar = document.getElementById('sidebarMenu');
+    const overlay = document.getElementById('sidebarOverlay');
+
+    function toggleSidebar() {
+        sidebar.classList.toggle('show');
+        overlay.classList.toggle('show');
+    }
+
+    // tombol navbar toggler
+    document.querySelector('.navbar-toggler').addEventListener('click', toggleSidebar);
+</script>
+
     @stack('styles')
 </head>
 
