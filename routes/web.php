@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\MenteeController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TaskController;
 
@@ -25,9 +26,9 @@ Route::get('/home', function () {
     return view('home');
 })->name('dashboard');
 
-Route::get('/task', function () {
-    return view('task.index');
-})->name('task.index');
+// Route::get('/task', function () {
+//     return view('task.index');
+// })->name('task.index');
 
 Route::get('/sprint', function () {
     return view('sprint.index');
@@ -39,7 +40,7 @@ Route::get('/sprint/my', function () {
 })->name('sprint.my');
 
 Route::get('/peserta', function () {
-    return view('peserta.index');
+    return view('peserta.index', ['mentees' => App\Models\Mentee::all()]);
 })->name('peserta.index');
 
 // Batasi akses ke route ini hanya untuk role 'admin'
@@ -80,7 +81,19 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+use App\Http\Controllers\TaskDashboardController;
+
+Route::get('/task', [TaskDashboardController::class, 'index'])->name('task.index');
 
 
-// Task routes
+// crud mentee
+
+Route::resource('mentees', MenteeController::class);
+
+
+
+
+
+
+
 

@@ -163,7 +163,8 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
-            <nav id="sidebarMenu" class="col-md-2 d-md-block bg-dark sidebar collapse">
+ <nav id="sidebarMenu" class="col-md-2 d-md-block bg-dark sidebar">
+
                 <div class="position-sticky">
                     <ul class="nav flex-column mt-3">
                         <li class="nav-item mb-2">
@@ -293,6 +294,21 @@
             font-weight: bold;
         }
     </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+    const toggler = document.querySelector('.navbar-toggler');
+    if(toggler){
+        toggler.addEventListener('click', function(){
+            const sidebar = document.getElementById('sidebarMenu');
+            const overlay = document.getElementById('sidebarOverlay');
+            sidebar.classList.toggle('show');
+            overlay.classList.toggle('show');
+        });
+    }
+});
+
+    </script>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

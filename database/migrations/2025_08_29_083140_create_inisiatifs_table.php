@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateInisiatifsTable extends Migration
+class CreateProgressInisiatifsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,20 @@ class CreateInisiatifsTable extends Migration
      */
     public function up()
     {
-        Schema::create('inisiatifs', function (Blueprint $table) {
+        Schema::create('progress_inisiatifs', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('task_id');  // hubungkan ke task
-            $table->string('teks');                 // teks inisiatif
-            $table->string('dokumen')->nullable();  // dokumen terkait
+            $table->unsignedBigInteger('mentee_id');     // siapa pesertanya
+            $table->unsignedBigInteger('inisiatif_id');  // inisiatif mana
+            $table->boolean('is_checked')->default(false); // checklist (true/false)
+            $table->date('start')->nullable();           // tanggal mulai
+            $table->date('end')->nullable();             // tanggal selesai
+            $table->enum('status', ['belum','proses','selesai'])->default('belum'); // status progress
+            $table->integer('progress')->default(0);     // persen progress task ini
             $table->timestamps();
 
-            $table->foreign('task_id')->references('id')->on('tasks')->onDelete('cascade');
+            // foreign key
+            $table->foreign('mentee_id')->references('id')->on('mentees')->onDelete('cascade');
+            $table->foreign('inisiatif_id')->references('id')->on('inisiatifs')->onDelete('cascade');
         });
     }
 
@@ -31,6 +37,6 @@ class CreateInisiatifsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('inisiatifs');
+        Schema::dropIfExists('progress_inisiatifs');
     }
 }

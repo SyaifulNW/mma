@@ -3,8 +3,8 @@
 @section('content')
 <h1 class="mb-4">📊 Sprint Management <small class="text-muted">(Monitoring Peserta)</small></h1>
 
-<div class="mb-3 d-flex justify-content-between align-items-center">
-    <div>
+<div class="mb-3 d-flex flex-wrap justify-content-between align-items-center gap-2">
+    <div class="d-flex flex-wrap gap-2">
         <button class="btn btn-success btn-sm"><i class="fa fa-file-excel"></i> Export Excel</button>
         <button class="btn btn-secondary btn-sm"><i class="fa fa-print"></i> Cetak</button>
         <button class="btn btn-info btn-sm"><i class="fa fa-sync"></i> Refresh</button>
@@ -18,7 +18,7 @@
     <div class="card-header bg-dark text-white">
         <i class="fa fa-users"></i> Daftar Sprint Peserta (Mentee)
     </div>
-    <div class="card-body">
+    <div class="card-body table-responsive">
         <table id="sprintTable" class="table table-hover table-bordered align-middle">
             <thead class="table-dark text-center">
                 <tr>
@@ -44,7 +44,7 @@
                     </td>
                     <td><span class="badge bg-success">Selesai</span></td>
                     <td>01 Jul 2025 - 31 Jul 2025</td>
-                    <td class="text-center">
+                    <td class="text-center d-flex flex-wrap justify-content-center gap-1">
                         <button class="btn btn-sm btn-outline-primary" 
                                 data-bs-toggle="modal" 
                                 data-bs-target="#detailSprintModal"
@@ -67,13 +67,13 @@
 
 {{-- Modal Detail Sprint --}}
 <div class="modal fade" id="detailSprintModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header bg-dark text-white">
         <h5 class="modal-title"><i class="fa fa-info-circle"></i> Detail Sprint Peserta</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body table-responsive">
         <table class="table table-bordered">
           <tr>
             <th>Peserta</th>
@@ -110,19 +110,18 @@
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+
 <script>
 $(document).ready(function () {
     $('#sprintTable').DataTable({
         pageLength: 5,
         order: [[0, 'asc']],
+        responsive: true,
         language: {
             search: "🔎 Cari Peserta / Task:",
             lengthMenu: "Tampilkan _MENU_ data",
             info: "Menampilkan _START_ - _END_ dari _TOTAL_ data",
-            paginate: {
-                previous: "⬅️",
-                next: "➡️"
-            }
+            paginate: { previous: "⬅️", next: "➡️" }
         }
     });
 
