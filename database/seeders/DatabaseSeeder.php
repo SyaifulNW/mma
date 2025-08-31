@@ -15,7 +15,8 @@ class DatabaseSeeder extends Seeder
 {
     $this->call([
         MateriHRDSeeder::class,
-        // Tambahkan seeder materi lain di sini
+        MateriJsonSeeder::class,
+         InisiatifStatusSeeder::class,
     ]);
 }
 

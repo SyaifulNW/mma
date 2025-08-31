@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Inisiatif extends Model
 {
     protected $table = 'inisiatifs';
-    protected $fillable = ['task_id', 'teks', 'dokumen'];
+    protected $fillable = ['task_id', 'judul', 'dokumen', 'status'];
 
     public function task()
     {

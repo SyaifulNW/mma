@@ -1,0 +1,2605 @@
+{
+  "judul": "Membangun Bidang HRD (Human Resource Development)",
+  "tahapan": [
+    {
+      "judul": "Mindset dan Filosofi Pengelolaan SDM",
+      "tasks": [
+        {
+          "judul": "Menyadari Bahwa Karyawan adalah Aset Bisnis, Bukan Beban",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menentukan Nilai, Budaya, dan Prinsip Dasar SDM di Perusahaan",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Membuat Visi & Misi Departemen HRD yang Selaras Bisnis",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Membedakan Peran HRD dan GA (General Affair)",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Strategi Jangka Panjang Pengelolaan SDM",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyadari Bahwa Karyawan adalah Aset Bisnis, Bukan Beban",
+          "tujuan": "Mengubah mindset manajemen dan pemilik bahwa SDM adalah investasi.",
+          "inisiatif": [
+            {
+              "judul": "Adakan workshop internal tentang people as assets",
+              "dokumen": "Workshop Material & Attendance List."
+            },
+            {
+              "judul": "Buat data kontribusi karyawan pada revenue",
+              "dokumen": "Employee Contribution Report."
+            },
+            {
+              "judul": "Publikasikan kisah sukses karyawan berprestasi",
+              "dokumen": "Employee Success Story Sheet."
+            },
+            {
+              "judul": "Buat program penghargaan bulanan/tahunan",
+              "dokumen": "Employee Award Policy."
+            },
+            {
+              "judul": "Tetapkan indikator ROI SDM",
+              "dokumen": "HR ROI Calculation Template."
+            },
+            {
+              "judul": "Bandingkan biaya turnover dengan biaya pengembangan",
+              "dokumen": "Turnover Cost Analysis."
+            },
+            {
+              "judul": "Adakan sesi sharing dengan karyawan senior",
+              "dokumen": "Sharing Session Notes."
+            },
+            {
+              "judul": "Dokumentasikan kontribusi karyawan di proyek penting",
+              "dokumen": "Project Contribution Log."
+            },
+            {
+              "judul": "Masukkan pencapaian SDM di laporan manajemen",
+              "dokumen": "HR Achievement Report."
+            },
+            {
+              "judul": "Lakukan survei persepsi manajemen tentang SDM",
+              "dokumen": "HR Perception Survey Result."
+            }
+          ]
+        },
+        {
+          "judul": "Menentukan Nilai, Budaya, dan Prinsip Dasar SDM di Perusahaan",
+          "tujuan": "Menjadi fondasi rekrutmen, pengembangan, dan evaluasi.",
+          "inisiatif": [
+            {
+              "judul": "FGD dengan manajemen untuk merumuskan nilai inti",
+              "dokumen": "Core Values Draft."
+            },
+            {
+              "judul": "Definisikan perilaku nyata dari setiap nilai",
+              "dokumen": "Value-to-Behavior Mapping."
+            },
+            {
+              "judul": "Buat Culture Book perusahaan",
+              "dokumen": "Company Culture Handbook."
+            },
+            {
+              "judul": "Sosialisasikan nilai dalam sesi orientasi karyawan baru",
+              "dokumen": "Onboarding Presentation."
+            },
+            {
+              "judul": "Integrasikan nilai ke KPI",
+              "dokumen": "Value-Integrated KPI Sheet."
+            },
+            {
+              "judul": "Pasang poster nilai di area kerja",
+              "dokumen": "Company Value Poster Design."
+            },
+            {
+              "judul": "Buat video internal tentang budaya kerja",
+              "dokumen": "Company Culture Video Script."
+            },
+            {
+              "judul": "Evaluasi budaya kerja tahunan",
+              "dokumen": "Culture Assessment Survey."
+            },
+            {
+              "judul": "Adakan culture day atau kegiatan internal",
+              "dokumen": "Culture Event Plan."
+            },
+            {
+              "judul": "Tulis panduan perilaku sesuai nilai",
+              "dokumen": "Code of Conduct."
+            }
+          ]
+        },
+        {
+          "judul": "Membuat Visi & Misi Departemen HRD yang Selaras Bisnis",
+          "tujuan": "Menyelaraskan HR dengan arah pertumbuhan perusahaan.",
+          "inisiatif": [
+            {
+              "judul": "Analisis visi & misi perusahaan",
+              "dokumen": "Business Vision Alignment Report."
+            },
+            {
+              "judul": "Rumuskan visi HR yang mendukung visi perusahaan",
+              "dokumen": "HR Vision Statement."
+            },
+            {
+              "judul": "Susun misi HR dalam bentuk aksi nyata",
+              "dokumen": "HR Mission Statement."
+            },
+            {
+              "judul": "Buat tujuan strategis HR untuk 3–5 tahun ke depan",
+              "dokumen": "HR Strategic Goals Document."
+            },
+            {
+              "judul": "Buat peta strategi HR (HR Strategy Map)",
+              "dokumen": "HR Strategy Map."
+            },
+            {
+              "judul": "Integrasikan visi HR ke rencana rekrutmen dan pelatihan",
+              "dokumen": "HR Integration Plan."
+            },
+            {
+              "judul": "Sosialisasikan visi-misi HR ke seluruh tim",
+              "dokumen": "HR Vision & Mission Poster."
+            },
+            {
+              "judul": "Masukkan visi-misi HR di manual perusahaan",
+              "dokumen": "Company Handbook Update."
+            },
+            {
+              "judul": "Review keselarasan visi HR setiap tahun",
+              "dokumen": "HR Vision Review Report."
+            },
+            {
+              "judul": "Dokumentasikan keberhasilan HR sesuai visi",
+              "dokumen": "HR Annual Achievement Report."
+            }
+          ]
+        },
+        {
+          "judul": "Membedakan Peran HRD dan GA (General Affair)",
+          "tujuan": "Memastikan HR fokus pada pengembangan SDM, GA pada urusan umum.",
+          "inisiatif": [
+            {
+              "judul": "Buat daftar fungsi HR dan GA",
+              "dokumen": "HR vs GA Function List."
+            },
+            {
+              "judul": "Susun deskripsi peran HR dan GA",
+              "dokumen": "HR & GA Role Definition Sheet."
+            },
+            {
+              "judul": "Tetapkan batas tanggung jawab masing-masing",
+              "dokumen": "Responsibility Matrix (RACI)."
+            },
+            {
+              "judul": "Buat SOP kerja HR",
+              "dokumen": "HR SOP Manual."
+            },
+            {
+              "judul": "Buat SOP kerja GA",
+              "dokumen": "GA SOP Manual."
+            },
+            {
+              "judul": "Sosialisasikan pembagian peran ke seluruh tim",
+              "dokumen": "HR-GA Communication Plan."
+            },
+            {
+              "judul": "Buat diagram alur kerja HR dan GA",
+              "dokumen": "Workflow Diagram."
+            },
+            {
+              "judul": "Tetapkan KPI terpisah untuk HR dan GA",
+              "dokumen": "HR & GA KPI List."
+            },
+            {
+              "judul": "Adakan rapat koordinasi rutin HR dan GA",
+              "dokumen": "Coordination Meeting Notes."
+            },
+            {
+              "judul": "Evaluasi efektivitas pembagian peran",
+              "dokumen": "HR-GA Role Effectiveness Report."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun Strategi Jangka Panjang Pengelolaan SDM",
+          "tujuan": "Membuat roadmap pengembangan organisasi berbasis SDM.",
+          "inisiatif": [
+            {
+              "judul": "Analisis kondisi SDM saat ini",
+              "dokumen": "HR Current State Report."
+            },
+            {
+              "judul": "Identifikasi kebutuhan SDM 3–5 tahun ke depan",
+              "dokumen": "Future Manpower Planning."
+            },
+            {
+              "judul": "Rancang strategi rekrutmen jangka panjang",
+              "dokumen": "Long-Term Recruitment Plan."
+            },
+            {
+              "judul": "Rancang program pelatihan & pengembangan",
+              "dokumen": "Learning & Development Roadmap."
+            },
+            {
+              "judul": "Buat strategi retensi karyawan",
+              "dokumen": "Employee Retention Strategy."
+            },
+            {
+              "judul": "Tetapkan jalur karier (career pathing)",
+              "dokumen": "Career Path Guide."
+            },
+            {
+              "judul": "Integrasikan teknologi HR (HRIS)",
+              "dokumen": "HR Tech Implementation Plan."
+            },
+            {
+              "judul": "Siapkan strategi suksesi jabatan kunci",
+              "dokumen": "Succession Planning Document."
+            },
+            {
+              "judul": "Tetapkan anggaran tahunan untuk HR",
+              "dokumen": "HR Budget Plan."
+            },
+            {
+              "judul": "Buat rencana evaluasi strategi tahunan",
+              "dokumen": "HR Strategy Review Template."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Perencanaan Kebutuhan dan Struktur Organisasi",
+      "tasks": [
+        {
+          "judul": "Membuat Struktur Organisasi Awal (Organogram)",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menentukan Kebutuhan Jabatan dan Peran",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Job Description dan Job Specification",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Standar Kompetensi dan Nilai Performa",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Rencana Pengembangan Tim Bertahap",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Membuat Struktur Organisasi Awal (Organogram)",
+          "tujuan": "Menjelaskan hierarki dan tanggung jawab kerja.",
+          "inisiatif": [
+            {
+              "judul": "Identifikasi seluruh fungsi bisnis utama",
+              "dokumen": "Function Mapping Sheet."
+            },
+            {
+              "judul": "Tentukan level jabatan (manajemen, supervisor, staf)",
+              "dokumen": "Job Level List."
+            },
+            {
+              "judul": "Susun hubungan pelaporan antar jabatan",
+              "dokumen": "Reporting Relationship Chart."
+            },
+            {
+              "judul": "Gunakan software organogram (Visio, Lucidchart, dll)",
+              "dokumen": "Digital Organogram File."
+            },
+            {
+              "judul": "Tandai posisi yang sudah terisi & kosong",
+              "dokumen": "Filled vs Vacant Position Table."
+            },
+            {
+              "judul": "Validasi organogram dengan manajemen",
+              "dokumen": "Organogram Approval Sheet."
+            },
+            {
+              "judul": "Cetak dan pasang organogram di area kerja",
+              "dokumen": "Printed Organizational Chart."
+            },
+            {
+              "judul": "Simpan versi digital di HRIS",
+              "dokumen": "HRIS Upload Log."
+            },
+            {
+              "judul": "Update organogram setiap perubahan struktur",
+              "dokumen": "Organogram Revision Log."
+            },
+            {
+              "judul": "Sosialisasikan ke seluruh tim",
+              "dokumen": "Organizational Chart Briefing Notes."
+            }
+          ]
+        },
+        {
+          "judul": "Menentukan Kebutuhan Jabatan dan Peran",
+          "tujuan": "Memetakan peran yang dibutuhkan agar fungsi terpenuhi.",
+          "inisiatif": [
+            {
+              "judul": "Analisis target bisnis jangka pendek & panjang",
+              "dokumen": "Business Target Analysis Report."
+            },
+            {
+              "judul": "Daftar semua fungsi yang wajib ada",
+              "dokumen": "Function Requirement List."
+            },
+            {
+              "judul": "Cocokkan fungsi ke jabatan",
+              "dokumen": "Function-to-Role Mapping."
+            },
+            {
+              "judul": "Tentukan jumlah SDM tiap jabatan",
+              "dokumen": "Manpower Planning Sheet."
+            },
+            {
+              "judul": "Tetapkan prioritas pengisian posisi",
+              "dokumen": "Position Priority List."
+            },
+            {
+              "judul": "Identifikasi keterampilan yang dibutuhkan per jabatan",
+              "dokumen": "Job Skill Requirement Table."
+            },
+            {
+              "judul": "Tandai posisi kritis yang mempengaruhi kinerja",
+              "dokumen": "Critical Role List."
+            },
+            {
+              "judul": "Buat matriks peran & tanggung jawab",
+              "dokumen": "Role Responsibility Matrix (RACI)."
+            },
+            {
+              "judul": "Validasi dengan pimpinan tiap departemen",
+              "dokumen": "Role Validation Form."
+            },
+            {
+              "judul": "Update daftar kebutuhan jabatan secara berkala",
+              "dokumen": "Position Review Log."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun Job Description dan Job Specification",
+          "tujuan": "Menentukan tugas dan syarat kompetensi tiap posisi.",
+          "inisiatif": [
+            {
+              "judul": "Wawancara pemegang posisi & atasan langsung",
+              "dokumen": "Job Task Interview Notes."
+            },
+            {
+              "judul": "Kumpulkan daftar tugas harian, mingguan, bulanan",
+              "dokumen": "Job Task List."
+            },
+            {
+              "judul": "Tentukan output yang dihasilkan jabatan",
+              "dokumen": "Job Output Document."
+            },
+            {
+              "judul": "Definisikan tanggung jawab utama",
+              "dokumen": "Job Responsibility Sheet."
+            },
+            {
+              "judul": "Rinci syarat kompetensi teknis & non-teknis",
+              "dokumen": "Job Competency Sheet."
+            },
+            {
+              "judul": "Susun kualifikasi minimum (pendidikan, pengalaman)",
+              "dokumen": "Qualification Criteria Sheet."
+            },
+            {
+              "judul": "Gunakan template standar untuk JD & JS",
+              "dokumen": "JD & JS Template."
+            },
+            {
+              "judul": "Validasi dengan manajer terkait",
+              "dokumen": "JD & JS Approval Form."
+            },
+            {
+              "judul": "Publikasikan JD & JS ke karyawan",
+              "dokumen": "JD & JS Distribution Log."
+            },
+            {
+              "judul": "Review berkala saat ada perubahan peran",
+              "dokumen": "JD & JS Update Log."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun Standar Kompetensi dan Nilai Performa",
+          "tujuan": "Menjadi alat ukur penilaian dan rekrutmen.",
+          "inisiatif": [
+            {
+              "judul": "Identifikasi kompetensi inti perusahaan",
+              "dokumen": "Core Competency List."
+            },
+            {
+              "judul": "Definisikan kompetensi teknis per jabatan",
+              "dokumen": "Technical Competency Matrix."
+            },
+            {
+              "judul": "Buat level kompetensi (pemula, menengah, ahli)",
+              "dokumen": "Competency Level Guide."
+            },
+            {
+              "judul": "Tetapkan indikator perilaku untuk tiap kompetensi",
+              "dokumen": "Competency Behavior Indicators."
+            },
+            {
+              "judul": "Tentukan nilai performa minimal yang diharapkan",
+              "dokumen": "Performance Benchmark Sheet."
+            },
+            {
+              "judul": "Integrasikan standar ini ke proses rekrutmen",
+              "dokumen": "Recruitment Competency Checklist."
+            },
+            {
+              "judul": "Integrasikan ke penilaian kinerja tahunan",
+              "dokumen": "Performance Appraisal Form."
+            },
+            {
+              "judul": "Buat panduan penilaian kompetensi",
+              "dokumen": "Competency Assessment Guide."
+            },
+            {
+              "judul": "Latih atasan langsung untuk melakukan penilaian",
+              "dokumen": "Competency Assessor Training Material."
+            },
+            {
+              "judul": "Review standar kompetensi setiap tahun",
+              "dokumen": "Competency Standard Revision Log."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun Rencana Pengembangan Tim Bertahap",
+          "tujuan": "Menyesuaikan pertumbuhan bisnis dengan penambahan SDM.",
+          "inisiatif": [
+            {
+              "judul": "Analisis proyeksi pertumbuhan bisnis",
+              "dokumen": "Business Growth Forecast."
+            },
+            {
+              "judul": "Hitung kebutuhan SDM per fase pertumbuhan",
+              "dokumen": "Phase-based Manpower Plan."
+            },
+            {
+              "judul": "Tentukan prioritas posisi yang harus ditambah lebih dulu",
+              "dokumen": "Priority Hiring List."
+            },
+            {
+              "judul": "Buat timeline perekrutan bertahap",
+              "dokumen": "Recruitment Timeline."
+            },
+            {
+              "judul": "Rancang program pelatihan onboarding",
+              "dokumen": "Onboarding Program Guide."
+            },
+            {
+              "judul": "Buat jalur karier sesuai roadmap bisnis",
+              "dokumen": "Career Pathing Document."
+            },
+            {
+              "judul": "Tentukan anggaran pengembangan tim",
+              "dokumen": "Team Development Budget Plan."
+            },
+            {
+              "judul": "Buat rencana suksesi untuk posisi kunci",
+              "dokumen": "Succession Planning Document."
+            },
+            {
+              "judul": "Monitor performa tim pasca penambahan anggota",
+              "dokumen": "Team Performance Tracking Report."
+            },
+            {
+              "judul": "Review rencana setiap 6 bulan",
+              "dokumen": "Team Development Review Log."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Rekrutmen dan Seleksi yang Efektif",
+      "tasks": [
+        {
+          "judul": "Menyusun SOP Rekrutmen",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menentukan Jalur Rekrutmen (Online, Referral, Freelance)",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Membuat Format Iklan Lowongan Kerja yang Menarik",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Format Seleksi: CV, Tes, Wawancara",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Penilaian dan Skor Seleksi",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun SOP Rekrutmen",
+          "tujuan": "Membuat proses rekrutmen konsisten dan profesional.",
+          "inisiatif": [
+            {
+              "judul": "Analisis kebutuhan rekrutmen tahunan",
+              "dokumen": "Annual Recruitment Needs Report."
+            },
+            {
+              "judul": "Definisikan tahapan rekrutmen dari A–Z",
+              "dokumen": "Recruitment Workflow Chart."
+            },
+            {
+              "judul": "Susun SOP mulai dari permintaan karyawan baru hingga onboarding",
+              "dokumen": "Recruitment SOP Manual."
+            },
+            {
+              "judul": "Tetapkan standar waktu setiap tahap rekrutmen",
+              "dokumen": "Recruitment SLA (Service Level Agreement)."
+            },
+            {
+              "judul": "Tentukan pihak yang terlibat di tiap tahap",
+              "dokumen": "Recruitment Responsibility Matrix."
+            },
+            {
+              "judul": "Buat form permintaan karyawan baru",
+              "dokumen": "Manpower Requisition Form."
+            },
+            {
+              "judul": "Susun panduan komunikasi dengan kandidat",
+              "dokumen": "Candidate Communication Guide."
+            },
+            {
+              "judul": "Integrasikan SOP ke HRIS / sistem digital",
+              "dokumen": "HRIS Recruitment Module Guide."
+            },
+            {
+              "judul": "Sosialisasikan SOP ke semua manajer terkait",
+              "dokumen": "Recruitment SOP Training Material."
+            },
+            {
+              "judul": "Review SOP setiap tahun",
+              "dokumen": "Recruitment SOP Revision Log."
+            }
+          ]
+        },
+        {
+          "judul": "Menentukan Jalur Rekrutmen (Online, Referral, Freelance)",
+          "tujuan": "Menjangkau kandidat sesuai kebutuhan dan anggaran.",
+          "inisiatif": [
+            {
+              "judul": "Buat daftar platform online rekrutmen yang efektif",
+              "dokumen": "Recruitment Platform List."
+            },
+            {
+              "judul": "Tentukan mekanisme program referral karyawan",
+              "dokumen": "Employee Referral Policy."
+            },
+            {
+              "judul": "Buat database vendor penyedia tenaga freelance",
+              "dokumen": "Freelance Vendor List."
+            },
+            {
+              "judul": "Uji efektivitas masing-masing jalur rekrutmen",
+              "dokumen": "Recruitment Channel Effectiveness Report."
+            },
+            {
+              "judul": "Tetapkan anggaran tiap jalur rekrutmen",
+              "dokumen": "Recruitment Budget Allocation."
+            },
+            {
+              "judul": "Buat panduan posting lowongan di platform online",
+              "dokumen": "Online Job Posting Guide."
+            },
+            {
+              "judul": "Buat format khusus untuk promosi internal",
+              "dokumen": "Internal Job Posting Template."
+            },
+            {
+              "judul": "Tetapkan standar waktu penayangan lowongan",
+              "dokumen": "Job Posting Timeline."
+            },
+            {
+              "judul": "Monitor hasil tiap jalur rekrutmen secara berkala",
+              "dokumen": "Recruitment Channel KPI Report."
+            },
+            {
+              "judul": "Review strategi rekrutmen setiap 6 bulan",
+              "dokumen": "Recruitment Channel Review Log."
+            }
+          ]
+        },
+        {
+          "judul": "Membuat Format Iklan Lowongan Kerja yang Menarik",
+          "tujuan": "Menarik kandidat berkualitas.",
+          "inisiatif": [
+            {
+              "judul": "Gunakan bahasa iklan yang profesional & persuasif",
+              "dokumen": "Job Ad Copywriting Guide."
+            },
+            {
+              "judul": "Masukkan informasi perusahaan yang membangun citra positif",
+              "dokumen": "Company Profile Summary."
+            },
+            {
+              "judul": "Sertakan deskripsi peran & tanggung jawab",
+              "dokumen": "Job Description Summary Template."
+            },
+            {
+              "judul": "Jelaskan kualifikasi yang dibutuhkan",
+              "dokumen": "Job Requirements Template."
+            },
+            {
+              "judul": "Sertakan benefit yang relevan & menarik",
+              "dokumen": "Employee Benefit List."
+            },
+            {
+              "judul": "Gunakan visual yang sesuai brand",
+              "dokumen": "Job Ad Design Template."
+            },
+            {
+              "judul": "Buat versi singkat untuk media sosial",
+              "dokumen": "Social Media Job Ad Template."
+            },
+            {
+              "judul": "Gunakan CTA yang jelas",
+              "dokumen": "Job Ad Call-to-Action Examples."
+            },
+            {
+              "judul": "Uji A/B iklan lowongan untuk melihat performa",
+              "dokumen": "Job Ad Performance Report."
+            },
+            {
+              "judul": "Simpan semua format di bank dokumen HR",
+              "dokumen": "Job Ad Template Library."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun Format Seleksi: CV, Tes, Wawancara",
+          "tujuan": "Memilih kandidat secara objektif dan efisien.",
+          "inisiatif": [
+            {
+              "judul": "Tentukan format penilaian CV",
+              "dokumen": "CV Screening Checklist."
+            },
+            {
+              "judul": "Siapkan format tes tertulis/online sesuai jabatan",
+              "dokumen": "Job Test Bank."
+            },
+            {
+              "judul": "Buat panduan wawancara berbasis kompetensi",
+              "dokumen": "Competency-Based Interview Guide."
+            },
+            {
+              "judul": "Tetapkan pertanyaan wawancara standar",
+              "dokumen": "Standard Interview Question List."
+            },
+            {
+              "judul": "Gunakan sistem skor untuk tiap tahapan seleksi",
+              "dokumen": "Selection Scoring Sheet."
+            },
+            {
+              "judul": "Sediakan form evaluasi tiap kandidat",
+              "dokumen": "Candidate Evaluation Form."
+            },
+            {
+              "judul": "Dokumentasikan hasil tes & wawancara",
+              "dokumen": "Candidate Test Result Archive."
+            },
+            {
+              "judul": "Lakukan uji validitas alat seleksi",
+              "dokumen": "Selection Tool Validation Report."
+            },
+            {
+              "judul": "Tetapkan bobot nilai tiap tahap seleksi",
+              "dokumen": "Selection Weighting Matrix."
+            },
+            {
+              "judul": "Simpan semua hasil seleksi untuk audit",
+              "dokumen": "Recruitment Record Archive."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun Penilaian dan Skor Seleksi",
+          "tujuan": "Mengurangi subjektivitas dalam pengambilan keputusan.",
+          "inisiatif": [
+            {
+              "judul": "Tentukan kriteria utama penilaian kandidat",
+              "dokumen": "Candidate Evaluation Criteria."
+            },
+            {
+              "judul": "Buat sistem skor numerik untuk tiap kriteria",
+              "dokumen": "Selection Scoring Matrix."
+            },
+            {
+              "judul": "Tetapkan bobot skor sesuai prioritas peran",
+              "dokumen": "Scoring Weight Allocation Sheet."
+            },
+            {
+              "judul": "Gunakan form penilaian yang sama untuk semua kandidat",
+              "dokumen": "Standard Candidate Scorecard."
+            },
+            {
+              "judul": "Libatkan minimal 2 penilai independen",
+              "dokumen": "Multi-Assessor Assignment Sheet."
+            },
+            {
+              "judul": "Lakukan kalibrasi penilaian antar penilai",
+              "dokumen": "Assessor Calibration Record."
+            },
+            {
+              "judul": "Gunakan software HR untuk agregasi skor",
+              "dokumen": "Digital Score Aggregation Report."
+            },
+            {
+              "judul": "Simpan hasil penilaian sebagai arsip",
+              "dokumen": "Candidate Scoring Archive."
+            },
+            {
+              "judul": "Analisis korelasi skor dengan performa karyawan terpilih",
+              "dokumen": "Post-Hire Performance Analysis."
+            },
+            {
+              "judul": "Review sistem penilaian setiap tahun",
+              "dokumen": "Scoring System Review Log."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Onboarding dan Adaptasi Budaya Kerja",
+      "tasks": [
+        {
+          "judul": "Menyusun SOP Onboarding Karyawan Baru",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Membuat Buku Panduan Perusahaan (Company Handbook)",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Kontrak Kerja & Surat Penugasan",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyiapkan Pelatihan Dasar untuk Karyawan Baru",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menunjuk Mentor atau Buddy untuk Adaptasi",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun SOP Onboarding Karyawan Baru",
+          "tujuan": "Mempercepat proses adaptasi dan produktivitas.",
+          "inisiatif": [
+            {
+              "judul": "Tentukan tahapan onboarding (hari 1, minggu 1, bulan 1)",
+              "dokumen": "Onboarding Timeline."
+            },
+            {
+              "judul": "Susun SOP proses administrasi (absen, email, ID card)",
+              "dokumen": "Admin Onboarding SOP."
+            },
+            {
+              "judul": "Buat jadwal orientasi perusahaan",
+              "dokumen": "Orientation Schedule."
+            },
+            {
+              "judul": "Siapkan materi pengenalan visi, misi, budaya",
+              "dokumen": "Company Introduction Deck."
+            },
+            {
+              "judul": "Siapkan tur fasilitas kantor",
+              "dokumen": "Office Tour Guide Sheet."
+            },
+            {
+              "judul": "Tetapkan PIC onboarding di HRD",
+              "dokumen": "Onboarding PIC Assignment Sheet."
+            },
+            {
+              "judul": "Buat checklist onboarding per karyawan",
+              "dokumen": "New Employee Onboarding Checklist."
+            },
+            {
+              "judul": "Siapkan evaluasi onboarding 30–60 hari",
+              "dokumen": "Onboarding Evaluation Form."
+            },
+            {
+              "judul": "Integrasikan onboarding ke HRIS",
+              "dokumen": "HRIS Onboarding Module Guide."
+            },
+            {
+              "judul": "Lakukan review tahunan SOP onboarding",
+              "dokumen": "Onboarding SOP Revision Log."
+            }
+          ]
+        },
+        {
+          "judul": "Membuat Buku Panduan Perusahaan (Company Handbook)",
+          "tujuan": "Menjadi rujukan nilai, aturan, dan budaya kerja.",
+          "inisiatif": [
+            {
+              "judul": "Kumpulkan visi, misi, nilai inti",
+              "dokumen": "Vision & Values Document."
+            },
+            {
+              "judul": "Susun sejarah & profil perusahaan",
+              "dokumen": "Company Profile Section."
+            },
+            {
+              "judul": "Rinci kebijakan kerja (jam kerja, cuti, izin)",
+              "dokumen": "HR Policy Section."
+            },
+            {
+              "judul": "Sertakan aturan perilaku & etika kerja",
+              "dokumen": "Code of Conduct Section."
+            },
+            {
+              "judul": "Cantumkan benefit & fasilitas karyawan",
+              "dokumen": "Employee Benefit Section."
+            },
+            {
+              "judul": "Sertakan prosedur pengajuan cuti & klaim",
+              "dokumen": "Leave & Claim Procedure Sheet."
+            },
+            {
+              "judul": "Gunakan desain visual yang menarik",
+              "dokumen": "Company Handbook Design File."
+            },
+            {
+              "judul": "Cetak dan distribusikan ke seluruh karyawan",
+              "dokumen": "Handbook Distribution Log."
+            },
+            {
+              "judul": "Simpan versi digital di intranet/HRIS",
+              "dokumen": "Digital Handbook File."
+            },
+            {
+              "judul": "Review konten minimal setahun sekali",
+              "dokumen": "Handbook Revision Log."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun Kontrak Kerja & Surat Penugasan",
+          "tujuan": "Kejelasan hak, kewajiban, dan legalitas kerja.",
+          "inisiatif": [
+            {
+              "judul": "Tentukan format kontrak sesuai UU Ketenagakerjaan",
+              "dokumen": "Employment Contract Template."
+            },
+            {
+              "judul": "Rinci hak dan kewajiban karyawan",
+              "dokumen": "Employee Rights & Duties Sheet."
+            },
+            {
+              "judul": "Sertakan klausul masa percobaan",
+              "dokumen": "Probation Clause Document."
+            },
+            {
+              "judul": "Tambahkan klausul kerahasiaan (NDA)",
+              "dokumen": "Non-Disclosure Agreement."
+            },
+            {
+              "judul": "Tentukan format surat penugasan proyek",
+              "dokumen": "Assignment Letter Template."
+            },
+            {
+              "judul": "Validasi kontrak dengan legal internal",
+              "dokumen": "Legal Review Checklist."
+            },
+            {
+              "judul": "Simpan arsip kontrak fisik & digital",
+              "dokumen": "Contract Archive System."
+            },
+            {
+              "judul": "Buat SOP tanda tangan kontrak",
+              "dokumen": "Contract Signing SOP."
+            },
+            {
+              "judul": "Pastikan kontrak ditandatangani sebelum mulai kerja",
+              "dokumen": "Contract Completion Checklist."
+            },
+            {
+              "judul": "Update kontrak saat ada perubahan jabatan",
+              "dokumen": "Contract Amendment Form."
+            }
+          ]
+        },
+        {
+          "judul": "Menyiapkan Pelatihan Dasar untuk Karyawan Baru",
+          "tujuan": "Membekali mereka dengan kompetensi minimum.",
+          "inisiatif": [
+            {
+              "judul": "Identifikasi skill wajib untuk semua karyawan",
+              "dokumen": "Core Skills List."
+            },
+            {
+              "judul": "Susun modul pelatihan dasar",
+              "dokumen": "Basic Training Module."
+            },
+            {
+              "judul": "Buat jadwal pelatihan onboarding",
+              "dokumen": "Training Schedule."
+            },
+            {
+              "judul": "Tentukan trainer internal/eksternal",
+              "dokumen": "Trainer Assignment Sheet."
+            },
+            {
+              "judul": "Siapkan materi presentasi",
+              "dokumen": "Training Slide Deck."
+            },
+            {
+              "judul": "Gunakan metode blended learning (offline & online)",
+              "dokumen": "E-Learning Access Guide."
+            },
+            {
+              "judul": "Buat pre-test & post-test",
+              "dokumen": "Training Assessment Form."
+            },
+            {
+              "judul": "Sediakan form evaluasi pelatihan",
+              "dokumen": "Training Feedback Form."
+            },
+            {
+              "judul": "Catat kehadiran & hasil peserta",
+              "dokumen": "Training Attendance & Result Log."
+            },
+            {
+              "judul": "Review konten pelatihan setiap 6 bulan",
+              "dokumen": "Training Content Review Log."
+            }
+          ]
+        },
+        {
+          "judul": "Menunjuk Mentor atau Buddy untuk Adaptasi",
+          "tujuan": "Membantu karyawan baru lebih cepat nyaman dan produktif.",
+          "inisiatif": [
+            {
+              "judul": "Tetapkan kriteria mentor/buddy",
+              "dokumen": "Mentor Selection Criteria."
+            },
+            {
+              "judul": "Buat daftar karyawan yang bisa jadi mentor",
+              "dokumen": "Mentor Candidate List."
+            },
+            {
+              "judul": "Pasangkan mentor dengan karyawan baru",
+              "dokumen": "Buddy Pairing Sheet."
+            },
+            {
+              "judul": "Susun panduan tugas mentor",
+              "dokumen": "Mentor Role Guide."
+            },
+            {
+              "judul": "Tetapkan durasi program mentoring",
+              "dokumen": "Mentorship Timeline."
+            },
+            {
+              "judul": "Buat form monitoring kemajuan adaptasi",
+              "dokumen": "Adaptation Progress Form."
+            },
+            {
+              "judul": "Lakukan pertemuan rutin mentor-mentee",
+              "dokumen": "Mentoring Meeting Notes."
+            },
+            {
+              "judul": "Evaluasi efektivitas mentor",
+              "dokumen": "Mentor Performance Review Form."
+            },
+            {
+              "judul": "Berikan penghargaan untuk mentor yang efektif",
+              "dokumen": "Mentor Recognition Program."
+            },
+            {
+              "judul": "Simpan catatan hasil mentoring di HRIS",
+              "dokumen": "Mentorship Archive."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Pengembangan Kompetensi dan Karir",
+      "tasks": [
+        {
+          "judul": "Menyusun Rencana Pelatihan Berkala (Training Plan)",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Sistem Penilaian Kinerja (Performance Appraisal)",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Rencana Pengembangan Karir (Career Path)",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Sistem Coaching dan Mentoring Internal",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Program Evaluasi Pasca Pelatihan",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Rencana Pelatihan Berkala (Training Plan)",
+          "tujuan": "Mengembangkan potensi dan keterampilan karyawan.",
+          "inisiatif": [
+            {
+              "judul": "Lakukan Training Needs Analysis (TNA)",
+              "dokumen": "TNA Report."
+            },
+            {
+              "judul": "Susun daftar kompetensi inti & tambahan",
+              "dokumen": "Competency Matrix."
+            },
+            {
+              "judul": "Tetapkan jadwal pelatihan tahunan",
+              "dokumen": "Annual Training Calendar."
+            },
+            {
+              "judul": "Tentukan metode pelatihan (online, offline, workshop)",
+              "dokumen": "Training Methodology Guide."
+            },
+            {
+              "judul": "Pilih trainer internal/eksternal sesuai topik",
+              "dokumen": "Trainer Roster."
+            },
+            {
+              "judul": "Alokasikan anggaran pelatihan",
+              "dokumen": "Training Budget Plan."
+            },
+            {
+              "judul": "Siapkan modul & materi pelatihan",
+              "dokumen": "Training Module Pack."
+            },
+            {
+              "judul": "Gunakan sistem pendaftaran & kehadiran",
+              "dokumen": "Training Attendance Record."
+            },
+            {
+              "judul": "Buat form evaluasi pelatihan",
+              "dokumen": "Training Feedback Form."
+            },
+            {
+              "judul": "Lakukan review efektivitas pelatihan tiap semester",
+              "dokumen": "Training Effectiveness Report."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun Sistem Penilaian Kinerja (Performance Appraisal)",
+          "tujuan": "Mengukur dan meningkatkan kontribusi.",
+          "inisiatif": [
+            {
+              "judul": "Tetapkan indikator kinerja utama (KPI) tiap jabatan",
+              "dokumen": "KPI Library."
+            },
+            {
+              "judul": "Buat format penilaian kinerja",
+              "dokumen": "Performance Appraisal Form."
+            },
+            {
+              "judul": "Tentukan periode penilaian (bulanan, kuartal, tahunan)",
+              "dokumen": "Appraisal Schedule."
+            },
+            {
+              "judul": "Tetapkan bobot penilaian per kriteria",
+              "dokumen": "KPI Weight Matrix."
+            },
+            {
+              "judul": "Gunakan metode 360° feedback bila perlu",
+              "dokumen": "360 Feedback Form."
+            },
+            {
+              "judul": "Integrasikan penilaian ke HRIS",
+              "dokumen": "Digital Appraisal User Guide."
+            },
+            {
+              "judul": "Sosialisasikan sistem ke semua karyawan",
+              "dokumen": "Appraisal Training Material."
+            },
+            {
+              "judul": "Lakukan kalibrasi penilaian antar manajer",
+              "dokumen": "Appraisal Calibration Record."
+            },
+            {
+              "judul": "Catat hasil & buat rekomendasi per karyawan",
+              "dokumen": "Employee Performance Report."
+            },
+            {
+              "judul": "Review sistem appraisal tiap tahun",
+              "dokumen": "Appraisal System Review Log."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun Rencana Pengembangan Karir (Career Path)",
+          "tujuan": "Memberikan arah tumbuh yang jelas bagi karyawan.",
+          "inisiatif": [
+            {
+              "judul": "Petakan struktur karir per divisi",
+              "dokumen": "Career Path Diagram."
+            },
+            {
+              "judul": "Tetapkan kualifikasi & kompetensi tiap level",
+              "dokumen": "Career Level Competency Guide."
+            },
+            {
+              "judul": "Susun jalur promosi & rotasi",
+              "dokumen": "Promotion & Rotation Policy."
+            },
+            {
+              "judul": "Buat panduan penilaian kesiapan promosi",
+              "dokumen": "Promotion Readiness Checklist."
+            },
+            {
+              "judul": "Kaitkan career path dengan program pelatihan",
+              "dokumen": "Training & Career Path Integration Map."
+            },
+            {
+              "judul": "Tawarkan program sertifikasi untuk peningkatan kompetensi",
+              "dokumen": "Certification Program List."
+            },
+            {
+              "judul": "Gunakan HRIS untuk melacak progress karir",
+              "dokumen": "Career Tracking Report."
+            },
+            {
+              "judul": "Komunikasikan career path ke semua karyawan",
+              "dokumen": "Career Path Handbook."
+            },
+            {
+              "judul": "Review career path sesuai perkembangan bisnis",
+              "dokumen": "Career Path Review Report."
+            },
+            {
+              "judul": "Siapkan succession plan untuk posisi kunci",
+              "dokumen": "Succession Planning Document."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun Sistem Coaching dan Mentoring Internal",
+          "tujuan": "Memberikan pendampingan yang terstruktur.",
+          "inisiatif": [
+            {
+              "judul": "Tetapkan tujuan program coaching/mentoring",
+              "dokumen": "Coaching Program Charter."
+            },
+            {
+              "judul": "Pilih mentor & coach internal",
+              "dokumen": "Mentor-Coach Roster."
+            },
+            {
+              "judul": "Tentukan format pertemuan (mingguan, bulanan)",
+              "dokumen": "Mentoring Meeting Schedule."
+            },
+            {
+              "judul": "Susun panduan peran mentor/coach",
+              "dokumen": "Mentoring & Coaching Guidebook."
+            },
+            {
+              "judul": "Buat modul pembinaan sesuai kebutuhan",
+              "dokumen": "Coaching Module Pack."
+            },
+            {
+              "judul": "Gunakan form progress mentee/coachee",
+              "dokumen": "Progress Tracking Form."
+            },
+            {
+              "judul": "Lakukan evaluasi berkala",
+              "dokumen": "Mentoring Evaluation Form."
+            },
+            {
+              "judul": "Dokumentasikan hasil pertemuan",
+              "dokumen": "Mentoring Meeting Notes."
+            },
+            {
+              "judul": "Berikan penghargaan bagi mentor efektif",
+              "dokumen": "Mentor Recognition List."
+            },
+            {
+              "judul": "Review program tiap 6 bulan",
+              "dokumen": "Coaching Program Review Report."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun Program Evaluasi Pasca Pelatihan",
+          "tujuan": "Mengetahui dampak pelatihan terhadap kinerja.",
+          "inisiatif": [
+            {
+              "judul": "Tentukan indikator keberhasilan pelatihan",
+              "dokumen": "Training Success Criteria."
+            },
+            {
+              "judul": "Gunakan metode evaluasi Kirkpatrick Level 1–4",
+              "dokumen": "Training Evaluation Framework."
+            },
+            {
+              "judul": "Lakukan post-test setelah pelatihan",
+              "dokumen": "Post-Training Test Form."
+            },
+            {
+              "judul": "Kumpulkan feedback peserta",
+              "dokumen": "Participant Feedback Form."
+            },
+            {
+              "judul": "Mintakan feedback dari atasan langsung",
+              "dokumen": "Supervisor Feedback Form."
+            },
+            {
+              "judul": "Bandingkan KPI sebelum & sesudah pelatihan",
+              "dokumen": "KPI Comparison Report."
+            },
+            {
+              "judul": "Lakukan follow-up setelah 1–3 bulan",
+              "dokumen": "Training Follow-Up Form."
+            },
+            {
+              "judul": "Catat perubahan perilaku & hasil kerja",
+              "dokumen": "Behaviour Change Log."
+            },
+            {
+              "judul": "Laporkan ROI pelatihan ke manajemen",
+              "dokumen": "Training ROI Report."
+            },
+            {
+              "judul": "Gunakan hasil evaluasi untuk perbaikan materi",
+              "dokumen": "Training Improvement Plan."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Pengelolaan Gaji, Tunjangan, dan Kesejahteraan",
+      "tasks": [
+        {
+          "judul": "Menentukan Struktur Gaji yang Adil dan Kompetitif",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menentukan Sistem Tunjangan dan Benefit Karyawan",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Sistem THR, Bonus, dan Insentif",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Mengelola BPJS Kesehatan dan Ketenagakerjaan",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyiapkan Program Kesejahteraan Non Finansial",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menentukan Struktur Gaji yang Adil dan Kompetitif",
+          "tujuan": "Menarik dan mempertahankan talenta.",
+          "inisiatif": [
+            {
+              "judul": "Lakukan survei gaji di industri sejenis",
+              "dokumen": "Salary Benchmark Report."
+            },
+            {
+              "judul": "Buat struktur gaji per jabatan & level",
+              "dokumen": "Salary Structure Chart."
+            },
+            {
+              "judul": "Tetapkan rentang gaji (minimum–maksimum)",
+              "dokumen": "Salary Range Matrix."
+            },
+            {
+              "judul": "Hubungkan gaji dengan kompetensi & kinerja",
+              "dokumen": "Competency-Based Pay Guide."
+            },
+            {
+              "judul": "Tentukan kebijakan kenaikan gaji tahunan",
+              "dokumen": "Annual Salary Adjustment Policy."
+            },
+            {
+              "judul": "Sosialisasikan struktur gaji ke manajemen",
+              "dokumen": "Salary Policy Presentation."
+            },
+            {
+              "judul": "Simpan data gaji dalam sistem HRIS",
+              "dokumen": "HRIS Payroll Database."
+            },
+            {
+              "judul": "Pastikan kepatuhan pada UU ketenagakerjaan",
+              "dokumen": "Legal Compliance Checklist."
+            },
+            {
+              "judul": "Review struktur gaji minimal 2 tahun sekali",
+              "dokumen": "Salary Structure Review Report."
+            },
+            {
+              "judul": "Dokumentasikan proses penetapan gaji",
+              "dokumen": "Salary Determination SOP."
+            }
+          ]
+        },
+        {
+          "judul": "Menentukan Sistem Tunjangan dan Benefit Karyawan",
+          "tujuan": "Meningkatkan loyalitas dan kepuasan kerja.",
+          "inisiatif": [
+            {
+              "judul": "Identifikasi kebutuhan benefit (transport, makan, kesehatan)",
+              "dokumen": "Employee Benefit Needs Survey."
+            },
+            {
+              "judul": "Susun daftar benefit wajib & tambahan",
+              "dokumen": "Benefit Catalog."
+            },
+            {
+              "judul": "Tetapkan kriteria penerima tunjangan",
+              "dokumen": "Benefit Eligibility Guide."
+            },
+            {
+              "judul": "Tentukan besaran & frekuensi pemberian",
+              "dokumen": "Benefit Payment Schedule."
+            },
+            {
+              "judul": "Integrasikan benefit dengan payroll",
+              "dokumen": "Payroll Integration SOP."
+            },
+            {
+              "judul": "Sosialisasikan benefit ke karyawan",
+              "dokumen": "Benefit Information Sheet."
+            },
+            {
+              "judul": "Evaluasi efektivitas benefit",
+              "dokumen": "Benefit Utilization Report."
+            },
+            {
+              "judul": "Sesuaikan benefit dengan perkembangan bisnis",
+              "dokumen": "Benefit Revision Log."
+            },
+            {
+              "judul": "Pastikan benefit sesuai regulasi pemerintah",
+              "dokumen": "Legal Compliance Report."
+            },
+            {
+              "judul": "Simpan data penerima benefit",
+              "dokumen": "Benefit Recipient Database."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun Sistem THR, Bonus, dan Insentif",
+          "tujuan": "Meningkatkan motivasi berbasis hasil.",
+          "inisiatif": [
+            {
+              "judul": "Tetapkan kebijakan THR sesuai aturan pemerintah",
+              "dokumen": "THR Policy."
+            },
+            {
+              "judul": "Tentukan formula perhitungan bonus",
+              "dokumen": "Bonus Calculation Formula Sheet."
+            },
+            {
+              "judul": "Rancang skema insentif berbasis kinerja",
+              "dokumen": "Performance Incentive Scheme."
+            },
+            {
+              "judul": "Hubungkan bonus/insentif dengan pencapaian KPI",
+              "dokumen": "KPI Incentive Linkage Guide."
+            },
+            {
+              "judul": "Tentukan waktu pemberian bonus/insentif",
+              "dokumen": "Bonus & Incentive Schedule."
+            },
+            {
+              "judul": "Sosialisasikan aturan THR, bonus, insentif",
+              "dokumen": "Employee Reward Handbook."
+            },
+            {
+              "judul": "Simpan perhitungan di payroll system",
+              "dokumen": "Payroll Reward Module."
+            },
+            {
+              "judul": "Evaluasi dampak insentif terhadap produktivitas",
+              "dokumen": "Incentive Effectiveness Report."
+            },
+            {
+              "judul": "Dokumentasikan proses penyaluran",
+              "dokumen": "Reward Distribution SOP."
+            },
+            {
+              "judul": "Review skema tahunan",
+              "dokumen": "Annual Reward Review Report."
+            }
+          ]
+        },
+        {
+          "judul": "Mengelola BPJS Kesehatan dan Ketenagakerjaan",
+          "tujuan": "Tunduk pada kewajiban hukum dan memberikan perlindungan.",
+          "inisiatif": [
+            {
+              "judul": "Registrasikan perusahaan di BPJS",
+              "dokumen": "BPJS Company Registration Form."
+            },
+            {
+              "judul": "Daftarkan seluruh karyawan",
+              "dokumen": "BPJS Employee Enrollment List."
+            },
+            {
+              "judul": "Buat SOP pendaftaran karyawan baru",
+              "dokumen": "BPJS Enrollment SOP."
+            },
+            {
+              "judul": "Tetapkan prosedur pembayaran iuran",
+              "dokumen": "BPJS Payment SOP."
+            },
+            {
+              "judul": "Pantau status kepesertaan karyawan",
+              "dokumen": "BPJS Participant Status Report."
+            },
+            {
+              "judul": "Tangani klaim BPJS",
+              "dokumen": "BPJS Claim Procedure Guide."
+            },
+            {
+              "judul": "Lakukan update data karyawan secara rutin",
+              "dokumen": "BPJS Data Update Log."
+            },
+            {
+              "judul": "Simpan bukti pembayaran iuran",
+              "dokumen": "BPJS Payment Archive."
+            },
+            {
+              "judul": "Sosialisasikan manfaat BPJS ke karyawan",
+              "dokumen": "BPJS Information Sheet."
+            },
+            {
+              "judul": "Pastikan kepatuhan hukum",
+              "dokumen": "BPJS Compliance Checklist."
+            }
+          ]
+        },
+        {
+          "judul": "Menyiapkan Program Kesejahteraan Non Finansial",
+          "tujuan": "Menjaga semangat dan kesehatan mental tim.",
+          "inisiatif": [
+            {
+              "judul": "Adakan kegiatan team building",
+              "dokumen": "Team Building Activity Plan."
+            },
+            {
+              "judul": "Sediakan program konseling karyawan",
+              "dokumen": "Employee Assistance Program (EAP) Guide."
+            },
+            {
+              "judul": "Buat kegiatan olahraga bersama",
+              "dokumen": "Employee Fitness Program Schedule."
+            },
+            {
+              "judul": "Terapkan jam kerja fleksibel",
+              "dokumen": "Flexible Work Policy."
+            },
+            {
+              "judul": "Sediakan ruang istirahat yang nyaman",
+              "dokumen": "Employee Lounge Design Plan."
+            },
+            {
+              "judul": "Adakan pelatihan motivasi & pengembangan diri",
+              "dokumen": "Self-Development Training Module."
+            },
+            {
+              "judul": "Rayakan ulang tahun & pencapaian karyawan",
+              "dokumen": "Employee Celebration Calendar."
+            },
+            {
+              "judul": "Buat program penghargaan non-materi",
+              "dokumen": "Non-Financial Reward Catalog."
+            },
+            {
+              "judul": "Terapkan kebijakan cuti tambahan khusus",
+              "dokumen": "Special Leave Policy."
+            },
+            {
+              "judul": "Lakukan survei kepuasan kerja",
+              "dokumen": "Employee Satisfaction Survey Report."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Penilaian dan Pengelolaan Kinerja",
+      "tasks": [
+        {
+          "judul": "Menentukan KPI dan Target Per Departemen",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Jadwal Evaluasi Kinerja Rutin",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Memberi Feedback Berkala dan Terstruktur",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyiapkan Format Laporan Kinerja Individu & Tim",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Mengaitkan Penilaian Kinerja dengan Reward & Pengembangan",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menentukan KPI dan Target Per Departemen",
+          "tujuan": "Menjadi acuan kerja dan evaluasi kinerja.",
+          "inisiatif": [
+            {
+              "judul": "Lakukan analisis tujuan bisnis jangka pendek & panjang",
+              "dokumen": "Business Goals Alignment Sheet."
+            },
+            {
+              "judul": "Identifikasi fungsi utama setiap departemen",
+              "dokumen": "Department Function Map."
+            },
+            {
+              "judul": "Tentukan indikator kinerja utama (KPI) yang relevan",
+              "dokumen": "KPI Library per Departemen."
+            },
+            {
+              "judul": "Tetapkan target numerik & timeline",
+              "dokumen": "KPI Target Sheet."
+            },
+            {
+              "judul": "Konsultasikan KPI dengan kepala departemen",
+              "dokumen": "KPI Discussion Notes."
+            },
+            {
+              "judul": "Integrasikan KPI ke HRIS/perangkat tracking",
+              "dokumen": "KPI Tracking System Guide."
+            },
+            {
+              "judul": "Sosialisasikan KPI ke seluruh tim",
+              "dokumen": "KPI Communication Plan."
+            },
+            {
+              "judul": "Pastikan KPI sejalan dengan nilai perusahaan",
+              "dokumen": "KPI-Values Alignment Report."
+            },
+            {
+              "judul": "Review KPI secara periodik",
+              "dokumen": "KPI Review Report."
+            },
+            {
+              "judul": "Simpan catatan KPI tahunan untuk pembelajaran",
+              "dokumen": "Annual KPI Archive."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun Jadwal Evaluasi Kinerja Rutin",
+          "tujuan": "Monitoring dan perbaikan berkala.",
+          "inisiatif": [
+            {
+              "judul": "Tentukan frekuensi evaluasi (bulanan, kuartal, tahunan)",
+              "dokumen": "Evaluation Schedule Calendar."
+            },
+            {
+              "judul": "Buat format evaluasi yang seragam",
+              "dokumen": "Standard Evaluation Form."
+            },
+            {
+              "judul": "Tetapkan siapa yang melakukan evaluasi",
+              "dokumen": "Evaluation Responsibility Chart."
+            },
+            {
+              "judul": "Integrasikan evaluasi ke meeting rutin",
+              "dokumen": "Performance Review Agenda."
+            },
+            {
+              "judul": "Sediakan waktu khusus one-on-one review",
+              "dokumen": "One-on-One Meeting Schedule."
+            },
+            {
+              "judul": "Gunakan data KPI sebagai bahan evaluasi",
+              "dokumen": "KPI Performance Dashboard."
+            },
+            {
+              "judul": "Dokumentasikan hasil evaluasi",
+              "dokumen": "Performance Evaluation Report."
+            },
+            {
+              "judul": "Catat rekomendasi perbaikan",
+              "dokumen": "Improvement Recommendation Log."
+            },
+            {
+              "judul": "Simpan semua arsip evaluasi di HRIS",
+              "dokumen": "Evaluation Archive Database."
+            },
+            {
+              "judul": "Review jadwal evaluasi tiap tahun",
+              "dokumen": "Evaluation Schedule Review Report."
+            }
+          ]
+        },
+        {
+          "judul": "Memberi Feedback Berkala dan Terstruktur",
+          "tujuan": "Membangun komunikasi dua arah yang sehat.",
+          "inisiatif": [
+            {
+              "judul": "Tentukan format feedback (lisan, tertulis, digital)",
+              "dokumen": "Feedback Format Guide."
+            },
+            {
+              "judul": "Latih atasan memberi feedback konstruktif",
+              "dokumen": "Feedback Skills Training Material."
+            },
+            {
+              "judul": "Jadwalkan feedback mingguan/bulanan",
+              "dokumen": "Feedback Calendar."
+            },
+            {
+              "judul": "Gunakan metode Start-Stop-Continue atau SBI Model",
+              "dokumen": "Feedback Method Guide."
+            },
+            {
+              "judul": "Dokumentasikan feedback penting",
+              "dokumen": "Feedback Record Form."
+            },
+            {
+              "judul": "Berikan ruang untuk feedback dari karyawan ke manajemen",
+              "dokumen": "Employee-to-Manager Feedback Form."
+            },
+            {
+              "judul": "Integrasikan feedback ke sistem appraisal",
+              "dokumen": "Appraisal-Feedback Integration Sheet."
+            },
+            {
+              "judul": "Pantau tindak lanjut hasil feedback",
+              "dokumen": "Feedback Follow-Up Log."
+            },
+            {
+              "judul": "Beri penghargaan untuk penerima feedback yang melakukan perbaikan signifikan",
+              "dokumen": "Feedback Impact Report."
+            },
+            {
+              "judul": "Review efektivitas sistem feedback",
+              "dokumen": "Feedback System Review Report."
+            }
+          ]
+        },
+        {
+          "judul": "Menyiapkan Format Laporan Kinerja Individu & Tim",
+          "tujuan": "Memudahkan analisis untuk promosi atau rotasi.",
+          "inisiatif": [
+            {
+              "judul": "Tentukan komponen laporan (output, KPI, perilaku kerja)",
+              "dokumen": "Performance Report Template."
+            },
+            {
+              "judul": "Buat format yang mudah dibaca manajemen",
+              "dokumen": "Executive Summary Layout."
+            },
+            {
+              "judul": "Pisahkan laporan individu dan tim",
+              "dokumen": "Individual vs Team Report Format."
+            },
+            {
+              "judul": "Gunakan indikator visual (grafik, warna)",
+              "dokumen": "Visual Performance Dashboard."
+            },
+            {
+              "judul": "Integrasikan laporan ke sistem HRIS",
+              "dokumen": "HRIS Report Upload SOP."
+            },
+            {
+              "judul": "Pastikan laporan mencatat progres bulanan",
+              "dokumen": "Monthly Performance Report."
+            },
+            {
+              "judul": "Sediakan kolom rekomendasi promosi/rotasi",
+              "dokumen": "Career Recommendation Sheet."
+            },
+            {
+              "judul": "Buat arsip laporan tahunan",
+              "dokumen": "Annual Performance Report Archive."
+            },
+            {
+              "judul": "Sosialisasikan format ke semua manajer",
+              "dokumen": "Performance Report Guidelines."
+            },
+            {
+              "judul": "Review format tiap tahun untuk relevansi",
+              "dokumen": "Performance Report Review Document."
+            }
+          ]
+        },
+        {
+          "judul": "Mengaitkan Penilaian Kinerja dengan Reward & Pengembangan",
+          "tujuan": "Memberi dampak nyata pada karir karyawan.",
+          "inisiatif": [
+            {
+              "judul": "Tentukan kriteria kinerja untuk reward",
+              "dokumen": "Reward Eligibility Criteria."
+            },
+            {
+              "judul": "Hubungkan skor appraisal dengan bonus/insentif",
+              "dokumen": "Appraisal-to-Reward Conversion Sheet."
+            },
+            {
+              "judul": "Tetapkan poin kinerja untuk promosi",
+              "dokumen": "Promotion Points Table."
+            },
+            {
+              "judul": "Integrasikan ke program pelatihan lanjutan",
+              "dokumen": "Performance-Based Training Plan."
+            },
+            {
+              "judul": "Buat SOP pemberian reward",
+              "dokumen": "Reward Distribution SOP."
+            },
+            {
+              "judul": "Sosialisasikan keterkaitan ini ke semua karyawan",
+              "dokumen": "Reward Communication Plan."
+            },
+            {
+              "judul": "Pantau dampak reward pada produktivitas",
+              "dokumen": "Reward Effectiveness Report."
+            },
+            {
+              "judul": "Simpan data riwayat reward per karyawan",
+              "dokumen": "Employee Reward History Database."
+            },
+            {
+              "judul": "Lakukan evaluasi sistem tiap tahun",
+              "dokumen": "Reward System Review Report."
+            },
+            {
+              "judul": "Sesuaikan kebijakan jika tidak efektif",
+              "dokumen": "Reward Policy Revision Log."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Pengelolaan Disiplin, Etika, dan Hukum Karyawan",
+      "tasks": [
+        {
+          "judul": "Menyusun Peraturan Perusahaan (PP) atau Tata Tertib",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyiapkan SOP Teguran, Sanksi, dan Pemutusan Kerja",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Dokumen Hukum Hubungan Industrial",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menjaga Dokumentasi HR yang Rapi dan Legal",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Format Exit Interview dan Offboarding",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Peraturan Perusahaan (PP) atau Tata Tertib",
+          "tujuan": "Menegakkan kedisiplinan dan batas perilaku.",
+          "inisiatif": [
+            {
+              "judul": "Kaji UU Ketenagakerjaan dan aturan terkait",
+              "dokumen": "Regulatory Compliance Checklist."
+            },
+            {
+              "judul": "Kumpulkan masukan dari manajemen & karyawan",
+              "dokumen": "PP Draft Input Form."
+            },
+            {
+              "judul": "Tentukan poin aturan tentang jam kerja, cuti, absensi, perilaku",
+              "dokumen": "Peraturan Perusahaan Draft."
+            },
+            {
+              "judul": "Sertakan sanksi & konsekuensi bila melanggar",
+              "dokumen": "Sanction Matrix."
+            },
+            {
+              "judul": "Pastikan selaras dengan visi, misi, dan budaya perusahaan",
+              "dokumen": "Culture Alignment Report."
+            },
+            {
+              "judul": "Konsultasikan ke konsultan hukum/perburuhan",
+              "dokumen": "Legal Review Report."
+            },
+            {
+              "judul": "Ajukan PP ke Disnaker untuk pengesahan",
+              "dokumen": "PP Submission Form."
+            },
+            {
+              "judul": "Sosialisasikan PP ke seluruh karyawan",
+              "dokumen": "PP Socialization Material."
+            },
+            {
+              "judul": "Arsipkan PP yang disahkan",
+              "dokumen": "Approved PP Archive."
+            },
+            {
+              "judul": "Review dan revisi PP setiap 2 tahun atau sesuai kebutuhan",
+              "dokumen": "PP Revision Log."
+            }
+          ]
+        },
+        {
+          "judul": "Menyiapkan SOP Teguran, Sanksi, dan Pemutusan Kerja",
+          "tujuan": "Menangani pelanggaran secara profesional.",
+          "inisiatif": [
+            {
+              "judul": "Identifikasi jenis pelanggaran ringan, sedang, berat",
+              "dokumen": "Violation Classification Guide."
+            },
+            {
+              "judul": "Tetapkan prosedur teguran lisan, tertulis, SP1–SP3",
+              "dokumen": "Disciplinary Procedure SOP."
+            },
+            {
+              "judul": "Siapkan format surat peringatan",
+              "dokumen": "Warning Letter Template."
+            },
+            {
+              "judul": "Buat panduan komunikasi saat memberikan teguran",
+              "dokumen": "Disciplinary Conversation Guide."
+            },
+            {
+              "judul": "Pastikan keterkaitan sanksi dengan PP",
+              "dokumen": "Sanction-PP Alignment Sheet."
+            },
+            {
+              "judul": "Buat SOP pemutusan hubungan kerja (PHK)",
+              "dokumen": "Termination SOP."
+            },
+            {
+              "judul": "Lengkapi dokumen PHK sesuai hukum",
+              "dokumen": "Termination Documentation Checklist."
+            },
+            {
+              "judul": "Siapkan catatan kejadian dan bukti pelanggaran",
+              "dokumen": "Incident Report Form."
+            },
+            {
+              "judul": "Arsipkan seluruh proses untuk menghindari sengketa",
+              "dokumen": "Disciplinary Action Archive."
+            },
+            {
+              "judul": "Review efektivitas SOP setiap tahun",
+              "dokumen": "Disciplinary SOP Review Report."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun Dokumen Hukum Hubungan Industrial",
+          "tujuan": "Siap dalam menghadapi potensi konflik tenaga kerja.",
+          "inisiatif": [
+            {
+              "judul": "Kaji regulasi hubungan industrial",
+              "dokumen": "Industrial Relations Law Guide."
+            },
+            {
+              "judul": "Buat perjanjian kerja bersama (PKB) jika ada serikat",
+              "dokumen": "Collective Labor Agreement."
+            },
+            {
+              "judul": "Susun format perjanjian kerja individu",
+              "dokumen": "Employment Contract Template."
+            },
+            {
+              "judul": "Siapkan surat pernyataan & perjanjian tambahan",
+              "dokumen": "Supplementary Agreement Templates."
+            },
+            {
+              "judul": "Dokumentasikan semua kebijakan HR",
+              "dokumen": "HR Policy Manual."
+            },
+            {
+              "judul": "Siapkan prosedur penyelesaian perselisihan",
+              "dokumen": "Dispute Resolution SOP."
+            },
+            {
+              "judul": "Arsipkan bukti kesepakatan & rapat bipartit",
+              "dokumen": "Bipartite Meeting Minutes."
+            },
+            {
+              "judul": "Simpan catatan mediasi atau arbitrase",
+              "dokumen": "Mediation Record File."
+            },
+            {
+              "judul": "Review kelengkapan dokumen hukum tahunan",
+              "dokumen": "Legal Compliance Audit Report."
+            },
+            {
+              "judul": "Buat daftar kontak pengacara/mediator",
+              "dokumen": "Legal Contact Directory."
+            }
+          ]
+        },
+        {
+          "judul": "Menjaga Dokumentasi HR yang Rapi dan Legal",
+          "tujuan": "Menjaga validitas dan keabsahan hubungan kerja.",
+          "inisiatif": [
+            {
+              "judul": "Buat sistem filing fisik & digital untuk dokumen HR",
+              "dokumen": "HR Filing System SOP."
+            },
+            {
+              "judul": "Tetapkan kategori dokumen (kontrak, absensi, pelatihan, gaji)",
+              "dokumen": "Document Classification Guide."
+            },
+            {
+              "judul": "Gunakan software HRIS untuk penyimpanan",
+              "dokumen": "HRIS User Manual."
+            },
+            {
+              "judul": "Atur akses dokumen hanya untuk pihak berwenang",
+              "dokumen": "Data Access Control Policy."
+            },
+            {
+              "judul": "Backup data secara berkala",
+              "dokumen": "Data Backup Schedule."
+            },
+            {
+              "judul": "Arsipkan dokumen sesuai masa retensi hukum",
+              "dokumen": "Document Retention Policy."
+            },
+            {
+              "judul": "Audit dokumen HR setiap 6 bulan",
+              "dokumen": "HR Document Audit Report."
+            },
+            {
+              "judul": "Buat log keluar-masuk dokumen",
+              "dokumen": "Document Tracking Log."
+            },
+            {
+              "judul": "Pastikan dokumen memiliki tanda tangan sah",
+              "dokumen": "Signature Verification Sheet."
+            },
+            {
+              "judul": "Lengkapi dokumen penting dengan stempel perusahaan",
+              "dokumen": "Company Seal Usage Log."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun Format Exit Interview dan Offboarding",
+          "tujuan": "Belajar dari pengalaman dan menjaga hubungan baik.",
+          "inisiatif": [
+            {
+              "judul": "Siapkan daftar pertanyaan exit interview",
+              "dokumen": "Exit Interview Questionnaire."
+            },
+            {
+              "judul": "Tetapkan siapa yang melakukan wawancara",
+              "dokumen": "Exit Interview Responsibility Chart."
+            },
+            {
+              "judul": "Buat format laporan hasil exit interview",
+              "dokumen": "Exit Interview Report Template."
+            },
+            {
+              "judul": "Pastikan pengembalian aset perusahaan",
+              "dokumen": "Asset Return Checklist."
+            },
+            {
+              "judul": "Hentikan akses email & sistem",
+              "dokumen": "IT Access Termination Form."
+            },
+            {
+              "judul": "Selesaikan administrasi keuangan (gaji terakhir, tunjangan)",
+              "dokumen": "Final Settlement Form."
+            },
+            {
+              "judul": "Arsipkan alasan keluar karyawan",
+              "dokumen": "Employee Departure Log."
+            },
+            {
+              "judul": "Buat ucapan terima kasih resmi",
+              "dokumen": "Farewell Letter Template."
+            },
+            {
+              "judul": "Review data untuk analisis turnover",
+              "dokumen": "Turnover Analysis Report."
+            },
+            {
+              "judul": "Simpan dokumentasi offboarding",
+              "dokumen": "Offboarding Archive File."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Budaya Kerja dan Keterlibatan Tim",
+      "tasks": [
+        {
+          "judul": "Menyusun Program Team Building & Engagement",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Membuat Forum Internal atau Rapat Karyawan Rutin",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Program Penghargaan dan Apresiasi",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Survei Kepuasan Karyawan",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Program Karyawan Teladan atau Talent Pool",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun Program Team Building & Engagement",
+          "tujuan": "Meningkatkan kebersamaan dan kolaborasi.",
+          "inisiatif": [
+            {
+              "judul": "Identifikasi tujuan spesifik (kerjasama, komunikasi, trust)",
+              "dokumen": "Team Building Objective Sheet."
+            },
+            {
+              "judul": "Survei kebutuhan tim untuk menentukan jenis aktivitas",
+              "dokumen": "Team Building Needs Survey."
+            },
+            {
+              "judul": "Rancang agenda kegiatan (indoor, outdoor, virtual)",
+              "dokumen": "Team Building Activity Plan."
+            },
+            {
+              "judul": "Buat anggaran dan alokasi dana",
+              "dokumen": "Team Building Budget Sheet."
+            },
+            {
+              "judul": "Pilih vendor atau fasilitator kegiatan",
+              "dokumen": "Vendor Selection Checklist."
+            },
+            {
+              "judul": "Buat materi ice breaking & permainan kolaborasi",
+              "dokumen": "Activity Materials & Game Guide."
+            },
+            {
+              "judul": "Sosialisasikan jadwal dan tujuan ke peserta",
+              "dokumen": "Team Building Communication Plan."
+            },
+            {
+              "judul": "Dokumentasikan kegiatan untuk publikasi internal",
+              "dokumen": "Team Building Photo & Video Archive."
+            },
+            {
+              "judul": "Lakukan evaluasi efektivitas kegiatan",
+              "dokumen": "Team Building Evaluation Form."
+            },
+            {
+              "judul": "Arsipkan hasil evaluasi untuk perbaikan event berikutnya",
+              "dokumen": "Event Improvement Report."
+            }
+          ]
+        },
+        {
+          "judul": "Membuat Forum Internal atau Rapat Karyawan Rutin",
+          "tujuan": "Membangun komunikasi dua arah.",
+          "inisiatif": [
+            {
+              "judul": "Tentukan frekuensi rapat (mingguan, bulanan)",
+              "dokumen": "Meeting Frequency Plan."
+            },
+            {
+              "judul": "Susun agenda rapat yang jelas",
+              "dokumen": "Meeting Agenda Template."
+            },
+            {
+              "judul": "Pilih moderator atau fasilitator tetap",
+              "dokumen": "Meeting Moderator Assignment Sheet."
+            },
+            {
+              "judul": "Siapkan platform (offline/online)",
+              "dokumen": "Meeting Platform SOP."
+            },
+            {
+              "judul": "Pastikan keterlibatan semua departemen",
+              "dokumen": "Attendance Tracking Sheet."
+            },
+            {
+              "judul": "Dokumentasikan notulen rapat",
+              "dokumen": "Meeting Minutes Template."
+            },
+            {
+              "judul": "Buat daftar tindak lanjut hasil rapat",
+              "dokumen": "Action Item Log."
+            },
+            {
+              "judul": "Arsipkan hasil rapat secara rapi",
+              "dokumen": "Meeting Archive Folder."
+            },
+            {
+              "judul": "Evaluasi efektivitas forum",
+              "dokumen": "Forum Effectiveness Survey."
+            },
+            {
+              "judul": "Sesuaikan format forum sesuai kebutuhan perusahaan",
+              "dokumen": "Forum Format Review Report."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun Program Penghargaan dan Apresiasi",
+          "tujuan": "Meningkatkan motivasi dan loyalitas.",
+          "inisiatif": [
+            {
+              "judul": "Tentukan kategori penghargaan (kinerja, inovasi, loyalitas)",
+              "dokumen": "Award Category List."
+            },
+            {
+              "judul": "Buat kriteria penilaian objektif",
+              "dokumen": "Award Criteria Sheet."
+            },
+            {
+              "judul": "Tentukan frekuensi pemberian penghargaan",
+              "dokumen": "Award Schedule Plan."
+            },
+            {
+              "judul": "Siapkan format nominasi karyawan",
+              "dokumen": "Nomination Form."
+            },
+            {
+              "judul": "Bentuk tim penilai",
+              "dokumen": "Award Committee Charter."
+            },
+            {
+              "judul": "Tentukan bentuk penghargaan (sertifikat, hadiah, voucher)",
+              "dokumen": "Reward Type List."
+            },
+            {
+              "judul": "Umumkan pemenang secara resmi",
+              "dokumen": "Award Ceremony Agenda."
+            },
+            {
+              "judul": "Publikasikan kisah inspiratif pemenang",
+              "dokumen": "Winner Story Publication Sheet."
+            },
+            {
+              "judul": "Evaluasi program penghargaan",
+              "dokumen": "Award Program Review Form."
+            },
+            {
+              "judul": "Simpan data penerima penghargaan",
+              "dokumen": "Award Recipients Archive."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun Survei Kepuasan Karyawan",
+          "tujuan": "Mengukur dan meningkatkan kesejahteraan.",
+          "inisiatif": [
+            {
+              "judul": "Tentukan indikator kepuasan (gaji, lingkungan kerja, komunikasi)",
+              "dokumen": "Employee Satisfaction Indicators List."
+            },
+            {
+              "judul": "Susun kuesioner dengan skala yang jelas",
+              "dokumen": "Employee Satisfaction Survey Form."
+            },
+            {
+              "judul": "Pilih metode survei (online, offline, anonim)",
+              "dokumen": "Survey Method SOP."
+            },
+            {
+              "judul": "Tentukan jadwal survei (tahunan/semestral)",
+              "dokumen": "Survey Schedule Plan."
+            },
+            {
+              "judul": "Sosialisasikan tujuan survei ke karyawan",
+              "dokumen": "Survey Communication Plan."
+            },
+            {
+              "judul": "Kumpulkan data secara rahasia",
+              "dokumen": "Survey Data Collection Log."
+            },
+            {
+              "judul": "Analisis hasil survei",
+              "dokumen": "Survey Analysis Report."
+            },
+            {
+              "judul": "Buat rekomendasi perbaikan",
+              "dokumen": "Employee Improvement Plan."
+            },
+            {
+              "judul": "Tindak lanjuti perbaikan berdasarkan hasil survei",
+              "dokumen": "Follow-Up Action Log."
+            },
+            {
+              "judul": "Arsipkan hasil survei untuk perbandingan",
+              "dokumen": "Employee Satisfaction Archive."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun Program Karyawan Teladan atau Talent Pool",
+          "tujuan": "Mempersiapkan pemimpin masa depan.",
+          "inisiatif": [
+            {
+              "judul": "Tentukan kriteria karyawan teladan",
+              "dokumen": "Role Model Criteria Sheet."
+            },
+            {
+              "judul": "Susun mekanisme pemilihan",
+              "dokumen": "Talent Pool Selection SOP."
+            },
+            {
+              "judul": "Identifikasi potensi kepemimpinan",
+              "dokumen": "Leadership Potential Assessment Form."
+            },
+            {
+              "judul": "Buat database talent pool",
+              "dokumen": "Talent Pool Database."
+            },
+            {
+              "judul": "Rancang program pengembangan khusus",
+              "dokumen": "Talent Development Plan."
+            },
+            {
+              "judul": "Pasangkan dengan mentor senior",
+              "dokumen": "Mentorship Assignment List."
+            },
+            {
+              "judul": "Pantau perkembangan peserta talent pool",
+              "dokumen": "Talent Progress Report."
+            },
+            {
+              "judul": "Berikan kesempatan proyek strategis",
+              "dokumen": "Strategic Project Assignment Sheet."
+            },
+            {
+              "judul": "Evaluasi keberhasilan program",
+              "dokumen": "Talent Pool Review Report."
+            },
+            {
+              "judul": "Arsipkan riwayat karyawan teladan",
+              "dokumen": "Role Model Archive."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Penguatan Sistem dan Skalabilitas SDM",
+      "tasks": [
+        {
+          "judul": "Membangun Sistem Database Karyawan (HRIS)",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyusun SOP HRD yang Terstandardisasi",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Melakukan Audit Internal Fungsi HRD",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Menyiapkan Sistem HR untuk Ekspansi (Cabang, Waralaba)",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Mengembangkan Tim HRD (Rekrutmen HR, HRBP, dll)",
+          "tujuan": "",
+          "inisiatif": []
+        },
+        {
+          "judul": "Membangun Sistem Database Karyawan (HRIS)",
+          "tujuan": "Menyimpan data secara aman dan mudah diakses.",
+          "inisiatif": [
+            {
+              "judul": "Identifikasi kebutuhan data karyawan yang akan disimpan",
+              "dokumen": "Employee Data Requirement List."
+            },
+            {
+              "judul": "Pilih platform HRIS yang sesuai (cloud/local)",
+              "dokumen": "HRIS Vendor Comparison Sheet."
+            },
+            {
+              "judul": "Migrasikan data manual ke sistem digital",
+              "dokumen": "Data Migration Plan."
+            },
+            {
+              "judul": "Tetapkan hak akses & keamanan data",
+              "dokumen": "HRIS Access Control Policy."
+            },
+            {
+              "judul": "Buat format input data standar",
+              "dokumen": "HRIS Data Entry Template."
+            },
+            {
+              "judul": "Latih tim HR menggunakan HRIS",
+              "dokumen": "HRIS Training Material."
+            },
+            {
+              "judul": "Integrasikan HRIS dengan sistem payroll & absensi",
+              "dokumen": "HRIS Integration SOP."
+            },
+            {
+              "judul": "Lakukan backup data secara berkala",
+              "dokumen": "Data Backup Schedule."
+            },
+            {
+              "judul": "Audit keamanan & validitas data tiap 6 bulan",
+              "dokumen": "HRIS Data Audit Report."
+            },
+            {
+              "judul": "Dokumentasikan panduan penggunaan",
+              "dokumen": "HRIS User Manual."
+            }
+          ]
+        },
+        {
+          "judul": "Menyusun SOP HRD yang Terstandardisasi",
+          "tujuan": "Konsistensi dan efisiensi proses.",
+          "inisiatif": [
+            {
+              "judul": "Inventaris semua proses HRD",
+              "dokumen": "HR Process Inventory List."
+            },
+            {
+              "judul": "Susun flowchart tiap proses",
+              "dokumen": "HR Process Flowchart."
+            },
+            {
+              "judul": "Standarisasi format dokumen HR",
+              "dokumen": "HR Document Standard Template."
+            },
+            {
+              "judul": "Tetapkan langkah kerja, waktu, & PIC",
+              "dokumen": "SOP Draft per Proses."
+            },
+            {
+              "judul": "Review & validasi SOP dengan manajemen",
+              "dokumen": "SOP Approval Form."
+            },
+            {
+              "judul": "Sosialisasikan SOP ke tim HR dan user",
+              "dokumen": "SOP Training Material."
+            },
+            {
+              "judul": "Simpan SOP di folder digital terpusat",
+              "dokumen": "SOP Archive Folder."
+            },
+            {
+              "judul": "Terapkan sistem kontrol revisi",
+              "dokumen": "SOP Revision Log."
+            },
+            {
+              "judul": "Evaluasi SOP minimal 1x/tahun",
+              "dokumen": "SOP Review Report."
+            },
+            {
+              "judul": "Pastikan SOP terintegrasi dengan HRIS",
+              "dokumen": "SOP-HRIS Integration Guide."
+            }
+          ]
+        },
+        {
+          "judul": "Melakukan Audit Internal Fungsi HRD",
+          "tujuan": "Mengevaluasi kinerja HR dan rencana perbaikan.",
+          "inisiatif": [
+            {
+              "judul": "Tentukan area audit (rekrutmen, training, payroll, dll)",
+              "dokumen": "HR Audit Scope Sheet."
+            },
+            {
+              "judul": "Buat checklist audit sesuai standar",
+              "dokumen": "HR Audit Checklist."
+            },
+            {
+              "judul": "Bentuk tim audit internal",
+              "dokumen": "HR Audit Team Charter."
+            },
+            {
+              "judul": "Kumpulkan data & bukti pelaksanaan HRD",
+              "dokumen": "HR Evidence Collection Log."
+            },
+            {
+              "judul": "Lakukan wawancara dengan stakeholder",
+              "dokumen": "HR Interview Notes."
+            },
+            {
+              "judul": "Analisis gap antara standar & praktik",
+              "dokumen": "HR Gap Analysis Report."
+            },
+            {
+              "judul": "Buat laporan hasil audit",
+              "dokumen": "HR Audit Report."
+            },
+            {
+              "judul": "Susun rencana perbaikan",
+              "dokumen": "HR Improvement Plan."
+            },
+            {
+              "judul": "Pantau implementasi perbaikan",
+              "dokumen": "HR Audit Follow-Up Log."
+            },
+            {
+              "judul": "Arsipkan semua hasil audit",
+              "dokumen": "HR Audit Archive."
+            }
+          ]
+        },
+        {
+          "judul": "Menyiapkan Sistem HR untuk Ekspansi (Cabang, Waralaba)",
+          "tujuan": "SDM bisa tumbuh mengikuti skala bisnis.",
+          "inisiatif": [
+            {
+              "judul": "Analisis kebutuhan SDM per cabang",
+              "dokumen": "Branch HR Needs Analysis."
+            },
+            {
+              "judul": "Standarisasi struktur organisasi cabang",
+              "dokumen": "Branch Org Structure Template."
+            },
+            {
+              "judul": "Buat SOP HR untuk multi-cabang",
+              "dokumen": "Multi-Branch HR SOP."
+            },
+            {
+              "judul": "Tentukan format laporan HR cabang",
+              "dokumen": "Branch HR Report Template."
+            },
+            {
+              "judul": "Tetapkan sistem rekrutmen terpadu",
+              "dokumen": "Centralized Recruitment SOP."
+            },
+            {
+              "judul": "Terapkan HRIS yang dapat memantau semua cabang",
+              "dokumen": "Multi-Branch HRIS Guide."
+            },
+            {
+              "judul": "Latih HR cabang",
+              "dokumen": "Branch HR Training Material."
+            },
+            {
+              "judul": "Tetapkan KPI HR per cabang",
+              "dokumen": "Branch HR KPI Sheet."
+            },
+            {
+              "judul": "Buat mekanisme audit HR cabang",
+              "dokumen": "Branch HR Audit SOP."
+            },
+            {
+              "judul": "Siapkan panduan onboarding untuk cabang baru",
+              "dokumen": "Branch Onboarding Manual."
+            }
+          ]
+        },
+        {
+          "judul": "Mengembangkan Tim HRD (Rekrutmen HR, HRBP, dll)",
+          "tujuan": "Meningkatkan kapasitas dan kapabilitas fungsi HRD.",
+          "inisiatif": [
+            {
+              "judul": "Analisis beban kerja HR saat ini",
+              "dokumen": "HR Workload Analysis."
+            },
+            {
+              "judul": "Tentukan formasi ideal tim HR",
+              "dokumen": "HR Team Structure Plan."
+            },
+            {
+              "judul": "Rekrut anggota HR sesuai kompetensi",
+              "dokumen": "HR Recruitment SOP."
+            },
+            {
+              "judul": "Tetapkan peran HRBP (Human Resource Business Partner)",
+              "dokumen": "HRBP Role Definition."
+            },
+            {
+              "judul": "Susun program pelatihan khusus tim HR",
+              "dokumen": "HR Training Plan."
+            },
+            {
+              "judul": "Buat career path untuk HR",
+              "dokumen": "HR Career Development Plan."
+            },
+            {
+              "judul": "Terapkan sistem penilaian kinerja HR",
+              "dokumen": "HR Performance Appraisal Form."
+            },
+            {
+              "judul": "Adakan forum sharing knowledge HR",
+              "dokumen": "HR Knowledge Sharing Agenda."
+            },
+            {
+              "judul": "Berikan penghargaan bagi HR yang berprestasi",
+              "dokumen": "HR Recognition Program."
+            },
+            {
+              "judul": "Review formasi & kapabilitas HR tiap tahun",
+              "dokumen": "HR Capability Review Report."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

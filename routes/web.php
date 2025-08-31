@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\MenteeController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\InisiatifController;
 use App\Http\Controllers\TaskController;
 
 
@@ -84,6 +85,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 use App\Http\Controllers\TaskDashboardController;
 
 Route::get('/task', [TaskDashboardController::class, 'index'])->name('task.index');
+
+// Tambah Inisiatif
+
+Route::post('/inisiatif', [InisiatifController::class, 'store'])->name('inisiatif.store');
+Route::patch('/inisiatif/{id}/toggle', [InisiatifController::class, 'toggle'])->name('inisiatif.toggle');
 
 
 // crud mentee
