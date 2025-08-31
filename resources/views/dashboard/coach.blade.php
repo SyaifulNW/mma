@@ -1,166 +1,128 @@
 @extends('layouts.dashboard')
 
 @section('content')
-<div class="container-fluid">
-    <h1 class="mb-4 fw-bold text-primary">📊 Dashboard Coach</h1>
+    <h1 class="mb-4">Dashboard </h1>
 
     <div class="row">
-        {{-- Progres Peserta --}}
-        <div class="col-md-6 mb-4">
-            <div class="card shadow-lg border-0 rounded-3">
-                <div class="card-header bg-primary text-white fw-semibold">
-                    Progres Peserta
-                </div>
-                <div class="card-body">
-                    <canvas id="progressPesertaChart" height="150"></canvas>
+        <!-- Card Statistik -->
+        <div class="col-md-3">
+            <div class="card text-white bg-primary shadow mb-3">
+                <div class="card-body d-flex align-items-center">
+                    <i class="fa fa-users fa-2x me-3"></i>
+                    <div>
+                        <h6 class="card-title">Total Mentee</h6>
+                        <h3>8</h3>
+                    </div>
                 </div>
             </div>
         </div>
-
-        {{-- Task Berjalan --}}
-        <div class="col-md-6 mb-4">
-            <div class="card shadow-lg border-0 rounded-3">
-                <div class="card-header bg-success text-white fw-semibold">
-                    Task Berjalan
+        <div class="col-md-3">
+            <div class="card text-white bg-warning shadow mb-3">
+                <div class="card-body d-flex align-items-center">
+                    <i class="fa fa-clipboard-list fa-2x me-3"></i>
+                    <div>
+                        <h6 class="card-title">Task Aktif</h6>
+                        <h3>15</h3>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Task A 
-                            <span class="badge bg-primary rounded-pill">70% ✅</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Task B 
-                            <span class="badge bg-warning rounded-pill">40%</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center text-danger">
-                            Task C 
-                            <span class="badge bg-danger rounded-pill">Overdue ⚠️</span>
-                        </li>
-                    </ul>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-success shadow mb-3">
+                <div class="card-body d-flex align-items-center">
+                    <i class="fa fa-check-circle fa-2x me-3"></i>
+                    <div>
+                        <h6 class="card-title">Task Selesai</h6>
+                        <h3>48</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-danger shadow mb-3">
+                <div class="card-body d-flex align-items-center">
+                    <i class="fa fa-rocket fa-2x me-3"></i>
+                    <div>
+                        <h6 class="card-title">Sprint Aktif</h6>
+                        <h3>2</h3>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    {{-- Report Pencapaian per Peserta --}}
-    <div class="row">
-        <div class="col-md-12 mb-4">
-            <div class="card shadow-lg border-0 rounded-3">
-                <div class="card-header bg-info text-white fw-semibold">
-                    Report Pencapaian per Peserta
-                </div>
+    <!-- Chart Section -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header">Progress per Mentee</div>
                 <div class="card-body">
-                    <canvas id="reportPesertaChart" height="120"></canvas>
+                    <canvas id="menteeProgressChart"></canvas>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header">Distribusi Task</div>
+                <div class="card-body">
+                    <canvas id="taskChart"></canvas>
                 </div>
             </div>
         </div>
     </div>
 
-    {{-- Chat/Forum Diskusi --}}
-    <div class="row">
-        <div class="col-md-12 mb-4">
-            <div class="card shadow-lg border-0 rounded-3">
-                <div class="card-header bg-dark text-white fw-semibold">
-                    Forum Diskusi Kelompok
-                </div>
-                <div class="card-body" style="height:300px; overflow-y:auto; background:#f8f9fa;">
-                    <div class="mb-2"><b>Ali:</b> Bagaimana progres task minggu ini?</div>
-                    <div class="mb-2"><b>Budi:</b> Task 1 sudah selesai 80% coach 👍</div>
-                </div>
-                <div class="card-footer">
-                    <form>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Tulis pesan...">
-                            <button class="btn btn-primary">
-                                <i class="fa fa-paper-plane"></i> Kirim
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+    <!-- Activity Timeline -->
+    <div class="card shadow-sm mt-4">
+        <div class="card-header">Aktivitas Terbaru Mentee</div>
+        <div class="card-body">
+            <ul class="list-group">
+                <li class="list-group-item"><i class="fa fa-check-circle text-success me-2"></i> Andi menyelesaikan Task 2</li>
+                <li class="list-group-item"><i class="fa fa-exclamation-circle text-danger me-2"></i> Siti terlambat mengumpulkan Task 3</li>
+                <li class="list-group-item"><i class="fa fa-rocket text-primary me-2"></i> Budi memulai Sprint baru</li>
+            </ul>
         </div>
     </div>
-</div>
-
-
-<script>
-    // Bar Chart: Progres Peserta
-    const ctx1 = document.getElementById('progressPesertaChart').getContext('2d');
-    new Chart(ctx1, {
-        type: 'bar',
-        data: {
-            labels: ['Mentee A', 'Mentee B', 'Mentee C'],
-            datasets: [{
-                label: 'Progress (%)',
-                data: [70, 40, 85],
-                backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
-                borderRadius: 8
-            }]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: { display: false },
-                tooltip: {
-                    backgroundColor: '#333',
-                    titleColor: '#fff',
-                    bodyColor: '#fff'
-                }
-            },
-            scales: { 
-                y: { 
-                    beginAtZero: true, 
-                    max: 100,
-                    ticks: { stepSize: 20 }
-                } 
-            }
-        }
-    });
-
-    // Line Chart: Report Pencapaian per Peserta
-    const ctx2 = document.getElementById('reportPesertaChart').getContext('2d');
-    new Chart(ctx2, {
-        type: 'line',
-        data: {
-            labels: ['Januari', 'Februari', 'Maret', 'April'],
-            datasets: [
-                {
-                    label: 'Mentee A',
-                    data: [20, 45, 60, 80],
-                    borderColor: '#4e73df',
-                    tension: 0.4,
-                    fill: true,
-                    backgroundColor: 'rgba(78,115,223,0.1)'
-                },
-                {
-                    label: 'Mentee B',
-                    data: [10, 30, 50, 65],
-                    borderColor: '#1cc88a',
-                    tension: 0.4,
-                    fill: true,
-                    backgroundColor: 'rgba(28,200,138,0.1)'
-                },
-                {
-                    label: 'Mentee C',
-                    data: [25, 55, 70, 90],
-                    borderColor: '#36b9cc',
-                    tension: 0.4,
-                    fill: true,
-                    backgroundColor: 'rgba(54,185,204,0.1)'
-                }
-            ]
-        },
-        options: { 
-            responsive: true,
-            plugins: {
-                tooltip: { mode: 'index', intersect: false },
-                legend: { position: 'bottom' }
-            }
-        }
-    });
-</script>
-
 @endsection
 
+@push('scripts')
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  // Chart Progress per Mentee
+  new Chart(document.getElementById('menteeProgressChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Andi', 'Budi', 'Siti', 'Yasmin'],
+      datasets: [{
+        label: 'Progress %',
+        data: [80, 60, 45, 90],
+        backgroundColor: ['#0d6efd', '#198754', '#ffc107', '#dc3545']
+      }]
+    },
+    options: {
+      plugins: { legend: { display: false } },
+      scales: { y: { beginAtZero: true, max: 100 } }
+    }
+  });
 
+  // Chart Distribusi Task
+  new Chart(document.getElementById('taskChart'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Selesai', 'Berjalan', 'Overdue'],
+      datasets: [{
+        data: [48, 15, 5],
+        backgroundColor: ['#198754', '#0d6efd', '#dc3545']
+      }]
+    }
+  });
+</script>
+@endpush
+
+@push('styles')
+<style>
+    h1 { font-weight: 600; }
+    .card { border-radius: 12px; }
+    .card-header { font-weight: 600; }
+</style>
+@endpush

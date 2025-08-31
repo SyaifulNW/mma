@@ -3,150 +3,196 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mastermind Academy MBC - Login</title>
+  <title>Welcome - Mastermind Academy MBC</title>
   <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon_clean.ico') }}">
 
   <style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .left-panel, .right-panel {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-  }
-
-  .left-panel {
-    background: #fff;
-    color: #333;
-    flex-direction: column;
-  }
-
-  .right-panel {
-    background: linear-gradient(135deg, #2980b9, #27ae60);
-    color: white;
-    text-align: center;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  .login-box {
-    width: 100%;
-    max-width: 350px;
-    text-align: center;
-  }
-
-  .logo {
-    width: 200px;
-    margin-bottom: 10px;
-  }
-
-  h1 { margin: 10px 0 5px; font-size: 20px; }
-  h2 { font-size: 14px; margin-bottom: 20px; color: #666; }
-
-  input {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 14px;
-  }
-
-  .btn {
-    width: 100%;
-    padding: 12px;
-    margin-top: 15px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    background: #8e44ad;
-    color: white;
-    transition: 0.3s;
-  }
-
-  .btn:hover { opacity: 0.9; }
-
-  .kelas-img {
-    max-width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    margin-bottom: 10px;
-  }
-
-  .quote-box { max-width: 500px; margin-top: 20px; }
-  .quote { font-size: 18px; font-style: italic; margin-bottom: 10px; }
-  .quote-author { font-weight: bold; }
-
-  .forgot-password, .register-link {
-    display: block;
-    margin-top: 12px;
-    font-size: 13px;
-    color: #2980b9;
-    text-decoration: none;
-    transition: 0.2s;
-  }
-
-  .forgot-password:hover, .register-link:hover { text-decoration: underline; color: #1a5276; }
-
-  /* RESPONSIVE MOBILE */
-  @media (max-width: 768px) {
     body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .left-panel, .right-panel {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .left-panel {
+      background: linear-gradient(135deg, #2980b9, #27ae60);
+      color: white;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .right-panel {
+      background: #fff;
+      color: #333;
+      text-align: center;
       flex-direction: column;
     }
-    .left-panel, .right-panel {
-      width: 100%;
-      padding: 20px;
-    }
-    .kelas-img {
-      max-height: 250px;
-    }
-    h1 { font-size: 18px; }
-    h2 { font-size: 12px; }
-    .quote { font-size: 16px; }
-  }
-</style>
 
+    .logo {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 10px 0;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #eee;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      background: #8e44ad;
+      color: white;
+      transition: 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    /* Animasi teks berjalan */
+    .typing {
+      font-size: 20px;
+      font-weight: bold;
+      border-right: 2px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards,
+                 blink .8s infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink {
+      0%, 100% { border-color: transparent }
+      50% { border-color: white }
+    }
+
+    /* Logo */
+     .logo-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: white; /* bisa diganti #f9f9f9 atau transparan */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin: 0 auto 15px auto;
+  }
+
+  .logo-circle .logo {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+
+
+  }
 
   
+
+    /* Carousel */
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .carousel img {
+      width: 100%;
+      display: none;
+    }
+
+    .carousel img.active {
+      display: block;
+      animation: fade 1s;
+    }
+
+    @keyframes fade {
+      from { opacity: 0.4 }
+      to { opacity: 1 }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      .left-panel, .right-panel {
+        width: 100%;
+        padding: 20px;
+      }
+      h1 { font-size: 22px; }
+      h2 { font-size: 14px; }
+      .typing { font-size: 16px; }
+    }
+  </style>
 </head>
 <body>
-  <!-- Panel Kiri (Form Login) -->
+  <!-- Panel Kiri (Welcome Text + Button) -->
   <div class="left-panel">
-    <div class="login-box">
-      <img src="{{ asset('img/mma.png') }}" alt="Logo Mastermind Academy" class="logo">
-      <h1>Mastermind Academy MBC</h1>
-      <h2>Growth Management System</h2>
+ <div class="logo-circle">
+  <img src="{{ asset('img/mma.png') }}" alt="Logo Mastermind Academy" class="logo">
+</div>
+    <h1>Selamat Datang di <br> Mastermind Academy MBC</h1>
+    <h2>Growth Management System</h2>
 
-      <!-- Login Form -->
-      <form method="POST" action="{{ route('login') }}">
-        @csrf
-        <input type="text" name="email" placeholder="Email" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <button type="submit" class="btn">Login</button>
-        <a href="{{ route('password.request') }}" class="forgot-password">Lupa kata sandi?</a>
-        <a href="{{ route('register') }}" class="register-link">Belum punya akun? Daftar sekarang</a>
-      </form>
+    <div class="typing">Membantu pengusaha Muslim untuk naik kelas </div>
+
+    <div style="margin-top: 30px;">
+      <a href="{{ route('login') }}" class="btn">Login</a>
+      <a href="{{ route('register') }}" class="btn">Register</a>
     </div>
   </div>
 
-  <!-- Panel Kanan (Foto Kelas + Quote) -->
+  <!-- Panel Kanan (Foto-foto carousel) -->
   <div class="right-panel">
-    <img src="{{ asset('img/gp11.jpg') }}" alt="Foto Kelas Mastermind" class="kelas-img">
-
-    <div class="quote-box">
-      <div class="quote">“Menjadi gerakan yang melahirkan pengusaha Muslim langit — berilmu, bertauhid, bermental juang.”</div>
-      <div class="quote-author">– Mastermind Academy</div>
+    <div class="carousel">
+      <img src="{{ asset('img/gp11.jpg') }}" alt="Kegiatan 1" class="active">
+      <img src="{{ asset('img/gp12.jpg') }}" alt="Kegiatan 2">
+      <img src="{{ asset('img/gp13.jpg') }}" alt="Kegiatan 3">
     </div>
+    <p style="margin-top: 20px; font-style: italic;">“Bersama-sama tumbuh, berilmu, bertauhid, bermental juang.”</p>
   </div>
+
+  <script>
+    // Carousel otomatis
+    let currentIndex = 0;
+    const images = document.querySelectorAll(".carousel img");
+
+    setInterval(() => {
+      images[currentIndex].classList.remove("active");
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].classList.add("active");
+    }, 3000);
+  </script>
 </body>
 </html>
