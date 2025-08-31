@@ -12,7 +12,7 @@
     $percent = $totalInisiatif > 0 ? round(($doneInisiatif/$totalInisiatif)*100) : 0;
     @endphp
 
-    <!-- Card Materi -->
+    <!-- Card Materi A-->
     <div class="col-md-4 col-sm-6">
         <div class="card shadow-sm h-100" role="button"
             data-bs-toggle="modal"
@@ -35,6 +35,9 @@
             </div>
         </div>
     </div>
+
+    <!-- Card Materi B -->
+     
 
     <!-- Modal Detail Materi -->
     <div class="modal fade" id="materiModal{{ $mIndex }}" tabindex="-1">

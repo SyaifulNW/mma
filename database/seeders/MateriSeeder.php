@@ -13,15 +13,25 @@ class MateriSeeder extends Seeder
     public function run(): void
     {
         $dataPath = database_path('seeders/data');
-
-        // ambil semua file JSON di folder
         $files = glob($dataPath . '/*.json');
 
-        foreach ($files as $file) {
-            $materiData = json_decode(file_get_contents($file), true);
+        if (empty($files)) {
+            $this->command->warn("⚠️ Tidak ada file JSON ditemukan di folder: $dataPath");
+            return;
+        }
 
-            if (!$materiData) {
-                $this->command->error("Gagal membaca file: $file");
+        foreach ($files as $file) {
+            $json = file_get_contents($file);
+            $materiData = json_decode($json, true);
+
+            if (json_last_error() !== JSON_ERROR_NONE) {
+                $this->command->error("❌ JSON tidak valid di file: $file");
+                $this->command->error(json_last_error_msg());
+                continue;
+            }
+
+            if (!$materiData || !isset($materiData['judul'])) {
+                $this->command->error("❌ Format tidak sesuai di file: $file");
                 continue;
             }
 
@@ -32,7 +42,7 @@ class MateriSeeder extends Seeder
             ]);
 
             // 2. Loop Tahapan
-            foreach ($materiData['tahapan'] as $t) {
+            foreach ($materiData['tahapan'] ?? [] as $t) {
                 $tahapan = Tahapan::create([
                     'materi_id' => $materi->id,
                     'judul' => $t['judul'],
@@ -40,7 +50,7 @@ class MateriSeeder extends Seeder
                 ]);
 
                 // 3. Loop Task
-                foreach ($t['tasks'] as $task) {
+                foreach ($t['tasks'] ?? [] as $task) {
                     $taskModel = Task::create([
                         'materi_id' => $materi->id,
                         'tahapan_id' => $tahapan->id,
@@ -49,7 +59,7 @@ class MateriSeeder extends Seeder
                     ]);
 
                     // 4. Loop Inisiatif
-                    foreach ($task['inisiatif'] as $inisiatif) {
+                    foreach ($task['inisiatif'] ?? [] as $inisiatif) {
                         Inisiatif::create([
                             'task_id' => $taskModel->id,
                             'judul' => $inisiatif['judul'],
@@ -59,7 +69,7 @@ class MateriSeeder extends Seeder
                 }
             }
 
-            $this->command->info("Materi berhasil dimasukkan: " . $materiData['judul']);
+            $this->command->info("✅ Materi berhasil dimasukkan: " . $materiData['judul']);
         }
     }
 }

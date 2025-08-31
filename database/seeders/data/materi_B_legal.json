@@ -1,0 +1,2805 @@
+{
+  "judul": "Membangun Bidang Legal",
+  "tahapan": [
+    {
+      "judul": "Tahap 1: Mindset Legal dan Kesadaran Hukum",
+      "tasks": [
+        {
+          "judul": "1. Menyadari Pentingnya Aspek Legal Sejak Awal\nTujuan: Menghindari risiko hukum yang bisa menghentikan operasional bisnis.",
+          "inisiatif": []
+        },
+        {
+          "judul": "2. Memahami Fungsi Legal dalam Bisnis\nTujuan: Mengetahui bahwa aspek hukum bukan penghambat, tapi pelindung dan penunjang.",
+          "inisiatif": []
+        },
+        {
+          "judul": "3. Menyusun Komitmen Kepatuhan Etik dan Hukum\nTujuan: Menanamkan budaya taat hukum sejak tim kecil.",
+          "inisiatif": []
+        },
+        {
+          "judul": "4. Membiasakan Dokumentasi dalam Setiap Keputusan\nTujuan: Mempermudah audit, evaluasi, dan perlindungan.",
+          "inisiatif": []
+        },
+        {
+          "judul": "5. Mengenali Area Legal yang Umum dalam Bisnis\nTujuan: Punya gambaran tentang kontrak, izin, pajak, perlindungan aset, dsb.",
+          "inisiatif": []
+        },
+        {
+          "judul": "1. Menyadari Pentingnya Aspek Legal Sejak Awal",
+          "inisiatif": [
+            {
+              "judul": "Adakan sesi edukasi legal untuk founder & manajemen",
+              "dokumen": "Legal Awareness Presentation"
+            },
+            {
+              "judul": "Buat daftar risiko hukum potensial bisnis",
+              "dokumen": "Legal Risk Assessment Sheet"
+            },
+            {
+              "judul": "Konsultasi awal dengan konsultan hukum/notaris",
+              "dokumen": "Legal Consultation Report"
+            },
+            {
+              "judul": "Identifikasi semua dokumen hukum wajib untuk izin usaha",
+              "dokumen": "Legal Document Checklist"
+            },
+            {
+              "judul": "Buat timeline pengurusan izin sejak awal",
+              "dokumen": "Legal Timeline Plan"
+            },
+            {
+              "judul": "Masukkan anggaran legal dalam business plan",
+              "dokumen": "Legal Budget Sheet"
+            },
+            {
+              "judul": "Tetapkan PIC untuk urusan legal sejak awal",
+              "dokumen": "Legal PIC Assignment Letter"
+            },
+            {
+              "judul": "Buat file khusus untuk menyimpan dokumen legal",
+              "dokumen": "Legal Filing System Guide"
+            },
+            {
+              "judul": "Evaluasi risiko hukum minimal setiap 6 bulan",
+              "dokumen": "Legal Risk Review Form"
+            },
+            {
+              "judul": "Pastikan setiap perubahan bisnis diperiksa dari sisi hukum",
+              "dokumen": "Legal Change Approval Form"
+            }
+          ]
+        },
+        {
+          "judul": "2. Memahami Fungsi Legal dalam Bisnis",
+          "inisiatif": [
+            {
+              "judul": "Edukasi tim manajemen tentang fungsi legal",
+              "dokumen": "Legal Function Training Material"
+            },
+            {
+              "judul": "Buat panduan fungsi legal di perusahaan",
+              "dokumen": "Legal Department Function Manual"
+            },
+            {
+              "judul": "Identifikasi area kerja legal (kontrak, izin, pajak, dispute, dll)",
+              "dokumen": "Legal Scope Mapping Sheet"
+            },
+            {
+              "judul": "Libatkan legal dalam perencanaan proyek",
+              "dokumen": "Legal Involvement Checklist"
+            },
+            {
+              "judul": "Tetapkan alur komunikasi legal dengan divisi lain",
+              "dokumen": "Legal Communication SOP"
+            },
+            {
+              "judul": "Buat format review kontrak & dokumen",
+              "dokumen": "Contract Review Template"
+            },
+            {
+              "judul": "Sosialisasi peran legal ke seluruh tim",
+              "dokumen": "Legal Awareness Bulletin"
+            },
+            {
+              "judul": "Adakan pertemuan rutin legal & manajemen",
+              "dokumen": "Legal Meeting Minutes"
+            },
+            {
+              "judul": "Pastikan legal terlibat dalam vendor selection",
+              "dokumen": "Legal Vendor Evaluation Form"
+            },
+            {
+              "judul": "Monitor kinerja fungsi legal",
+              "dokumen": "Legal KPI Tracking Sheet"
+            }
+          ]
+        },
+        {
+          "judul": "3. Menyusun Komitmen Kepatuhan Etik dan Hukum",
+          "inisiatif": [
+            {
+              "judul": "Susun kode etik perusahaan",
+              "dokumen": "Company Code of Ethics"
+            },
+            {
+              "judul": "Libatkan tim dalam penyusunan kode etik",
+              "dokumen": "Ethics Workshop Notes"
+            },
+            {
+              "judul": "Tetapkan kebijakan anti suap & anti gratifikasi",
+              "dokumen": "Anti-Bribery Policy"
+            },
+            {
+              "judul": "Buat pernyataan komitmen kepatuhan hukum",
+              "dokumen": "Legal Compliance Statement"
+            },
+            {
+              "judul": "Sosialisasikan kode etik ke seluruh tim",
+              "dokumen": "Ethics Training Material"
+            },
+            {
+              "judul": "Tanda tangan komitmen individu",
+              "dokumen": "Employee Ethics Agreement"
+            },
+            {
+              "judul": "Tetapkan prosedur pelaporan pelanggaran",
+              "dokumen": "Whistleblowing SOP"
+            },
+            {
+              "judul": "Berikan sanksi tertulis untuk pelanggaran",
+              "dokumen": "Disciplinary Action Policy"
+            },
+            {
+              "judul": "Review kode etik minimal setahun sekali",
+              "dokumen": "Ethics Review Report"
+            },
+            {
+              "judul": "Dokumentasikan setiap pelanggaran & tindak lanjut",
+              "dokumen": "Ethics Violation Log"
+            }
+          ]
+        },
+        {
+          "judul": "4. Membiasakan Dokumentasi dalam Setiap Keputusan",
+          "inisiatif": [
+            {
+              "judul": "Wajibkan notulen untuk semua rapat",
+              "dokumen": "Meeting Minutes Template"
+            },
+            {
+              "judul": "Buat format keputusan resmi",
+              "dokumen": "Decision Memo Template"
+            },
+            {
+              "judul": "Simpan semua keputusan di folder legal digital & fisik",
+              "dokumen": "Decision Archive Guide"
+            },
+            {
+              "judul": "Tetapkan PIC dokumentasi per divisi",
+              "dokumen": "Documentation Responsibility Letter"
+            },
+            {
+              "judul": "Gunakan sistem penomoran dokumen",
+              "dokumen": "Document Numbering SOP"
+            },
+            {
+              "judul": "Scan & backup semua keputusan",
+              "dokumen": "Digital Backup Procedure"
+            },
+            {
+              "judul": "Pastikan semua kontrak dilampirkan dengan bukti keputusan",
+              "dokumen": "Contract Attachment Checklist"
+            },
+            {
+              "judul": "Audit dokumentasi setiap 3 bulan",
+              "dokumen": "Documentation Audit Form"
+            },
+            {
+              "judul": "Gunakan tanda tangan digital untuk legalitas",
+              "dokumen": "E-Signature Policy"
+            },
+            {
+              "judul": "Pelatihan dokumentasi untuk semua manajer",
+              "dokumen": "Documentation Training Material"
+            }
+          ]
+        },
+        {
+          "judul": "5. Mengenali Area Legal yang Umum dalam Bisnis",
+          "inisiatif": [
+            {
+              "judul": "Buat daftar area legal utama",
+              "dokumen": "Business Legal Areas List"
+            },
+            {
+              "judul": "Mapping kebutuhan legal tiap divisi",
+              "dokumen": "Department Legal Needs Mapping"
+            },
+            {
+              "judul": "Buat panduan per area legal (kontrak, izin, pajak, dll)",
+              "dokumen": "Legal Area Guidebook"
+            },
+            {
+              "judul": "Tentukan PIC per area legal",
+              "dokumen": "Legal Responsibility Matrix"
+            },
+            {
+              "judul": "Susun daftar izin wajib & masa berlaku",
+              "dokumen": "Licensing Master List"
+            },
+            {
+              "judul": "Buat format pemantauan pajak",
+              "dokumen": "Tax Compliance Calendar"
+            },
+            {
+              "judul": "Inventaris semua aset perusahaan",
+              "dokumen": "Asset Register"
+            },
+            {
+              "judul": "Cek perlindungan hak kekayaan intelektual",
+              "dokumen": "IP Protection Checklist"
+            },
+            {
+              "judul": "Tetapkan jadwal review kontrak",
+              "dokumen": "Contract Review Calendar"
+            },
+            {
+              "judul": "Lakukan evaluasi risiko tiap area legal",
+              "dokumen": "Legal Risk Analysis Report"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Tahap 2: Legalitas Dasar Pendirian Usaha",
+      "tasks": [
+        {
+          "judul": "6. Menentukan Bentuk Badan Usaha (CV, PT, dll)\nTujuan: Menentukan struktur hukum yang tepat sesuai skala dan kebutuhan.",
+          "inisiatif": []
+        },
+        {
+          "judul": "7. Menyusun Akta Pendirian\nTujuan: Sebagai dasar hukum eksistensi bisnis.",
+          "inisiatif": []
+        },
+        {
+          "judul": "8. Mengurus SK Kemenkumham (untuk PT)\nTujuan: Mendapat pengakuan resmi dari negara.",
+          "inisiatif": []
+        },
+        {
+          "judul": "9. Mengurus NPWP Badan Usaha\nTujuan: Menjadi subjek pajak yang sah.",
+          "inisiatif": []
+        },
+        {
+          "judul": "10. Mendaftar NIB (Nomor Induk Berusaha)\nTujuan: Mendapat izin usaha dan akses OSS.",
+          "inisiatif": []
+        },
+        {
+          "judul": "6. Menentukan Bentuk Badan Usaha (CV, PT, dll)",
+          "inisiatif": [
+            {
+              "judul": "Analisis kebutuhan bisnis jangka pendek & panjang",
+              "dokumen": "Business Needs Assessment"
+            },
+            {
+              "judul": "Konsultasi dengan konsultan hukum atau notaris",
+              "dokumen": "Legal Consultation Notes"
+            },
+            {
+              "judul": "Bandingkan kelebihan & kekurangan tiap bentuk badan usaha",
+              "dokumen": "Legal Entity Comparison Chart"
+            },
+            {
+              "judul": "Pertimbangkan pajak & kewajiban administratif masing-masing",
+              "dokumen": "Tax Obligation Comparison Sheet"
+            },
+            {
+              "judul": "Cek modal minimum & persyaratan hukum",
+              "dokumen": "Legal Requirements Checklist"
+            },
+            {
+              "judul": "Sesuaikan bentuk badan usaha dengan rencana ekspansi",
+              "dokumen": "Business Expansion Plan"
+            },
+            {
+              "judul": "Diskusikan dengan partner/owner",
+              "dokumen": "Decision Meeting Minutes"
+            },
+            {
+              "judul": "Pilih bentuk badan usaha & buat keputusan resmi",
+              "dokumen": "Legal Entity Decision Letter"
+            },
+            {
+              "judul": "Siapkan dokumen pendukung (KTP, KK, NPWP)",
+              "dokumen": "Supporting Document Folder"
+            },
+            {
+              "judul": "Simpan hasil keputusan di arsip legal",
+              "dokumen": "Legal Decision Archive"
+            }
+          ]
+        },
+        {
+          "judul": "7. Menyusun Akta Pendirian",
+          "inisiatif": [
+            {
+              "judul": "Pilih notaris yang berpengalaman",
+              "dokumen": "Notary Selection Sheet"
+            },
+            {
+              "judul": "Siapkan identitas pemilik & data perusahaan",
+              "dokumen": "Founders Data Form"
+            },
+            {
+              "judul": "Tentukan judul perusahaan sesuai aturan",
+              "dokumen": "Company Name Approval Request"
+            },
+            {
+              "judul": "Tentukan maksud & tujuan usaha",
+              "dokumen": "Business Purpose Statement"
+            },
+            {
+              "judul": "Tentukan susunan kepengurusan",
+              "dokumen": "Board of Directors List"
+            },
+            {
+              "judul": "Tetapkan modal dasar, setor, dan ditempatkan",
+              "dokumen": "Capital Statement"
+            },
+            {
+              "judul": "Tandatangani akta di hadapan notaris",
+              "dokumen": "Deed of Establishment"
+            },
+            {
+              "judul": "Arsipkan salinan akta di kantor",
+              "dokumen": "Company Deed File"
+            },
+            {
+              "judul": "Daftarkan akta ke Kemenkumham (jika PT)",
+              "dokumen": "Ministry Registration Submission"
+            },
+            {
+              "judul": "Simpan bukti pendaftaran resmi",
+              "dokumen": "Legal Registration Proof"
+            }
+          ]
+        },
+        {
+          "judul": "8. Mengurus SK Kemenkumham (untuk PT)",
+          "inisiatif": [
+            {
+              "judul": "Siapkan akta pendirian dari notaris",
+              "dokumen": "Notary Deed Copy"
+            },
+            {
+              "judul": "Isi formulir pendaftaran online di AHU",
+              "dokumen": "AHU Registration Form"
+            },
+            {
+              "judul": "Upload dokumen pendukung (KTP, NPWP, dll)",
+              "dokumen": "Supporting Document Folder"
+            },
+            {
+              "judul": "Bayar biaya pendaftaran resmi",
+              "dokumen": "Payment Receipt"
+            },
+            {
+              "judul": "Tunggu proses verifikasi Kemenkumham",
+              "dokumen": "Verification Progress Log"
+            },
+            {
+              "judul": "Terima SK pengesahan badan hukum",
+              "dokumen": "Certificate of Incorporation"
+            },
+            {
+              "judul": "Cetak & arsipkan SK asli",
+              "dokumen": "Legal Archive File"
+            },
+            {
+              "judul": "Simpan softcopy SK di folder digital aman",
+              "dokumen": "Digital Legal Archive"
+            },
+            {
+              "judul": "Sosialisasikan SK kepada tim & stakeholder",
+              "dokumen": "Legal Announcement Letter"
+            },
+            {
+              "judul": "Masukkan SK ke dalam dokumen legal perusahaan",
+              "dokumen": "Master Legal File"
+            }
+          ]
+        },
+        {
+          "judul": "9. Mengurus NPWP Badan Usaha",
+          "inisiatif": [
+            {
+              "judul": "Siapkan akta pendirian & SK Kemenkumham",
+              "dokumen": "Legal Establishment Documents"
+            },
+            {
+              "judul": "Isi formulir permohonan NPWP",
+              "dokumen": "NPWP Application Form"
+            },
+            {
+              "judul": "Lampirkan KTP & NPWP pemilik",
+              "dokumen": "Owner ID & Tax File"
+            },
+            {
+              "judul": "Serahkan ke KPP setempat atau online",
+              "dokumen": "Submission Receipt"
+            },
+            {
+              "judul": "Verifikasi oleh petugas pajak",
+              "dokumen": "Tax Office Verification Notes"
+            },
+            {
+              "judul": "Terima NPWP Badan Usaha",
+              "dokumen": "Company Tax ID Card"
+            },
+            {
+              "judul": "Simpan NPWP asli di arsip",
+              "dokumen": "Tax Archive Folder"
+            },
+            {
+              "judul": "Simpan softcopy untuk backup",
+              "dokumen": "Digital Tax Archive"
+            },
+            {
+              "judul": "Input NPWP ke semua dokumen resmi",
+              "dokumen": "Company Profile Updated"
+            },
+            {
+              "judul": "Lapor SPT tahunan secara tepat waktu",
+              "dokumen": "Annual Tax Report"
+            }
+          ]
+        },
+        {
+          "judul": "10. Mendaftar NIB (Nomor Induk Berusaha)",
+          "inisiatif": [
+            {
+              "judul": "Buat akun di OSS (Online Single Submission)",
+              "dokumen": "OSS Account Record"
+            },
+            {
+              "judul": "Siapkan dokumen legal perusahaan (akta, SK, NPWP)",
+              "dokumen": "Legal Submission File"
+            },
+            {
+              "judul": "Lengkapi profil perusahaan di OSS",
+              "dokumen": "OSS Company Profile Form"
+            },
+            {
+              "judul": "Isi bidang usaha sesuai KBLI",
+              "dokumen": "KBLI Selection Sheet"
+            },
+            {
+              "judul": "Unggah dokumen pendukung",
+              "dokumen": "Upload Confirmation Receipt"
+            },
+            {
+              "judul": "Submit permohonan NIB",
+              "dokumen": "NIB Application Submission"
+            },
+            {
+              "judul": "Terima NIB resmi",
+              "dokumen": "NIB Certificate"
+            },
+            {
+              "judul": "Simpan NIB asli & softcopy",
+              "dokumen": "NIB Archive Folder"
+            },
+            {
+              "judul": "Cantumkan NIB di papan judul & dokumen perusahaan",
+              "dokumen": "Company Stationery Update"
+            },
+            {
+              "judul": "Update OSS jika ada perubahan",
+              "dokumen": "OSS Update Log"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Tahap 3: Dokumen dan Izin Operasional",
+      "tasks": [
+        {
+          "judul": "11. Mengurus Izin Usaha Sektor Spesifik (jika perlu)\nTujuan: Tunduk pada regulasi industri tertentu (misal makanan, jasa keuangan).",
+          "inisiatif": []
+        },
+        {
+          "judul": "12. Mengurus Surat Domisili Usaha (jika diperlukan)\nTujuan: Validasi lokasi operasional secara administratif.",
+          "inisiatif": []
+        },
+        {
+          "judul": "13. Menyiapkan Struktur Organisasi Formal\nTujuan: Membedakan wewenang secara legal dan akuntabel.",
+          "inisiatif": []
+        },
+        {
+          "judul": "14. Menyusun AD/ART Perusahaan\nTujuan: Menjadi acuan hukum internal dalam pengambilan keputusan.",
+          "inisiatif": []
+        },
+        {
+          "judul": "15. Menyusun MoU dengan Mitra Awal (jika ada)\nTujuan: Menghindari konflik persepsi di masa depan.",
+          "inisiatif": []
+        },
+        {
+          "judul": "11. Mengurus Izin Usaha Sektor Spesifik (jika perlu)",
+          "inisiatif": [
+            {
+              "judul": "Identifikasi sektor usaha yang memerlukan izin khusus.\n📄 Dokumen: Regulatory Requirements List",
+              "dokumen": null
+            },
+            {
+              "judul": "Konsultasi dengan dinas terkait atau asosiasi industri.\n📄 Dokumen: Consultation Notes",
+              "dokumen": null
+            },
+            {
+              "judul": "Siapkan dokumen pendukung sesuai regulasi.\n📄 Dokumen: Licensing Document Folder",
+              "dokumen": null
+            },
+            {
+              "judul": "Lengkapi formulir permohonan izin.\n📄 Dokumen: License Application Form",
+              "dokumen": null
+            },
+            {
+              "judul": "Lakukan inspeksi/pemeriksaan jika disyaratkan.\n📄 Dokumen: Inspection Checklist & Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Bayar biaya resmi perizinan.\n📄 Dokumen: Payment Receipt",
+              "dokumen": null
+            },
+            {
+              "judul": "Simpan izin resmi yang diterbitkan.\n📄 Dokumen: Official License Certificate",
+              "dokumen": null
+            },
+            {
+              "judul": "Arsipkan softcopy di sistem digital.\n📄 Dokumen: Digital License Archive",
+              "dokumen": null
+            },
+            {
+              "judul": "Cantumkan nomor izin di papan judul & website.\n📄 Dokumen: Public License Display",
+              "dokumen": null
+            },
+            {
+              "judul": "Jadwalkan perpanjangan sebelum masa berlaku habis.\n📄 Dokumen: License Renewal Reminder Log",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "12. Mengurus Surat Domisili Usaha (jika diperlukan)",
+          "inisiatif": [
+            {
+              "judul": "Cek aturan pemerintah daerah terkait domisili usaha.\n📄 Dokumen: Local Regulation Summary",
+              "dokumen": null
+            },
+            {
+              "judul": "Siapkan KTP, NPWP, dan bukti sewa/kepemilikan tempat.\n📄 Dokumen: Ownership or Lease Proof File",
+              "dokumen": null
+            },
+            {
+              "judul": "Isi formulir pengajuan surat domisili.\n📄 Dokumen: Domicile Application Form",
+              "dokumen": null
+            },
+            {
+              "judul": "Serahkan dokumen ke kelurahan/kecamatan.\n📄 Dokumen: Submission Receipt",
+              "dokumen": null
+            },
+            {
+              "judul": "Ikuti verifikasi lapangan jika diminta.\n📄 Dokumen: Verification Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Terima surat domisili resmi.\n📄 Dokumen: Official Domicile Letter",
+              "dokumen": null
+            },
+            {
+              "judul": "Simpan arsip fisik & digital.\n📄 Dokumen: Domicile Archive Folder",
+              "dokumen": null
+            },
+            {
+              "judul": "Cantumkan alamat resmi di semua dokumen perusahaan.\n📄 Dokumen: Company Profile Update",
+              "dokumen": null
+            },
+            {
+              "judul": "Gunakan surat domisili untuk pengurusan izin lainnya.\n📄 Dokumen: License Application Bundle",
+              "dokumen": null
+            },
+            {
+              "judul": "Perbarui surat domisili jika pindah lokasi.\n📄 Dokumen: Domicile Change Notification",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "13. Menyiapkan Struktur Organisasi Formal",
+          "inisiatif": [
+            {
+              "judul": "Identifikasi seluruh fungsi penting dalam perusahaan.\n📄 Dokumen: Functional Role List",
+              "dokumen": null
+            },
+            {
+              "judul": "Tentukan posisi jabatan beserta judul singkat.\n📄 Dokumen: Position Summary Sheet",
+              "dokumen": null
+            },
+            {
+              "judul": "Tentukan rantai komando & koordinasi.\n📄 Dokumen: Chain of Command Chart",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat bagan organisasi resmi.\n📄 Dokumen: Organizational Chart",
+              "dokumen": null
+            },
+            {
+              "judul": "Tetapkan judul & jabatan pada struktur.\n📄 Dokumen: Staff Assignment List",
+              "dokumen": null
+            },
+            {
+              "judul": "Validasi dengan pimpinan perusahaan.\n📄 Dokumen: Approval Notes",
+              "dokumen": null
+            },
+            {
+              "judul": "Sosialisasikan struktur organisasi ke tim.\n📄 Dokumen: Organization Announcement Memo",
+              "dokumen": null
+            },
+            {
+              "judul": "Simpan di arsip legal & digital.\n📄 Dokumen: Org Chart Archive",
+              "dokumen": null
+            },
+            {
+              "judul": "Update jika ada perubahan jabatan.\n📄 Dokumen: Organizational Change Log",
+              "dokumen": null
+            },
+            {
+              "judul": "Gunakan sebagai acuan dalam kontrak kerja & KPI.\n📄 Dokumen: HR & KPI Integration File",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "14. Menyusun AD/ART Perusahaan",
+          "inisiatif": [
+            {
+              "judul": "Pelajari contoh AD/ART dari perusahaan sejenis.\n📄 Dokumen: Sample AD/ART Collection",
+              "dokumen": null
+            },
+            {
+              "judul": "Tentukan ketentuan umum perusahaan.\n📄 Dokumen: General Provision Draft",
+              "dokumen": null
+            },
+            {
+              "judul": "Tetapkan aturan tentang pemegang saham & RUPS.\n📄 Dokumen: Shareholder Rules Draft",
+              "dokumen": null
+            },
+            {
+              "judul": "Tentukan mekanisme pengangkatan & pemberhentian direksi.\n📄 Dokumen: Governance Structure Draft",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat ketentuan pembagian laba & kerugian.\n📄 Dokumen: Profit Distribution Clause",
+              "dokumen": null
+            },
+            {
+              "judul": "Tetapkan tata cara rapat & pengambilan keputusan.\n📄 Dokumen: Meeting Rules Draft",
+              "dokumen": null
+            },
+            {
+              "judul": "Konsultasikan draft ke notaris/konsultan hukum.\n📄 Dokumen: Legal Review Notes",
+              "dokumen": null
+            },
+            {
+              "judul": "Sahkan AD/ART dalam RUPS.\n📄 Dokumen: Meeting Minutes of AD/ART Approval",
+              "dokumen": null
+            },
+            {
+              "judul": "Arsipkan dokumen AD/ART asli.\n📄 Dokumen: Official AD/ART File",
+              "dokumen": null
+            },
+            {
+              "judul": "Distribusikan salinan ke pihak terkait.\n📄 Dokumen: AD/ART Distribution List",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "15. Menyusun MoU dengan Mitra Awal (jika ada)",
+          "inisiatif": [
+            {
+              "judul": "Identifikasi pihak mitra & lingkup kerja sama.\n📄 Dokumen: Partner Identification Sheet",
+              "dokumen": null
+            },
+            {
+              "judul": "Tentukan tujuan & manfaat kerja sama.\n📄 Dokumen: Partnership Objective Draft",
+              "dokumen": null
+            },
+            {
+              "judul": "Tetapkan peran & tanggung jawab masing-masing pihak.\n📄 Dokumen: Role & Responsibility Table",
+              "dokumen": null
+            },
+            {
+              "judul": "Tentukan durasi & masa berlaku MoU.\n📄 Dokumen: MoU Duration Clause",
+              "dokumen": null
+            },
+            {
+              "judul": "Atur mekanisme penyelesaian sengketa.\n📄 Dokumen: Dispute Resolution Clause",
+              "dokumen": null
+            },
+            {
+              "judul": "Rancang draft MoU.\n📄 Dokumen: MoU Draft Document",
+              "dokumen": null
+            },
+            {
+              "judul": "Review bersama mitra & lakukan negosiasi.\n📄 Dokumen: MoU Negotiation Notes",
+              "dokumen": null
+            },
+            {
+              "judul": "Tandatangani MoU oleh pihak berwenang.\n📄 Dokumen: Signed MoU",
+              "dokumen": null
+            },
+            {
+              "judul": "Simpan salinan fisik & digital.\n📄 Dokumen: MoU Archive File",
+              "dokumen": null
+            },
+            {
+              "judul": "Lakukan evaluasi & pembaruan MoU sesuai perkembangan.\n📄 Dokumen: MoU Renewal Record",
+              "dokumen": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Tahap 4: Kontrak dan Perjanjian",
+      "tasks": [
+        {
+          "judul": "16. Membuat Draft Kontrak Penjualan Standar\nTujuan: Melindungi kepentingan usaha dalam transaksi.",
+          "inisiatif": []
+        },
+        {
+          "judul": "17. Menyusun Kontrak Karyawan Awal\nTujuan: Jelas hak, kewajiban, dan status hukum tenaga kerja.",
+          "inisiatif": []
+        },
+        {
+          "judul": "18. Menyiapkan NDA (Non Disclosure Agreement)\nTujuan: Melindungi ide dan informasi bisnis.",
+          "inisiatif": []
+        },
+        {
+          "judul": "19. Menyusun Perjanjian Kerja Sama Mitra\nTujuan: Menjaga hubungan kemitraan secara profesional.",
+          "inisiatif": []
+        },
+        {
+          "judul": "20. Mempelajari Unsur Legalitas dalam Perjanjian\nTujuan: Memastikan kontrak berlaku dan sah secara hukum.",
+          "inisiatif": []
+        },
+        {
+          "judul": "16. Membuat Draft Kontrak Penjualan Standar",
+          "inisiatif": [
+            {
+              "judul": "Analisis transaksi penjualan yang paling sering terjadi.\n📄 Dokumen: Sales Transaction Analysis Sheet",
+              "dokumen": null
+            },
+            {
+              "judul": "Tentukan klausul wajib (harga, pembayaran, pengiriman, garansi).\n📄 Dokumen: Mandatory Clause List",
+              "dokumen": null
+            },
+            {
+              "judul": "Siapkan pasal perlindungan risiko (force majeure, wanprestasi).\n📄 Dokumen: Risk Protection Clause Draft",
+              "dokumen": null
+            },
+            {
+              "judul": "Rancang draft kontrak penjualan awal.\n📄 Dokumen: Standard Sales Contract Draft",
+              "dokumen": null
+            },
+            {
+              "judul": "Konsultasikan dengan penasihat hukum.\n📄 Dokumen: Legal Review Notes",
+              "dokumen": null
+            },
+            {
+              "judul": "Revisi sesuai masukan.\n📄 Dokumen: Contract Revision Record",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat template yang mudah disesuaikan untuk tiap klien.\n📄 Dokumen: Customizable Sales Contract Template",
+              "dokumen": null
+            },
+            {
+              "judul": "Simpan master file kontrak di database legal.\n📄 Dokumen: Contract Master File",
+              "dokumen": null
+            },
+            {
+              "judul": "Tetapkan prosedur tanda tangan & penyimpanan kontrak.\n📄 Dokumen: Contract Signing SOP",
+              "dokumen": null
+            },
+            {
+              "judul": "Sosialisasikan ke tim sales agar konsisten digunakan.\n📄 Dokumen: Sales Contract Usage Guide",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "17. Menyusun Kontrak Karyawan Awal",
+          "inisiatif": [
+            {
+              "judul": "Tentukan jenis hubungan kerja (PKWT, PKWTT, freelance).\n📄 Dokumen: Employment Type Decision Sheet",
+              "dokumen": null
+            },
+            {
+              "judul": "Susun pasal hak & kewajiban kedua pihak.\n📄 Dokumen: Rights & Duties Draft",
+              "dokumen": null
+            },
+            {
+              "judul": "Sertakan aturan jam kerja, cuti, dan disiplin.\n📄 Dokumen: Work Rules Clause",
+              "dokumen": null
+            },
+            {
+              "judul": "Tambahkan ketentuan PHK dan kompensasi.\n📄 Dokumen: Termination & Compensation Clause",
+              "dokumen": null
+            },
+            {
+              "judul": "Konsultasikan draft ke konsultan hukum/HR.\n📄 Dokumen: Legal Review Notes",
+              "dokumen": null
+            },
+            {
+              "judul": "Finalisasi kontrak dan buat template resmi.\n📄 Dokumen: Employment Contract Template",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat SOP tanda tangan kontrak.\n📄 Dokumen: Contract Signing SOP",
+              "dokumen": null
+            },
+            {
+              "judul": "Arsipkan kontrak di database karyawan (fisik & digital).\n📄 Dokumen: Employee Contract Archive",
+              "dokumen": null
+            },
+            {
+              "judul": "Lakukan pembaruan kontrak jika ada perubahan status kerja.\n📄 Dokumen: Contract Amendment File",
+              "dokumen": null
+            },
+            {
+              "judul": "Gunakan kontrak ini sebagai acuan onboarding.\n📄 Dokumen: Onboarding Checklist",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "18. Menyiapkan NDA (Non Disclosure Agreement)",
+          "inisiatif": [
+            {
+              "judul": "Tentukan informasi yang tergolong rahasia.\n📄 Dokumen: Confidential Information List",
+              "dokumen": null
+            },
+            {
+              "judul": "Rancang pasal kewajiban menjaga kerahasiaan.\n📄 Dokumen: Confidentiality Clause Draft",
+              "dokumen": null
+            },
+            {
+              "judul": "Sertakan batas waktu berlaku NDA.\n📄 Dokumen: NDA Validity Clause",
+              "dokumen": null
+            },
+            {
+              "judul": "Tambahkan sanksi pelanggaran.\n📄 Dokumen: Breach Penalty Clause",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat draft NDA sesuai kebutuhan bisnis.\n📄 Dokumen: NDA Draft Document",
+              "dokumen": null
+            },
+            {
+              "judul": "Konsultasi dengan penasihat hukum.\n📄 Dokumen: Legal Review Notes",
+              "dokumen": null
+            },
+            {
+              "judul": "Finalisasi NDA dalam bentuk template.\n📄 Dokumen: NDA Template File",
+              "dokumen": null
+            },
+            {
+              "judul": "Simpan di database legal.\n📄 Dokumen: NDA Archive",
+              "dokumen": null
+            },
+            {
+              "judul": "Terapkan dalam setiap kerja sama yang melibatkan informasi sensitif.\n📄 Dokumen: NDA Usage SOP",
+              "dokumen": null
+            },
+            {
+              "judul": "Monitor kepatuhan NDA secara berkala.\n📄 Dokumen: NDA Compliance Report",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "19. Menyusun Perjanjian Kerja Sama Mitra",
+          "inisiatif": [
+            {
+              "judul": "Identifikasi pihak dan tujuan kerja sama.\n📄 Dokumen: Partnership Identification Sheet",
+              "dokumen": null
+            },
+            {
+              "judul": "Tentukan ruang lingkup & tanggung jawab masing-masing.\n📄 Dokumen: Scope of Work Agreement",
+              "dokumen": null
+            },
+            {
+              "judul": "Atur mekanisme pembagian hasil atau keuntungan.\n📄 Dokumen: Profit Sharing Clause",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat pasal penyelesaian perselisihan.\n📄 Dokumen: Dispute Resolution Clause",
+              "dokumen": null
+            },
+            {
+              "judul": "Susun draft awal perjanjian.\n📄 Dokumen: Partnership Agreement Draft",
+              "dokumen": null
+            },
+            {
+              "judul": "Konsultasi dengan pihak mitra & hukum.\n📄 Dokumen: Negotiation Notes",
+              "dokumen": null
+            },
+            {
+              "judul": "Finalisasi & tanda tangani perjanjian.\n📄 Dokumen: Signed Partnership Agreement",
+              "dokumen": null
+            },
+            {
+              "judul": "Simpan arsip fisik & digital.\n📄 Dokumen: Partnership Archive",
+              "dokumen": null
+            },
+            {
+              "judul": "Evaluasi kerja sama secara berkala.\n📄 Dokumen: Partnership Evaluation Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Perbarui perjanjian sesuai perkembangan kerja sama.\n📄 Dokumen: Agreement Renewal Record",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "20. Mempelajari Unsur Legalitas dalam Perjanjian",
+          "inisiatif": [
+            {
+              "judul": "Pelajari UU & peraturan terkait kontrak.\n📄 Dokumen: Contract Law Summary",
+              "dokumen": null
+            },
+            {
+              "judul": "Pahami unsur sah perjanjian (kesepakatan, kecakapan, objek tertentu, sebab halal).\n📄 Dokumen: Legal Element Checklist",
+              "dokumen": null
+            },
+            {
+              "judul": "Pelajari jenis-jenis kontrak bisnis.\n📄 Dokumen: Business Contract Types List",
+              "dokumen": null
+            },
+            {
+              "judul": "Pelajari format standar kontrak.\n📄 Dokumen: Standard Contract Format Guide",
+              "dokumen": null
+            },
+            {
+              "judul": "Ikuti pelatihan/seminar hukum bisnis.\n📄 Dokumen: Training Certificate & Notes",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat panduan internal unsur legalitas kontrak.\n📄 Dokumen: Contract Legality Guidebook",
+              "dokumen": null
+            },
+            {
+              "judul": "Terapkan checklist legal sebelum menandatangani kontrak.\n📄 Dokumen: Contract Review Checklist",
+              "dokumen": null
+            },
+            {
+              "judul": "Review semua kontrak lama apakah memenuhi unsur legalitas.\n📄 Dokumen: Contract Compliance Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Konsultasi dengan notaris atau konsultan hukum.\n📄 Dokumen: Legal Consultation Notes",
+              "dokumen": null
+            },
+            {
+              "judul": "Arsipkan semua dokumen hasil pembelajaran & template.\n📄 Dokumen: Legal Knowledge Archive",
+              "dokumen": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Tahap 5: Perlindungan Aset dan Hak Usaha",
+      "tasks": [
+        {
+          "judul": "21. Melakukan Pendaftaran Merek Dagang\nTujuan: Menghindari pembajakan atau penyalahgunaan identitas bisnis.",
+          "inisiatif": []
+        },
+        {
+          "judul": "22. Melindungi Hak Cipta Konten / Produk Digital\nTujuan: Mencegah duplikasi tanpa izin.",
+          "inisiatif": []
+        },
+        {
+          "judul": "23. Menyusun Ketentuan Penggunaan Produk / Layanan\nTujuan: Menjaga batas tanggung jawab dan hak pelanggan.",
+          "inisiatif": []
+        },
+        {
+          "judul": "24. Melindungi Aset Digital dan Teknologi\nTujuan: Mencegah pencurian data dan penyalahgunaan akses.",
+          "inisiatif": []
+        },
+        {
+          "judul": "25. Menyiapkan Syarat & Ketentuan Website (Terms of Use)\nTujuan: Memastikan situs beroperasi dengan aturan yang melindungi pemilik.",
+          "inisiatif": []
+        },
+        {
+          "judul": "21. Melakukan Pendaftaran Merek Dagang",
+          "inisiatif": [
+            {
+              "judul": "Cek ketersediaan judul merek di DJKI.\n📄 Dokumen: Trademark Search Result",
+              "dokumen": null
+            },
+            {
+              "judul": "Tentukan kelas barang/jasa sesuai bisnis.\n📄 Dokumen: Trademark Class Identification Sheet",
+              "dokumen": null
+            },
+            {
+              "judul": "Siapkan logo dan identitas visual resmi.\n📄 Dokumen: Official Brand Identity File",
+              "dokumen": null
+            },
+            {
+              "judul": "Lengkapi persyaratan pendaftaran merek.\n📄 Dokumen: Trademark Registration Requirements List",
+              "dokumen": null
+            },
+            {
+              "judul": "Ajukan pendaftaran ke DJKI (manual/online).\n📄 Dokumen: Trademark Registration Form",
+              "dokumen": null
+            },
+            {
+              "judul": "Simpan bukti pengajuan.\n📄 Dokumen: Filing Receipt",
+              "dokumen": null
+            },
+            {
+              "judul": "Pantau proses pemeriksaan formalitas dan substantif.\n📄 Dokumen: Trademark Application Tracking Sheet",
+              "dokumen": null
+            },
+            {
+              "judul": "Tanggapi keberatan pihak ketiga (jika ada).\n📄 Dokumen: Opposition Response File",
+              "dokumen": null
+            },
+            {
+              "judul": "Simpan sertifikat merek dagang setelah disetujui.\n📄 Dokumen: Trademark Certificate",
+              "dokumen": null
+            },
+            {
+              "judul": "Perbarui pendaftaran sebelum masa berlaku habis.\n📄 Dokumen: Trademark Renewal Reminder",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "22. Melindungi Hak Cipta Konten / Produk Digital",
+          "inisiatif": [
+            {
+              "judul": "Identifikasi semua konten/produk digital yang dimiliki.\n📄 Dokumen: Digital Asset Inventory List",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat watermark/logo di semua media visual.\n📄 Dokumen: Watermarked Content File",
+              "dokumen": null
+            },
+            {
+              "judul": "Daftarkan hak cipta ke DJKI.\n📄 Dokumen: Copyright Registration Form",
+              "dokumen": null
+            },
+            {
+              "judul": "Simpan bukti kepemilikan karya (draft, file asli, metadata).\n📄 Dokumen: Proof of Ownership Archive",
+              "dokumen": null
+            },
+            {
+              "judul": "Gunakan lisensi terbatas untuk klien/pihak ketiga.\n📄 Dokumen: Limited Use License Agreement",
+              "dokumen": null
+            },
+            {
+              "judul": "Cantumkan peringatan hak cipta di media publik.\n📄 Dokumen: Copyright Disclaimer Template",
+              "dokumen": null
+            },
+            {
+              "judul": "Monitor pelanggaran online (Google Alert, tools lain).\n📄 Dokumen: Copyright Violation Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Kirimkan surat teguran jika ada pelanggaran.\n📄 Dokumen: Cease and Desist Letter",
+              "dokumen": null
+            },
+            {
+              "judul": "Catat semua tindakan perlindungan hak cipta.\n📄 Dokumen: Copyright Protection Log",
+              "dokumen": null
+            },
+            {
+              "judul": "Perbarui pendaftaran jika ada karya baru.\n📄 Dokumen: Copyright Renewal Form",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "23. Menyusun Ketentuan Penggunaan Produk / Layanan",
+          "inisiatif": [
+            {
+              "judul": "Identifikasi risiko penggunaan produk/jasa.\n📄 Dokumen: Risk Assessment Sheet",
+              "dokumen": null
+            },
+            {
+              "judul": "Tetapkan hak dan kewajiban pelanggan.\n📄 Dokumen: Customer Rights & Obligations List",
+              "dokumen": null
+            },
+            {
+              "judul": "Sertakan disclaimer penggunaan yang aman.\n📄 Dokumen: Product Disclaimer Draft",
+              "dokumen": null
+            },
+            {
+              "judul": "Tetapkan syarat garansi & klaim.\n📄 Dokumen: Warranty Policy Document",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat draft ketentuan penggunaan.\n📄 Dokumen: Terms of Service Draft",
+              "dokumen": null
+            },
+            {
+              "judul": "Review bersama tim legal.\n📄 Dokumen: Legal Review Notes",
+              "dokumen": null
+            },
+            {
+              "judul": "Finalisasi dan simpan dokumen resmi.\n📄 Dokumen: Approved Terms of Service",
+              "dokumen": null
+            },
+            {
+              "judul": "Publikasikan di website & materi promosi.\n📄 Dokumen: Public Terms Copy",
+              "dokumen": null
+            },
+            {
+              "judul": "Edukasi tim sales & CS untuk memahaminya.\n📄 Dokumen: Staff Training Guide on Terms",
+              "dokumen": null
+            },
+            {
+              "judul": "Review tahunan untuk update kebijakan.\n📄 Dokumen: Terms Revision Record",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "24. Melindungi Aset Digital dan Teknologi",
+          "inisiatif": [
+            {
+              "judul": "Buat daftar semua aset digital & teknologi yang dimiliki.\n📄 Dokumen: Digital & Tech Asset Inventory",
+              "dokumen": null
+            },
+            {
+              "judul": "Terapkan sistem password management.\n📄 Dokumen: Password Policy Guide",
+              "dokumen": null
+            },
+            {
+              "judul": "Gunakan enkripsi data penting.\n📄 Dokumen: Data Encryption SOP",
+              "dokumen": null
+            },
+            {
+              "judul": "Tetapkan hak akses berdasarkan peran.\n📄 Dokumen: Access Control List",
+              "dokumen": null
+            },
+            {
+              "judul": "Pasang sistem keamanan (firewall, antivirus).\n📄 Dokumen: Security System Setup Guide",
+              "dokumen": null
+            },
+            {
+              "judul": "Lakukan backup data rutin.\n📄 Dokumen: Data Backup Schedule",
+              "dokumen": null
+            },
+            {
+              "judul": "Pantau aktivitas login & akses data.\n📄 Dokumen: Security Activity Log",
+              "dokumen": null
+            },
+            {
+              "judul": "Latih karyawan tentang keamanan siber.\n📄 Dokumen: Cybersecurity Training Material",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat rencana respon insiden keamanan.\n📄 Dokumen: Incident Response Plan",
+              "dokumen": null
+            },
+            {
+              "judul": "Audit keamanan secara berkala.\n📄 Dokumen: Security Audit Report",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "25. Menyiapkan Syarat & Ketentuan Website (Terms of Use)",
+          "inisiatif": [
+            {
+              "judul": "Identifikasi fungsi & layanan yang disediakan website.\n📄 Dokumen: Website Function List",
+              "dokumen": null
+            },
+            {
+              "judul": "Tetapkan aturan penggunaan bagi pengunjung.\n📄 Dokumen: Website Usage Rules",
+              "dokumen": null
+            },
+            {
+              "judul": "Cantumkan kebijakan privasi dan perlindungan data.\n📄 Dokumen: Privacy Policy Document",
+              "dokumen": null
+            },
+            {
+              "judul": "Atur pembatasan tanggung jawab pemilik.\n📄 Dokumen: Liability Limitation Clause",
+              "dokumen": null
+            },
+            {
+              "judul": "Sertakan syarat pembayaran & pengembalian (jika ada).\n📄 Dokumen: Payment & Refund Policy",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat draft Terms of Use.\n📄 Dokumen: Website Terms of Use Draft",
+              "dokumen": null
+            },
+            {
+              "judul": "Review dengan tim legal.\n📄 Dokumen: Legal Review Notes",
+              "dokumen": null
+            },
+            {
+              "judul": "Finalisasi & publikasi di website.\n📄 Dokumen: Published Terms of Use",
+              "dokumen": null
+            },
+            {
+              "judul": "Edukasi admin & CS untuk menanganinya.\n📄 Dokumen: Admin Terms Guide",
+              "dokumen": null
+            },
+            {
+              "judul": "Update secara berkala sesuai perubahan layanan.\n📄 Dokumen: Terms Update Log",
+              "dokumen": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Tahap 6: Kepatuhan Hukum dan Regulasi",
+      "tasks": [
+        {
+          "judul": "26. Mengenali Kewajiban Pajak Bulanan dan Tahunan\nTujuan: Menjalankan kewajiban fiskal dan menghindari denda.",
+          "inisiatif": []
+        },
+        {
+          "judul": "27. Mengurus Laporan Keuangan dan Pajak Sesuai Aturan\nTujuan: Kesesuaian dengan standar audit dan akuntabilitas.",
+          "inisiatif": []
+        },
+        {
+          "judul": "28. Menyusun SOP Internal Legal & Administrasi\nTujuan: Konsistensi pengelolaan dokumen dan aktivitas hukum.",
+          "inisiatif": []
+        },
+        {
+          "judul": "29. Update Perubahan Regulasi Terkait Industri\nTujuan: Siap beradaptasi dengan kebijakan pemerintah.",
+          "inisiatif": []
+        },
+        {
+          "judul": "30. Memastikan Seluruh Karyawan Terdaftar BPJS\nTujuan: Kepatuhan terhadap UU Ketenagakerjaan.",
+          "inisiatif": []
+        },
+        {
+          "judul": "26. Mengenali Kewajiban Pajak Bulanan dan Tahunan",
+          "inisiatif": [
+            {
+              "judul": "Identifikasi jenis pajak yang berlaku (PPN, PPh, dll).\n📄 Dokumen: Tax Obligations List",
+              "dokumen": null
+            },
+            {
+              "judul": "Tentukan jadwal pembayaran pajak bulanan & tahunan.\n📄 Dokumen: Tax Calendar",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat akun DJP Online untuk pelaporan.\n📄 Dokumen: DJP Online Registration Proof",
+              "dokumen": null
+            },
+            {
+              "judul": "Pastikan NPWP badan dan NPWP pengurus aktif.\n📄 Dokumen: NPWP Copy",
+              "dokumen": null
+            },
+            {
+              "judul": "Hitung kewajiban pajak sesuai omzet dan biaya.\n📄 Dokumen: Monthly Tax Calculation Sheet",
+              "dokumen": null
+            },
+            {
+              "judul": "Gunakan aplikasi e-faktur untuk PPN.\n📄 Dokumen: E-Faktur Transaction Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Gunakan aplikasi e-bupot untuk PPh.\n📄 Dokumen: E-Bupot Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Arsipkan semua bukti setoran pajak.\n📄 Dokumen: Tax Payment Receipts Folder",
+              "dokumen": null
+            },
+            {
+              "judul": "Evaluasi kepatuhan pajak setiap 3 bulan.\n📄 Dokumen: Tax Compliance Review Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Libatkan konsultan pajak bila perlu.\n📄 Dokumen: Tax Consultant Agreement",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "27. Mengurus Laporan Keuangan dan Pajak Sesuai Aturan",
+          "inisiatif": [
+            {
+              "judul": "Gunakan software akuntansi yang sesuai standar.\n📄 Dokumen: Accounting Software Setup Guide",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat laporan keuangan bulanan.\n📄 Dokumen: Monthly Financial Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Rekonsiliasi bank secara rutin.\n📄 Dokumen: Bank Reconciliation Sheet",
+              "dokumen": null
+            },
+            {
+              "judul": "Lakukan pencatatan jurnal harian.\n📄 Dokumen: Daily Journal Ledger",
+              "dokumen": null
+            },
+            {
+              "judul": "Arsipkan semua bukti transaksi.\n📄 Dokumen: Transaction Receipt Archive",
+              "dokumen": null
+            },
+            {
+              "judul": "Siapkan laporan tahunan untuk audit.\n📄 Dokumen: Annual Financial Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Laporkan pajak sesuai data keuangan.\n📄 Dokumen: Tax Filing Summary",
+              "dokumen": null
+            },
+            {
+              "judul": "Lakukan audit internal berkala.\n📄 Dokumen: Internal Audit Checklist",
+              "dokumen": null
+            },
+            {
+              "judul": "Pastikan laporan sesuai PSAK yang berlaku.\n📄 Dokumen: PSAK Compliance Checklist",
+              "dokumen": null
+            },
+            {
+              "judul": "Simpan laporan minimal 5 tahun sesuai aturan.\n📄 Dokumen: Financial Records Archive Index",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "28. Menyusun SOP Internal Legal & Administrasi",
+          "inisiatif": [
+            {
+              "judul": "Identifikasi semua proses legal & administrasi yang ada.\n📄 Dokumen: Legal & Admin Process Map",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat format standar dokumen (kontrak, MoU, surat resmi).\n📄 Dokumen: Standard Document Templates",
+              "dokumen": null
+            },
+            {
+              "judul": "Tentukan alur persetujuan dokumen.\n📄 Dokumen: Document Approval Flowchart",
+              "dokumen": null
+            },
+            {
+              "judul": "Atur sistem penomoran dokumen.\n📄 Dokumen: Document Numbering SOP",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat aturan penyimpanan dokumen fisik & digital.\n📄 Dokumen: Document Storage SOP",
+              "dokumen": null
+            },
+            {
+              "judul": "Tetapkan batas waktu arsip dokumen.\n📄 Dokumen: Document Retention Policy",
+              "dokumen": null
+            },
+            {
+              "judul": "Pastikan ada backup data penting.\n📄 Dokumen: Document Backup Schedule",
+              "dokumen": null
+            },
+            {
+              "judul": "Tetapkan PIC untuk tiap jenis dokumen.\n📄 Dokumen: Document Responsibility List",
+              "dokumen": null
+            },
+            {
+              "judul": "Audit kepatuhan SOP tiap 6 bulan.\n📄 Dokumen: SOP Compliance Audit Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Update SOP bila ada perubahan hukum.\n📄 Dokumen: SOP Revision Log",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "29. Update Perubahan Regulasi Terkait Industri",
+          "inisiatif": [
+            {
+              "judul": "Daftar ke newsletter asosiasi industri.\n📄 Dokumen: Industry Association Membership Proof",
+              "dokumen": null
+            },
+            {
+              "judul": "Ikuti update dari website kementerian terkait.\n📄 Dokumen: Regulatory Update Log",
+              "dokumen": null
+            },
+            {
+              "judul": "Tunjuk tim legal sebagai PIC monitoring regulasi.\n📄 Dokumen: Regulatory Monitoring Assignment Letter",
+              "dokumen": null
+            },
+            {
+              "judul": "Simpan semua update regulasi di folder khusus.\n📄 Dokumen: Regulation Archive Folder",
+              "dokumen": null
+            },
+            {
+              "judul": "Lakukan analisis dampak regulasi baru.\n📄 Dokumen: Regulatory Impact Analysis Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Update SOP jika regulasi berubah.\n📄 Dokumen: SOP Revision Document",
+              "dokumen": null
+            },
+            {
+              "judul": "Adakan briefing internal soal regulasi baru.\n📄 Dokumen: Regulatory Briefing Presentation",
+              "dokumen": null
+            },
+            {
+              "judul": "Konsultasi ke pengacara untuk interpretasi aturan.\n📄 Dokumen: Legal Consultation Notes",
+              "dokumen": null
+            },
+            {
+              "judul": "Catat regulasi yang berlaku per tahun.\n📄 Dokumen: Annual Regulation Tracker",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat checklist kepatuhan regulasi.\n📄 Dokumen: Regulatory Compliance Checklist",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "30. Memastikan Seluruh Karyawan Terdaftar BPJS",
+          "inisiatif": [
+            {
+              "judul": "Data semua karyawan aktif.\n📄 Dokumen: Employee Master List",
+              "dokumen": null
+            },
+            {
+              "judul": "Cek status BPJS kesehatan & ketenagakerjaan karyawan.\n📄 Dokumen: BPJS Status Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Daftarkan karyawan yang belum tercover.\n📄 Dokumen: BPJS Registration Form",
+              "dokumen": null
+            },
+            {
+              "judul": "Simpan kartu BPJS atau bukti digitalnya.\n📄 Dokumen: BPJS Card Archive",
+              "dokumen": null
+            },
+            {
+              "judul": "Bayarkan iuran tepat waktu.\n📄 Dokumen: BPJS Payment Receipt",
+              "dokumen": null
+            },
+            {
+              "judul": "Rekonsiliasi data BPJS dengan HR tiap bulan.\n📄 Dokumen: BPJS Data Reconciliation Sheet",
+              "dokumen": null
+            },
+            {
+              "judul": "Laporkan karyawan baru atau keluar ke BPJS.\n📄 Dokumen: BPJS Change Notification Form",
+              "dokumen": null
+            },
+            {
+              "judul": "Edukasi karyawan tentang manfaat BPJS.\n📄 Dokumen: BPJS Employee Guide",
+              "dokumen": null
+            },
+            {
+              "judul": "Pantau klaim & manfaat BPJS yang digunakan.\n📄 Dokumen: BPJS Claim Log",
+              "dokumen": null
+            },
+            {
+              "judul": "Audit kepatuhan BPJS setiap 6 bulan.\n📄 Dokumen: BPJS Compliance Audit Report",
+              "dokumen": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Tahap 7: Pengelolaan Risiko dan Legal Audit",
+      "tasks": [
+        {
+          "judul": "31. Membuat Daftar Risiko Legal Potensial\nTujuan: Antisipasi permasalahan sebelum terjadi.",
+          "inisiatif": []
+        },
+        {
+          "judul": "32. Menyusun Matriks Risiko dan Penanganannya\nTujuan: Punya skenario cepat saat terjadi sengketa.",
+          "inisiatif": []
+        },
+        {
+          "judul": "33. Melakukan Audit Dokumen Legal Secara Berkala\nTujuan: Menjaga keteraturan dan kelengkapan dokumen.",
+          "inisiatif": []
+        },
+        {
+          "judul": "34. Mengarsipkan Semua Bukti Pembayaran dan Transaksi\nTujuan: Bukti sah untuk verifikasi, audit, dan pembelaan.",
+          "inisiatif": []
+        },
+        {
+          "judul": "35. Menyiapkan Timeline Perpanjangan Izin & Legalitas\nTujuan: Tidak terlambat dalam memperbarui dokumen penting.",
+          "inisiatif": []
+        },
+        {
+          "judul": "31. Membuat Daftar Risiko Legal Potensial",
+          "inisiatif": [
+            {
+              "judul": "Identifikasi risiko legal dari setiap departemen.\n📄 Dokumen: Risk Identification Worksheet",
+              "dokumen": null
+            },
+            {
+              "judul": "Wawancara manajer & staf untuk mengumpulkan potensi masalah.\n📄 Dokumen: Risk Interview Notes",
+              "dokumen": null
+            },
+            {
+              "judul": "Analisis kontrak untuk menemukan celah hukum.\n📄 Dokumen: Contract Risk Assessment Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Cek perizinan usaha apakah sesuai regulasi terbaru.\n📄 Dokumen: License Compliance Checklist",
+              "dokumen": null
+            },
+            {
+              "judul": "Review hubungan kerja apakah sesuai UU ketenagakerjaan.\n📄 Dokumen: Employment Compliance Review",
+              "dokumen": null
+            },
+            {
+              "judul": "Cek perlindungan merek & hak cipta.\n📄 Dokumen: IP Protection Status Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Pantau perubahan regulasi yang memengaruhi operasional.\n📄 Dokumen: Regulatory Watchlist",
+              "dokumen": null
+            },
+            {
+              "judul": "Evaluasi risiko sengketa dengan pelanggan & vendor.\n📄 Dokumen: Dispute Risk Analysis",
+              "dokumen": null
+            },
+            {
+              "judul": "Prioritasksan risiko berdasarkan potensi kerugian.\n📄 Dokumen: Legal Risk Priority Matrix",
+              "dokumen": null
+            },
+            {
+              "judul": "Simpan semua daftar risiko di file terpusat.\n📄 Dokumen: Legal Risk Master List",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "32. Menyusun Matriks Risiko dan Penanganannya",
+          "inisiatif": [
+            {
+              "judul": "Buat tabel risiko berdasarkan dampak dan kemungkinan.\n📄 Dokumen: Risk Matrix Template",
+              "dokumen": null
+            },
+            {
+              "judul": "Tentukan level risiko (rendah, sedang, tinggi).\n📄 Dokumen: Risk Level Classification Guide",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat rencana mitigasi untuk setiap risiko.\n📄 Dokumen: Risk Mitigation Plan",
+              "dokumen": null
+            },
+            {
+              "judul": "Tentukan PIC untuk menangani risiko.\n📄 Dokumen: Risk Responsibility Chart",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat SOP respons cepat sengketa.\n📄 Dokumen: Dispute Response SOP",
+              "dokumen": null
+            },
+            {
+              "judul": "Latih tim dalam simulasi penanganan sengketa.\n📄 Dokumen: Dispute Simulation Training Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Siapkan dokumen pendukung untuk tiap risiko.\n📄 Dokumen: Risk Supporting Document Checklist",
+              "dokumen": null
+            },
+            {
+              "judul": "Evaluasi efektivitas mitigasi tiap 6 bulan.\n📄 Dokumen: Risk Review Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Update matriks risiko jika ada perubahan bisnis.\n📄 Dokumen: Risk Matrix Revision Log",
+              "dokumen": null
+            },
+            {
+              "judul": "Simpan matriks risiko di repository legal perusahaan.\n📄 Dokumen: Central Risk Matrix File",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "33. Melakukan Audit Dokumen Legal Secara Berkala",
+          "inisiatif": [
+            {
+              "judul": "Buat daftar dokumen legal yang wajib ada.\n📄 Dokumen: Legal Document Master List",
+              "dokumen": null
+            },
+            {
+              "judul": "Tentukan jadwal audit dokumen (6 bulanan / tahunan).\n📄 Dokumen: Legal Audit Calendar",
+              "dokumen": null
+            },
+            {
+              "judul": "Cek keaslian dokumen penting.\n📄 Dokumen: Document Authenticity Verification Sheet",
+              "dokumen": null
+            },
+            {
+              "judul": "Pastikan semua dokumen legal masih berlaku.\n📄 Dokumen: Legal Expiry Status Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Tandai dokumen yang harus diperbarui.\n📄 Dokumen: Document Renewal List",
+              "dokumen": null
+            },
+            {
+              "judul": "Lengkapi dokumen yang hilang atau kurang.\n📄 Dokumen: Missing Document Log",
+              "dokumen": null
+            },
+            {
+              "judul": "Simpan dokumen legal secara digital & fisik.\n📄 Dokumen: Document Archiving SOP",
+              "dokumen": null
+            },
+            {
+              "judul": "Beri label dan nomor dokumen sesuai sistem.\n📄 Dokumen: Document Labeling Guide",
+              "dokumen": null
+            },
+            {
+              "judul": "Laporan hasil audit ke manajemen.\n📄 Dokumen: Legal Audit Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat rekomendasi perbaikan dari hasil audit.\n📄 Dokumen: Audit Improvement Plan",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "34. Mengarsipkan Semua Bukti Pembayaran dan Transaksi",
+          "inisiatif": [
+            {
+              "judul": "Gunakan sistem penomoran transaksi unik.\n📄 Dokumen: Transaction Numbering SOP",
+              "dokumen": null
+            },
+            {
+              "judul": "Pisahkan arsip bukti fisik dan digital.\n📄 Dokumen: Payment Archive Folder Structure",
+              "dokumen": null
+            },
+            {
+              "judul": "Scan setiap bukti pembayaran.\n📄 Dokumen: Digital Payment Proof File",
+              "dokumen": null
+            },
+            {
+              "judul": "Simpan bukti di folder sesuai kategori.\n📄 Dokumen: Payment Categorization Guide",
+              "dokumen": null
+            },
+            {
+              "judul": "Gunakan software akuntansi untuk tracking.\n📄 Dokumen: Payment Tracking Report",
+              "dokumen": null
+            },
+            {
+              "judul": "Backup data bukti pembayaran secara rutin.\n📄 Dokumen: Payment Backup Schedule",
+              "dokumen": null
+            },
+            {
+              "judul": "Arsipkan bukti minimal 5 tahun.\n📄 Dokumen: Document Retention Policy",
+              "dokumen": null
+            },
+            {
+              "judul": "Audit bukti pembayaran tiap 3 bulan.\n📄 Dokumen: Payment Audit Checklist",
+              "dokumen": null
+            },
+            {
+              "judul": "Pastikan bukti asli tidak rusak.\n📄 Dokumen: Physical Payment Storage SOP",
+              "dokumen": null
+            },
+            {
+              "judul": "Beri akses terbatas pada arsip penting.\n📄 Dokumen: Payment Archive Access List",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "35. Menyiapkan Timeline Perpanjangan Izin & Legalitas",
+          "inisiatif": [
+            {
+              "judul": "Inventaris semua izin & legalitas yang ada.\n📄 Dokumen: License Inventory List",
+              "dokumen": null
+            },
+            {
+              "judul": "Catat tanggal berlaku & kedaluwarsa.\n📄 Dokumen: License Expiry Tracker",
+              "dokumen": null
+            },
+            {
+              "judul": "Buat kalender pengingat perpanjangan.\n📄 Dokumen: License Renewal Calendar",
+              "dokumen": null
+            },
+            {
+              "judul": "Tetapkan PIC untuk tiap izin.\n📄 Dokumen: License Responsibility Chart",
+              "dokumen": null
+            },
+            {
+              "judul": "Siapkan dokumen pendukung perpanjangan lebih awal.\n📄 Dokumen: License Renewal Document Checklist",
+              "dokumen": null
+            },
+            {
+              "judul": "Hubungi instansi penerbit izin sebelum masa habis.\n📄 Dokumen: Renewal Communication Log",
+              "dokumen": null
+            },
+            {
+              "judul": "Anggarkan biaya perpanjangan di RAB tahunan.\n📄 Dokumen: License Renewal Budget Sheet",
+              "dokumen": null
+            },
+            {
+              "judul": "Lakukan perpanjangan minimal 30 hari sebelum habis.\n📄 Dokumen: Renewal Submission Proof",
+              "dokumen": null
+            },
+            {
+              "judul": "Simpan bukti perpanjangan di arsip.\n📄 Dokumen: License Renewal Archive",
+              "dokumen": null
+            },
+            {
+              "judul": "Update status izin setelah diperbarui.\n📄 Dokumen: License Status Update Form",
+              "dokumen": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Tahap 8: Pengelolaan Legal SDM dan Tim",
+      "tasks": [
+        {
+          "judul": "36. Menyusun Peraturan Perusahaan Awal (PP)\nTujuan: Mengatur disiplin kerja, hak dan kewajiban karyawan.",
+          "inisiatif": []
+        },
+        {
+          "judul": "37. Membuat Kontrak Probation & Tetap Karyawan\nTujuan: Menyesuaikan status kerja secara sah.",
+          "inisiatif": []
+        },
+        {
+          "judul": "38. Menyusun Aturan Jam Kerja, Cuti, dan Sanksi\nTujuan: Kepastian hukum dalam pengelolaan SDM.",
+          "inisiatif": []
+        },
+        {
+          "judul": "39. Memberikan Pemahaman Legal pada Tim Inti\nTujuan: Membangun kesadaran dan tanggung jawab hukum bersama.",
+          "inisiatif": []
+        },
+        {
+          "judul": "40. Mengelola Dokumen dan File Karyawan Secara Legal\nTujuan: Validasi jika terjadi kasus tenaga kerja.",
+          "inisiatif": []
+        },
+        {
+          "judul": "36. Menyusun Peraturan Perusahaan Awal (PP)",
+          "inisiatif": [
+            {
+              "judul": "Mengumpulkan aturan yang sesuai UU Ketenagakerjaan",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyesuaikan peraturan dengan budaya & kebutuhan bisnis",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengkonsultasikan draft PP dengan konsultan hukum/Disnaker",
+              "dokumen": null
+            },
+            {
+              "judul": "Menetapkan pasal tentang hak & kewajiban karyawan",
+              "dokumen": null
+            },
+            {
+              "judul": "Memasukkan aturan disiplin dan konsekuensi pelanggaran",
+              "dokumen": null
+            },
+            {
+              "judul": "Membuat pasal terkait jam kerja, cuti, dan lembur",
+              "dokumen": null
+            },
+            {
+              "judul": "Memasukkan klausul perlindungan data perusahaan",
+              "dokumen": null
+            },
+            {
+              "judul": "Sosialisasi ke semua karyawan sebelum diterapkan",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengurus pengesahan PP ke Disnaker (jika perlu)",
+              "dokumen": null
+            },
+            {
+              "judul": "Menetapkan tanggal mulai berlaku dan masa revisi PP",
+              "dokumen": null
+            },
+            {
+              "judul": "📄 Dokumen:",
+              "dokumen": null
+            },
+            {
+              "judul": "Draft Peraturan Perusahaan (PP)",
+              "dokumen": null
+            },
+            {
+              "judul": "Lampiran pasal-pasal disiplin kerja",
+              "dokumen": null
+            },
+            {
+              "judul": "Bukti pengesahan dari Disnaker",
+              "dokumen": null
+            },
+            {
+              "judul": "Form tanda terima PP oleh karyawan",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "37. Membuat Kontrak Probation & Tetap Karyawan",
+          "inisiatif": [
+            {
+              "judul": "Menyusun template kontrak probation (masa percobaan)",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyusun template kontrak karyawan tetap",
+              "dokumen": null
+            },
+            {
+              "judul": "Memasukkan klausul hak, kewajiban, dan sanksi",
+              "dokumen": null
+            },
+            {
+              "judul": "Menentukan jangka waktu probation sesuai UU",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyertakan detail gaji & benefit sesuai jabatan",
+              "dokumen": null
+            },
+            {
+              "judul": "Memasukkan ketentuan pemutusan hubungan kerja",
+              "dokumen": null
+            },
+            {
+              "judul": "Konsultasi draft dengan pihak legal",
+              "dokumen": null
+            },
+            {
+              "judul": "Memastikan tanda tangan kedua belah pihak",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyimpan kontrak fisik & digital di HRIS",
+              "dokumen": null
+            },
+            {
+              "judul": "Melakukan evaluasi sebelum mengubah status probation ke tetap",
+              "dokumen": null
+            },
+            {
+              "judul": "📄 Dokumen:",
+              "dokumen": null
+            },
+            {
+              "judul": "Template Kontrak Probation",
+              "dokumen": null
+            },
+            {
+              "judul": "Template Kontrak Karyawan Tetap",
+              "dokumen": null
+            },
+            {
+              "judul": "Form Evaluasi Probation",
+              "dokumen": null
+            },
+            {
+              "judul": "Arsip kontrak fisik & digital",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "38. Menyusun Aturan Jam Kerja, Cuti, dan Sanksi",
+          "inisiatif": [
+            {
+              "judul": "Menentukan jam kerja normal & shift sesuai kebutuhan",
+              "dokumen": null
+            },
+            {
+              "judul": "Menentukan jumlah cuti tahunan & cuti khusus",
+              "dokumen": null
+            },
+            {
+              "judul": "Menentukan kebijakan lembur & kompensasi",
+              "dokumen": null
+            },
+            {
+              "judul": "Menetapkan aturan izin & sakit",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyusun sanksi keterlambatan & pelanggaran kerja",
+              "dokumen": null
+            },
+            {
+              "judul": "Memastikan aturan sesuai UU Ketenagakerjaan",
+              "dokumen": null
+            },
+            {
+              "judul": "Sosialisasi aturan ke seluruh tim",
+              "dokumen": null
+            },
+            {
+              "judul": "Memasukkan aturan ini ke PP & Handbook",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengarsipkan semua permintaan cuti/izin",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengevaluasi aturan tiap tahun",
+              "dokumen": null
+            },
+            {
+              "judul": "📄 Dokumen:",
+              "dokumen": null
+            },
+            {
+              "judul": "Kebijakan Jam Kerja & Cuti",
+              "dokumen": null
+            },
+            {
+              "judul": "Form Izin & Cuti Karyawan",
+              "dokumen": null
+            },
+            {
+              "judul": "Daftar Sanksi Kedisiplinan",
+              "dokumen": null
+            },
+            {
+              "judul": "Log Kehadiran & Absensi",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "39. Memberikan Pemahaman Legal pada Tim Inti",
+          "inisiatif": [
+            {
+              "judul": "Mengadakan pelatihan dasar hukum bisnis & ketenagakerjaan",
+              "dokumen": null
+            },
+            {
+              "judul": "Memberi contoh kasus pelanggaran dan akibatnya",
+              "dokumen": null
+            },
+            {
+              "judul": "Menjelaskan isi Peraturan Perusahaan (PP)",
+              "dokumen": null
+            },
+            {
+              "judul": "Memaparkan risiko legal jika tidak patuh",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengundang narasumber hukum untuk diskusi",
+              "dokumen": null
+            },
+            {
+              "judul": "Membuat modul internal legal awareness",
+              "dokumen": null
+            },
+            {
+              "judul": "Memberikan quiz atau uji pemahaman",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyimpan materi pelatihan di intranet/HRIS",
+              "dokumen": null
+            },
+            {
+              "judul": "Memberikan update berkala jika ada perubahan hukum",
+              "dokumen": null
+            },
+            {
+              "judul": "Mendorong budaya melapor jika ada pelanggaran",
+              "dokumen": null
+            },
+            {
+              "judul": "📄 Dokumen:",
+              "dokumen": null
+            },
+            {
+              "judul": "Materi Presentasi Legal Awareness",
+              "dokumen": null
+            },
+            {
+              "judul": "Modul Pelatihan Hukum Dasar",
+              "dokumen": null
+            },
+            {
+              "judul": "Daftar Hadir Pelatihan",
+              "dokumen": null
+            },
+            {
+              "judul": "Laporan Evaluasi Pemahaman Tim",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "40. Mengelola Dokumen dan File Karyawan Secara Legal",
+          "inisiatif": [
+            {
+              "judul": "Membuat daftar dokumen wajib setiap karyawan",
+              "dokumen": null
+            },
+            {
+              "judul": "Menentukan format penyimpanan fisik & digital",
+              "dokumen": null
+            },
+            {
+              "judul": "Memastikan dokumen memiliki tanda tangan asli",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyimpan salinan KTP, NPWP, KK, dan ijazah",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyimpan kontrak kerja & revisinya",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyimpan catatan absensi & penilaian kinerja",
+              "dokumen": null
+            },
+            {
+              "judul": "Menjaga kerahasiaan data sesuai UU Perlindungan Data",
+              "dokumen": null
+            },
+            {
+              "judul": "Membuat SOP pengarsipan & akses dokumen",
+              "dokumen": null
+            },
+            {
+              "judul": "Backup data digital secara rutin",
+              "dokumen": null
+            },
+            {
+              "judul": "Melakukan audit arsip setiap 6 bulan",
+              "dokumen": null
+            },
+            {
+              "judul": "📄 Dokumen:",
+              "dokumen": null
+            },
+            {
+              "judul": "Daftar Dokumen Wajib Karyawan",
+              "dokumen": null
+            },
+            {
+              "judul": "SOP Pengelolaan Arsip Karyawan",
+              "dokumen": null
+            },
+            {
+              "judul": "Form Akses Dokumen",
+              "dokumen": null
+            },
+            {
+              "judul": "Laporan Audit Arsip",
+              "dokumen": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Tahap 9: Kesiapan Ekspansi & Kolaborasi",
+      "tasks": [
+        {
+          "judul": "41. Menyusun SOP Legal untuk Cabang / Waralaba\nTujuan: Menjamin konsistensi hukum di tiap lokasi.",
+          "inisiatif": []
+        },
+        {
+          "judul": "42. Menyiapkan Format Perjanjian Investasi\nTujuan: Menghindari konflik dan kerugian saat ada investor masuk.",
+          "inisiatif": []
+        },
+        {
+          "judul": "43. Membuat Legal Checklist untuk Ekspansi\nTujuan: Tidak ada yang terlewat dalam perluasan usaha.",
+          "inisiatif": []
+        },
+        {
+          "judul": "44. Menyiapkan Legalitas untuk Produk Baru / Lini Baru\nTujuan: Menghindari pelanggaran hukum dalam inovasi.",
+          "inisiatif": []
+        },
+        {
+          "judul": "45. Melindungi Kerja Sama Strategis lewat Perjanjian Tertulis\nTujuan: Menjaga hak dan tanggung jawab masing-masing pihak.",
+          "inisiatif": []
+        },
+        {
+          "judul": "41. Menyusun SOP Legal untuk Cabang / Waralaba",
+          "inisiatif": [
+            {
+              "judul": "Mengidentifikasi kebutuhan legal untuk cabang/waralaba",
+              "dokumen": null
+            },
+            {
+              "judul": "Membuat daftar dokumen legal yang wajib dimiliki setiap cabang",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyusun prosedur pembukaan cabang baru sesuai hukum",
+              "dokumen": null
+            },
+            {
+              "judul": "Menentukan format perjanjian waralaba sesuai regulasi Kementerian Perdagangan",
+              "dokumen": null
+            },
+            {
+              "judul": "Memasukkan klausul penggunaan merek & standar operasional",
+              "dokumen": null
+            },
+            {
+              "judul": "Menetapkan alur persetujuan legal dari kantor pusat",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyediakan template kontrak kerja untuk cabang",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengatur mekanisme pelaporan legal dari cabang ke pusat",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengatur sistem audit legal tahunan cabang",
+              "dokumen": null
+            },
+            {
+              "judul": "Melatih manajer cabang terkait kepatuhan hukum",
+              "dokumen": null
+            },
+            {
+              "judul": "📄 Dokumen:",
+              "dokumen": null
+            },
+            {
+              "judul": "SOP Legal Cabang/Waralaba",
+              "dokumen": null
+            },
+            {
+              "judul": "Daftar Dokumen Wajib Cabang",
+              "dokumen": null
+            },
+            {
+              "judul": "Template Perjanjian Waralaba",
+              "dokumen": null
+            },
+            {
+              "judul": "Form Laporan Legal Cabang",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "42. Menyiapkan Format Perjanjian Investasi",
+          "inisiatif": [
+            {
+              "judul": "Mengidentifikasi jenis investasi (saham, pinjaman, joint venture)",
+              "dokumen": null
+            },
+            {
+              "judul": "Menentukan klausul pembagian keuntungan dan risiko",
+              "dokumen": null
+            },
+            {
+              "judul": "Memasukkan pasal hak suara & keputusan strategis",
+              "dokumen": null
+            },
+            {
+              "judul": "Menentukan syarat keluar (exit clause)",
+              "dokumen": null
+            },
+            {
+              "judul": "Memastikan perjanjian sesuai UU Penanaman Modal",
+              "dokumen": null
+            },
+            {
+              "judul": "Konsultasi dengan pengacara untuk review",
+              "dokumen": null
+            },
+            {
+              "judul": "Membuat template perjanjian investasi",
+              "dokumen": null
+            },
+            {
+              "judul": "Menentukan alur negosiasi & penandatanganan",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyimpan arsip perjanjian di sistem legal",
+              "dokumen": null
+            },
+            {
+              "judul": "Melakukan evaluasi kinerja investasi secara berkala",
+              "dokumen": null
+            },
+            {
+              "judul": "📄 Dokumen:",
+              "dokumen": null
+            },
+            {
+              "judul": "Template Perjanjian Investasi",
+              "dokumen": null
+            },
+            {
+              "judul": "Draft Klausul Pembagian Saham & Keuntungan",
+              "dokumen": null
+            },
+            {
+              "judul": "Form Persetujuan Investasi",
+              "dokumen": null
+            },
+            {
+              "judul": "Laporan Evaluasi Investasi",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "43. Membuat Legal Checklist untuk Ekspansi",
+          "inisiatif": [
+            {
+              "judul": "Menyusun daftar izin usaha yang diperlukan di wilayah baru",
+              "dokumen": null
+            },
+            {
+              "judul": "Memastikan pendaftaran merek di wilayah target",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengecek persyaratan pajak daerah setempat",
+              "dokumen": null
+            },
+            {
+              "judul": "Memastikan kontrak sewa/pembelian tempat legal",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengurus izin lingkungan jika diperlukan",
+              "dokumen": null
+            },
+            {
+              "judul": "Memastikan kesesuaian peraturan zonasi daerah",
+              "dokumen": null
+            },
+            {
+              "judul": "Memastikan dokumen HR sesuai hukum setempat",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyusun format checklist ekspansi",
+              "dokumen": null
+            },
+            {
+              "judul": "Menetapkan PIC untuk verifikasi legal",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengarsipkan hasil verifikasi di sistem",
+              "dokumen": null
+            },
+            {
+              "judul": "📄 Dokumen:",
+              "dokumen": null
+            },
+            {
+              "judul": "Legal Checklist Ekspansi",
+              "dokumen": null
+            },
+            {
+              "judul": "Form Verifikasi Dokumen",
+              "dokumen": null
+            },
+            {
+              "judul": "Daftar Regulasi Daerah Target",
+              "dokumen": null
+            },
+            {
+              "judul": "Laporan Persiapan Ekspansi",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "44. Menyiapkan Legalitas untuk Produk Baru / Lini Baru",
+          "inisiatif": [
+            {
+              "judul": "Mengidentifikasi regulasi terkait produk baru",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengurus sertifikasi produk (BPOM, SNI, Halal)",
+              "dokumen": null
+            },
+            {
+              "judul": "Mendaftarkan merek produk baru",
+              "dokumen": null
+            },
+            {
+              "judul": "Melindungi desain & kemasan lewat HKI",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyusun kontrak pemasok bahan baku",
+              "dokumen": null
+            },
+            {
+              "judul": "Memastikan label sesuai aturan (klaim, komposisi, peringatan)",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyusun SOP pengujian mutu produk",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengurus izin edar produk",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyusun dokumen ketentuan garansi & retur",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyimpan semua arsip legal produk di database",
+              "dokumen": null
+            },
+            {
+              "judul": "📄 Dokumen:",
+              "dokumen": null
+            },
+            {
+              "judul": "Checklist Legalitas Produk Baru",
+              "dokumen": null
+            },
+            {
+              "judul": "Sertifikat BPOM/SNI/Halal",
+              "dokumen": null
+            },
+            {
+              "judul": "Template Kontrak Pemasok",
+              "dokumen": null
+            },
+            {
+              "judul": "Arsip Pendaftaran Merek",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "45. Melindungi Kerja Sama Strategis lewat Perjanjian Tertulis",
+          "inisiatif": [
+            {
+              "judul": "Menentukan lingkup kerja sama secara jelas",
+              "dokumen": null
+            },
+            {
+              "judul": "Menetapkan hak & kewajiban masing-masing pihak",
+              "dokumen": null
+            },
+            {
+              "judul": "Memasukkan klausul kerahasiaan (NDA)",
+              "dokumen": null
+            },
+            {
+              "judul": "Menentukan durasi & mekanisme perpanjangan",
+              "dokumen": null
+            },
+            {
+              "judul": "Menetapkan sanksi jika terjadi pelanggaran",
+              "dokumen": null
+            },
+            {
+              "judul": "Memasukkan klausul force majeure",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyusun format perjanjian kerja sama",
+              "dokumen": null
+            },
+            {
+              "judul": "Melakukan review legal sebelum tanda tangan",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengarsipkan perjanjian di sistem",
+              "dokumen": null
+            },
+            {
+              "judul": "Memantau pelaksanaan kerja sama",
+              "dokumen": null
+            },
+            {
+              "judul": "📄 Dokumen:",
+              "dokumen": null
+            },
+            {
+              "judul": "Template Perjanjian Kerja Sama Strategis",
+              "dokumen": null
+            },
+            {
+              "judul": "NDA (Non Disclosure Agreement)",
+              "dokumen": null
+            },
+            {
+              "judul": "Form Monitoring Pelaksanaan Kerja Sama",
+              "dokumen": null
+            },
+            {
+              "judul": "Arsip Perjanjian",
+              "dokumen": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Tahap 10: Konsolidasi, Literasi dan Skalabilitas",
+      "tasks": [
+        {
+          "judul": "46. Membuat Pusat Dokumentasi Legal Digital\nTujuan: Akses cepat dan aman oleh pihak terkait.",
+          "inisiatif": []
+        },
+        {
+          "judul": "47. Memberikan Pelatihan Legal Dasar untuk Semua Tim\nTujuan: Meningkatkan literasi hukum di seluruh organisasi.",
+          "inisiatif": []
+        },
+        {
+          "judul": "48. Membentuk Posisi Legal Internal (freelance / paruh waktu)\nTujuan: Memiliki pengawas internal dalam aspek hukum.",
+          "inisiatif": []
+        },
+        {
+          "judul": "49. Membuat Rencana Konsultasi Legal Eksternal\nTujuan: Siap berkoordinasi saat isu besar muncul.",
+          "inisiatif": []
+        },
+        {
+          "judul": "50. Menyiapkan Sistem Duplikasi Legalitas untuk Bisnis Baru\nTujuan: Proses legal bisa berjalan cepat dan berulang.",
+          "inisiatif": []
+        },
+        {
+          "judul": "46. Membuat Pusat Dokumentasi Legal Digital",
+          "inisiatif": [
+            {
+              "judul": "Memilih platform penyimpanan digital yang aman (Google Drive, SharePoint, HRIS Legal)",
+              "dokumen": null
+            },
+            {
+              "judul": "Membuat struktur folder berdasarkan kategori dokumen (izin, kontrak, merek, pajak)",
+              "dokumen": null
+            },
+            {
+              "judul": "Memberi hak akses sesuai jabatan untuk menjaga kerahasiaan",
+              "dokumen": null
+            },
+            {
+              "judul": "Memindai seluruh dokumen fisik ke format PDF",
+              "dokumen": null
+            },
+            {
+              "judul": "Menambahkan fitur pencarian cepat dengan tag & metadata",
+              "dokumen": null
+            },
+            {
+              "judul": "Menentukan SOP pengunggahan dokumen baru",
+              "dokumen": null
+            },
+            {
+              "judul": "Menetapkan jadwal backup data rutin",
+              "dokumen": null
+            },
+            {
+              "judul": "Melakukan audit keamanan penyimpanan tiap 6 bulan",
+              "dokumen": null
+            },
+            {
+              "judul": "Melatih staf terkait penggunaan sistem",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyediakan log aktivitas untuk melacak siapa mengakses dokumen",
+              "dokumen": null
+            },
+            {
+              "judul": "📄 Dokumen:",
+              "dokumen": null
+            },
+            {
+              "judul": "SOP Pusat Dokumentasi Legal Digital",
+              "dokumen": null
+            },
+            {
+              "judul": "Struktur Folder & Kategori Dokumen",
+              "dokumen": null
+            },
+            {
+              "judul": "Form Checklist Upload & Backup",
+              "dokumen": null
+            },
+            {
+              "judul": "Log Aktivitas Akses Dokumen",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "47. Memberikan Pelatihan Legal Dasar untuk Semua Tim",
+          "inisiatif": [
+            {
+              "judul": "Menentukan materi pelatihan legal dasar yang relevan",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyusun modul pelatihan dengan bahasa sederhana",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengundang pengacara atau legal expert untuk sesi khusus",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyertakan studi kasus perusahaan serupa",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengadakan kuis untuk mengukur pemahaman",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyediakan materi pelatihan dalam format video & PDF",
+              "dokumen": null
+            },
+            {
+              "judul": "Membuat jadwal pelatihan tahunan",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyusun pre-test & post-test",
+              "dokumen": null
+            },
+            {
+              "judul": "Membuat sertifikat kelulusan pelatihan",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengevaluasi efektivitas pelatihan",
+              "dokumen": null
+            },
+            {
+              "judul": "📄 Dokumen:",
+              "dokumen": null
+            },
+            {
+              "judul": "Modul Pelatihan Legal Dasar",
+              "dokumen": null
+            },
+            {
+              "judul": "Daftar Materi & Silabus",
+              "dokumen": null
+            },
+            {
+              "judul": "Form Pre-Test & Post-Test",
+              "dokumen": null
+            },
+            {
+              "judul": "Sertifikat Pelatihan Legal",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "48. Membentuk Posisi Legal Internal (freelance / paruh waktu)",
+          "inisiatif": [
+            {
+              "judul": "Menentukan job description legal officer internal",
+              "dokumen": null
+            },
+            {
+              "judul": "Memilih model kerja (freelance atau paruh waktu)",
+              "dokumen": null
+            },
+            {
+              "judul": "Menetapkan kriteria kompetensi & pengalaman minimal",
+              "dokumen": null
+            },
+            {
+              "judul": "Membuat kontrak kerja sama dengan legal officer",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyediakan akses ke dokumen & sistem legal perusahaan",
+              "dokumen": null
+            },
+            {
+              "judul": "Menentukan alur pelaporan isu hukum",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengatur jadwal evaluasi kinerja legal officer",
+              "dokumen": null
+            },
+            {
+              "judul": "Menetapkan KPI legal officer (kecepatan, ketepatan, akurasi)",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyiapkan anggaran honorarium",
+              "dokumen": null
+            },
+            {
+              "judul": "Membuat sistem komunikasi rutin dengan manajemen",
+              "dokumen": null
+            },
+            {
+              "judul": "📄 Dokumen:",
+              "dokumen": null
+            },
+            {
+              "judul": "Job Description Legal Officer Internal",
+              "dokumen": null
+            },
+            {
+              "judul": "Kontrak Kerja Sama Legal Officer",
+              "dokumen": null
+            },
+            {
+              "judul": "Form Laporan Isu Hukum",
+              "dokumen": null
+            },
+            {
+              "judul": "KPI Legal Officer",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "49. Membuat Rencana Konsultasi Legal Eksternal",
+          "inisiatif": [
+            {
+              "judul": "Mengidentifikasi firma hukum atau konsultan yang relevan",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyusun daftar kontak darurat legal",
+              "dokumen": null
+            },
+            {
+              "judul": "Menentukan jenis kasus yang perlu eskalasi eksternal",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyusun prosedur permintaan pendapat hukum",
+              "dokumen": null
+            },
+            {
+              "judul": "Menetapkan anggaran konsultasi tahunan",
+              "dokumen": null
+            },
+            {
+              "judul": "Membuat template surat kuasa konsultasi hukum",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengatur jadwal koordinasi rutin dengan konsultan eksternal",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyimpan semua hasil konsultasi di pusat dokumentasi digital",
+              "dokumen": null
+            },
+            {
+              "judul": "Mengevaluasi kualitas layanan konsultan tiap tahun",
+              "dokumen": null
+            },
+            {
+              "judul": "Menetapkan kontrak kerja sama dengan firma hukum",
+              "dokumen": null
+            },
+            {
+              "judul": "📄 Dokumen:",
+              "dokumen": null
+            },
+            {
+              "judul": "Daftar Kontak Konsultan/Firma Hukum",
+              "dokumen": null
+            },
+            {
+              "judul": "SOP Permintaan Konsultasi Legal",
+              "dokumen": null
+            },
+            {
+              "judul": "Template Surat Kuasa Hukum",
+              "dokumen": null
+            },
+            {
+              "judul": "Kontrak Kerja Sama Konsultan Legal",
+              "dokumen": null
+            }
+          ]
+        },
+        {
+          "judul": "50. Menyiapkan Sistem Duplikasi Legalitas untuk Bisnis Baru",
+          "inisiatif": [
+            {
+              "judul": "Membuat checklist legal untuk pendirian bisnis baru",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyusun template akta pendirian",
+              "dokumen": null
+            },
+            {
+              "judul": "Membuat panduan pendaftaran NIB & izin usaha",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyediakan template kontrak standar untuk bisnis baru",
+              "dokumen": null
+            },
+            {
+              "judul": "Menetapkan alur kerja pembuatan legalitas",
+              "dokumen": null
+            },
+            {
+              "judul": "Menyimpan semua template di pusat dokumentasi digital",
+              "dokumen": null
+            },
+            {
+              "judul": "Melatih tim legal atau admin untuk proses duplikasi",
+              "dokumen": null
+            },
+            {
+              "judul": "Menentukan waktu standar (SLA) penyelesaian legalitas",
+              "dokumen": null
+            },
+            {
+              "judul": "Memastikan daftar biaya legal tersedia & transparan",
+              "dokumen": null
+            },
+            {
+              "judul": "Melakukan evaluasi efektivitas proses duplikasi",
+              "dokumen": null
+            },
+            {
+              "judul": "📄 Dokumen:",
+              "dokumen": null
+            },
+            {
+              "judul": "Checklist Legal Pendirian Bisnis Baru",
+              "dokumen": null
+            },
+            {
+              "judul": "Template Akta Pendirian",
+              "dokumen": null
+            },
+            {
+              "judul": "Panduan Pendaftaran NIB & Izin Usaha",
+              "dokumen": null
+            },
+            {
+              "judul": "Template Kontrak Standar",
+              "dokumen": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
