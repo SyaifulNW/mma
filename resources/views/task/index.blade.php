@@ -96,9 +96,11 @@
                                                         <tr>
                                                             <th>#</th>
                                                             <th class="text-start">Inisiatif</th>
-                                                            <th class="text-start">Dokumen</th>
+
+                                                            <th>Tanggal Mulai</th>
+                                                            <th>Tanggal Selesai</th>
                                                             <th>Checklist</th>
-                                                            <th>Aksi</th>
+                                                            <th>Done</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -106,7 +108,8 @@
                                                         <tr data-task-id="{{ $task->id }}">
                                                             <td>{{ $iIndex+1 }}</td>
                                                             <td class="text-start">{{ $inisiatif->judul }}</td>
-                                                            <td class="text-start">{{ $inisiatif->dokumen }}</td>
+                                                            <td>{{ $inisiatif->tanggal_mulai ? $inisiatif->tanggal_mulai->format('d M Y') : '-' }}</td>
+                                                            <td>{{ $inisiatif->tanggal_selesai ? $inisiatif->tanggal_selesai->format('d M Y') : '-' }}</td>
                                                             <td>
                                                                 <input type="checkbox"
                                                                     class="toggle-inisiatif"
@@ -115,16 +118,13 @@
                                                                     {{ $inisiatif->status ? 'checked' : '' }}>
                                                             </td>
                                                             <td>
-                                                                <button class="btn btn-sm btn-warning edit-btn"
-                                                                    data-id="{{ $inisiatif->id }}"
-                                                                    data-judul="{{ $inisiatif->judul }}"
-                                                                    data-dokumen="{{ $inisiatif->dokumen }}">
-                                                                    ✏️
-                                                                </button>
-                                                                <button class="btn btn-sm btn-danger delete-btn" data-id="{{ $inisiatif->id }}">
-                                                                    🗑
-                                                                </button>
+                                                                @if($inisiatif->status)
+                                                                <i class="fa fa-check text-success"></i>
+                                                                @else
+                                                                <i class="fa fa-times text-danger"></i>
+                                                                @endif
                                                             </td>
+                                                       
                                                         </tr>
 
                                                         @endforeach

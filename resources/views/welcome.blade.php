@@ -180,7 +180,9 @@
       <img src="{{ asset('img/gp12.jpg') }}" alt="Kegiatan 2">
       <img src="{{ asset('img/gp13.jpg') }}" alt="Kegiatan 3">
     </div>
-    <p style="margin-top: 20px; font-style: italic;">“Bersama-sama tumbuh, berilmu, bertauhid, bermental juang.”</p>
+<p style="margin-top: 12px; font-style: italic; font-size: 18px; color: #555;">
+   “Bersama-sama tumbuh, berilmu, bertauhid, bermental juang.”
+</p>
   </div>
 
   <script>

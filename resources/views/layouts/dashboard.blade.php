@@ -103,8 +103,8 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}" href="{{ route('home') }}">Dashboard</a>
                     </li>
@@ -114,7 +114,7 @@
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('sprint*') ? 'active' : '' }}" href="{{ route('sprint.index') }}">Sprints</a>
                     </li>
-                </ul>
+                </ul> -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -143,7 +143,7 @@
                     @csrf
                 </form>
             
-            </div> -->
+            </div>
         </div>
 
         <!-- hidden logout form -->
@@ -178,7 +178,7 @@
                             <a class="nav-link d-flex align-items-center gap-2 {{ request()->is('coach/dashboard') ? 'active' : '' }}"
                                 href="{{ route('coach.dashboard') }}">
                                 <i class="fa fa-chart-line"></i>
-                                <span>Dashboard Coach</span>
+                                <span>Dashboard Anda</span>
                             </a>
                             @elseif(Auth::user()->role === 'peserta')
                             <a class="nav-link d-flex align-items-center gap-2 {{ request()->is('peserta/dashboard') ? 'active' : '' }}"
@@ -226,7 +226,7 @@
                         @if(auth()->check() && auth()->user()->role == 'coach' )
                         <li class="nav-item">
                             <a class="nav-link {{ request()->is('peserta*') ? 'active' : '' }}" href="{{ route('peserta.index') }}">
-                                <i class="fa fa-users"></i> Daftar Mentee
+                                <i class="fa fa-users"></i>  Mentee
                             </a>
                         </li>
                         @endif
