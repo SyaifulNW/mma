@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "id_materi": 23,
+    "task": "Menyadari Bahwa Karyawan adalah Aset Bisnis, Bukan Beban"
+  },
+  {
+    "id": 2,
+    "id_materi": 23,
+    "task": "Menentukan Nilai, Budaya, dan Prinsip Dasar SDM di Perusahaan"
+  },
+  {
+    "id": 3,
+    "id_materi": 23,
+    "task": "Membuat Visi & Misi Departemen HRD yang Selaras Bisnis"
+  },
+  {
+    "id": 4,
+    "id_materi": 23,
+    "task": "Membedakan Peran HRD dan GA (General Affair)"
+  },
+  {
+    "id": 5,
+    "id_materi": 23,
+    "task": "Menyusun Strategi Jangka Panjang Pengelolaan SDM"
+  },
+  {
+    "id": 6,
+    "id_materi": 23,
+    "task": "Membuat Struktur Organisasi Awal (Organogram)"
+  },
+  {
+    "id": 7,
+    "id_materi": 23,
+    "task": "Menentukan Kebutuhan Jabatan dan Peran"
+  },
+  {
+    "id": 8,
+    "id_materi": 23,
+    "task": "Menyusun Job Description dan Job Specification"
+  },
+  {
+    "id": 9,
+    "id_materi": 23,
+    "task": "Menyusun Standar Kompetensi dan Nilai Performa"
+  },
+  {
+    "id": 10,
+    "id_materi": 23,
+    "task": "Menyusun Rencana Pengembangan Tim Bertahap"
+  },
+  {
+    "id": 11,
+    "id_materi": 23,
+    "task": "Menyusun SOP Rekrutmen"
+  },
+  {
+    "id": 12,
+    "id_materi": 23,
+    "task": "Menentukan Jalur Rekrutmen (Online, Referral, Freelance)"
+  },
+  {
+    "id": 13,
+    "id_materi": 23,
+    "task": "Membuat Format Iklan Lowongan Kerja yang Menarik"
+  },
+  {
+    "id": 14,
+    "id_materi": 23,
+    "task": "Menyusun Format Seleksi: CV, Tes, Wawancara"
+  },
+  {
+    "id": 15,
+    "id_materi": 23,
+    "task": "Menyusun Penilaian dan Skor Seleksi"
+  },
+  {
+    "id": 16,
+    "id_materi": 23,
+    "task": "Menyusun SOP Onboarding Karyawan Baru"
+  },
+  {
+    "id": 17,
+    "id_materi": 23,
+    "task": "Membuat Buku Panduan Perusahaan (Company Handbook)"
+  },
+  {
+    "id": 18,
+    "id_materi": 23,
+    "task": "Menyusun Kontrak Kerja & Surat Penugasan"
+  },
+  {
+    "id": 19,
+    "id_materi": 23,
+    "task": "Menyiapkan Pelatihan Dasar untuk Karyawan Baru"
+  },
+  {
+    "id": 20,
+    "id_materi": 23,
+    "task": "Menunjuk Mentor atau Buddy untuk Adaptasi"
+  },
+  {
+    "id": 21,
+    "id_materi": 23,
+    "task": "Menyusun Rencana Pelatihan Berkala (Training Plan)"
+  },
+  {
+    "id": 22,
+    "id_materi": 23,
+    "task": "Menyusun Sistem Penilaian Kinerja (Performance Appraisal)"
+  },
+  {
+    "id": 23,
+    "id_materi": 23,
+    "task": "Menyusun Rencana Pengembangan Karir (Career Path)"
+  },
+  {
+    "id": 24,
+    "id_materi": 23,
+    "task": "Menyusun Sistem Coaching dan Mentoring Internal"
+  },
+  {
+    "id": 25,
+    "id_materi": 23,
+    "task": "Menyusun Program Evaluasi Pasca Pelatihan"
+  },
+  {
+    "id": 26,
+    "id_materi": 23,
+    "task": "Menentukan Struktur Gaji yang Adil dan Kompetitif"
+  },
+  {
+    "id": 27,
+    "id_materi": 23,
+    "task": "Menentukan Sistem Tunjangan dan Benefit Karyawan"
+  },
+  {
+    "id": 28,
+    "id_materi": 23,
+    "task": "Menyusun Sistem THR, Bonus, dan Insentif"
+  },
+  {
+    "id": 29,
+    "id_materi": 23,
+    "task": "Mengelola BPJS Kesehatan dan Ketenagakerjaan"
+  },
+  {
+    "id": 30,
+    "id_materi": 23,
+    "task": "Menyiapkan Program Kesejahteraan Non Finansial"
+  },
+  {
+    "id": 31,
+    "id_materi": 23,
+    "task": "Mengelola Cuti dan Kehadiran Karyawan"
+  },
+  {
+    "id": 32,
+    "id_materi": 23,
+    "task": "Mengelola Disiplin dan Sanksi"
+  },
+  {
+    "id": 33,
+    "id_materi": 23,
+    "task": "Mengelola Sistem Absensi"
+  },
+  {
+    "id": 34,
+    "id_materi": 23,
+    "task": "Mengelola Keluhan dan Masalah Karyawan"
+  },
+  {
+    "id": 35,
+    "id_materi": 23,
+    "task": "Mengelola Karyawan Resign"
+  },
+  {
+    "id": 36,
+    "id_materi": 23,
+    "task": "Mengembangkan Komunikasi Internal yang Efektif"
+  },
+  {
+    "id": 37,
+    "id_materi": 23,
+    "task": "Mengelola Hubungan Industrial dengan Buruh"
+  },
+  {
+    "id": 38,
+    "id_materi": 23,
+    "task": "Melakukan Survei Kepuasan Karyawan"
+  },
+  {
+    "id": 39,
+    "id_materi": 23,
+    "task": "Mengelola Sistem Penghargaan dan Pengakuan"
+  },
+  {
+    "id": 40,
+    "id_materi": 23,
+    "task": "Membuat Program Wellness dan Kebugaran"
+  },
+  {
+    "id": 41,
+    "id_materi": 23,
+    "task": "Mengembangkan Sistem Peninjauan Gaji"
+  },
+  {
+    "id": 42,
+    "id_materi": 23,
+    "task": "Mengelola Promosi, Mutasi, dan Demosi"
+  },
+  {
+    "id": 43,
+    "id_materi": 23,
+    "task": "Membuat Penilaian Perilaku Kerja"
+  },
+  {
+    "id": 44,
+    "id_materi": 23,
+    "task": "Menyusun Indikator Kinerja HRD"
+  },
+  {
+    "id": 45,
+    "id_materi": 23,
+    "task": "Menyusun Laporan Analisis Data HR"
+  },
+  {
+    "id": 46,
+    "id_materi": 23,
+    "task": "Membuat Sistem Informasi SDM (HRIS)"
+  },
+  {
+    "id": 47,
+    "id_materi": 23,
+    "task": "Mengelola Data Digital Karyawan"
+  },
+  {
+    "id": 48,
+    "id_materi": 23,
+    "task": "Mengelola HR untuk Perusahaan Multi-Cabang"
+  },
+  {
+    "id": 49,
+    "id_materi": 23,
+    "task": "Mengembangkan Tim HRD (Rekrutmen HR, HRBP, dll)"
+  },
+  {
+    "id": 50,
+    "id_materi": 23,
+    "task": "Melaksanakan Audit HRD"
+  }
+]

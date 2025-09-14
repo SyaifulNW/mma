@@ -6,6 +6,10 @@ use App\Http\Controllers\MenteeController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InisiatifController;
 use App\Http\Controllers\TaskController;
+use App\Http\Controllers\SprintController;
+use App\Models\Mentee;
+use App\Models\Sprint;
+
 
 
 /*
@@ -31,14 +35,16 @@ Route::get('/home', function () {
 //     return view('task.index');
 // })->name('task.index');
 
-Route::get('/sprint', function () {
-    return view('sprint.index');
-})->name('sprint.index');
+// Route::get('/sprints', function () {
+//     return view('sprints.index');
+// })->name('sprints.index', ['sprints' => App\Models\Sprint::all()]);
 
-// Sprint my
-Route::get('/sprint/my', function () {
-    return view('sprint.my');
-})->name('sprint.my');
+
+// Sprint Ganchart
+// Route::get('/sprints/ganchart', function () {
+//     return view('sprints.ganchart', ['sprints' => App\Models\Sprint::all()]);
+// })->name('sprints.ganchart');
+
 
 Route::get('/peserta', function () {
     return view('peserta.index', ['mentees' => App\Models\Mentee::all()]);
@@ -95,6 +101,21 @@ Route::patch('/inisiatif/{id}/toggle', [InisiatifController::class, 'toggle'])->
 // crud mentee
 
 Route::resource('mentees', MenteeController::class);
+
+
+Route::post('/inisiatif/update-tanggal-ajax', [InisiatifController::class, 'updateTanggalAjax'])
+    ->name('inisiatif.update-tanggal-ajax');
+
+
+
+
+
+// Sprint
+
+Route::resource('sprints', SprintController::class);
+Route::post('/sprints/store', [SprintController::class, 'store'])->name('sprints.store');
+Route::get('/sprints', [SprintController::class, 'index'])->name('sprints.index');
+Route::put('/sprints/{id}', [SprintController::class, 'update'])->name('sprints.update');
 
 
 

@@ -14,6 +14,8 @@
         <thead>
             <tr>
                 <th>Nama</th>
+                <th>Email</th>
+                <th>Password</th>
                 <th>Level</th>
                 <th>WA</th>
                 <th>Kota</th>
@@ -24,6 +26,8 @@
             @foreach ($mentees as $mentee)
             <tr>
                 <td>{{ $mentee->nama }}</td>
+                <td>{{ $mentee->user->email }}</td>
+                <td>*******</td>
                 <td>{{ $mentee->level }}</td>
                 <td>{{ $mentee->wa }}</td>
                 <td>{{ $mentee->kota }}</td>
@@ -91,6 +95,7 @@
 </div>
 
 <!-- Modal Tambah -->
+<!-- Modal Tambah -->
 <div class="modal fade" id="modalTambah" tabindex="-1">
     <div class="modal-dialog">
         <form action="{{ route('mentees.store') }}" method="POST">
@@ -105,21 +110,34 @@
                         <label>Nama</label>
                         <input type="text" name="nama" class="form-control" required>
                     </div>
+
+                    <div class="mb-3">
+                        <label>Email</label>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Password</label>
+                        <input type="password" name="password" class="form-control" required>
+                    </div>
+
                     <div class="mb-3">
                         <label>Level</label>
                         <select id="level" name="level" class="form-control" required>
-                            <option value="level">-- Pilih Level --</option>
-                            <option>Start-Up</option>
-                            <option>Stand-Up</option>
-                            <option>Step-Up</option>
-                            <option>Grow-Up</option>
-                            <option>Scale-Up</option>
+                            <option value="">-- Pilih Level --</option>
+                            <option>Start-Up 🚀</option>
+                            <option>Stand-Up 💪</option>
+                            <option>Step-Up 📈</option>
+                            <option>Grow-Up 🌱</option>
+                            <option>Scale-Up 🌍</option>
                         </select>
                     </div>
+
                     <div class="mb-3">
                         <label>No. WA</label>
                         <input type="text" name="wa" class="form-control">
                     </div>
+
                     <div class="mb-3">
                         <label>Kota</label>
                         <input type="text" name="kota" class="form-control">
@@ -132,4 +150,5 @@
         </form>
     </div>
 </div>
+
 @endsection

@@ -13,6 +13,11 @@ class Inisiatif extends Model
     {
         return $this->belongsTo(Task::class, 'task_id');
     }
+    public function sprints()
+{
+    return $this->hasMany(Sprint::class);
+}
+
 }
 
 ?>

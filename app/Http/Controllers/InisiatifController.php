@@ -55,6 +55,34 @@ class InisiatifController extends Controller
         ]
     ]);
 }
+
+public function updateTanggalAjax(Request $request)
+{
+    try {
+        $validated = $request->validate([
+            'id' => 'required|integer|exists:inisiatif,id',
+            'field' => 'required|string|in:tanggal_mulai,tanggal_selesai',
+            'value' => 'required|date',
+        ]);
+
+        $inisiatif = Inisiatif::findOrFail($validated['id']);
+        $inisiatif->{$validated['field']} = $validated['value'];
+        $inisiatif->save();
+
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Tanggal berhasil diperbarui'
+        ]);
+    } catch (\Exception $e) {
+        return response()->json([
+            'status' => 'error',
+            'message' => 'Gagal update: ' . $e->getMessage()
+        ], 500);
+    }
+}
+
+
+
 }
 
 

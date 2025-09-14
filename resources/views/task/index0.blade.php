@@ -191,67 +191,38 @@ document.addEventListener("DOMContentLoaded", function () {
         new bootstrap.Modal(document.getElementById("taskModal")).show();
     });
 
-    // Save tasks (langsung kirim ke DB)
-document.getElementById("saveTasks").addEventListener("click", async function () {
-    const checked = Array.from(document.querySelectorAll(".task-check:checked")).map(c => parseInt(c.value));
-    if (checked.length > maxTask) {
-        Swal.fire("Maksimal " + maxTask + " Task", "Anda hanya boleh pilih " + maxTask + " task.", "warning");
-        return;
-    }
-    selectedTasks = checked;
-    document.getElementById("taskSummary").innerText = `Dipilih: ${selectedTasks.length} task`;
-    bootstrap.Modal.getInstance(document.getElementById("taskModal")).hide();
-
-    try {
-        const res = await fetch("{{ route('sprints.store') }}", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "Accept": "application/json",
-                "X-CSRF-TOKEN": document.querySelector('meta[name="csrf-token"]').content
-            },
-            body: JSON.stringify({
-                materi: selectedMateri, // opsional jika kamu kirim
-                tasks: selectedTasks
-            })
-        });
-
-        console.log('Response status', res.status);
-        const data = await res.json();
-        console.log('Response JSON', data);
-
-        if (!res.ok) {
-            Swal.fire("Error", data.message || "Server error", "error");
+    // Save tasks
+    document.getElementById("saveTasks").addEventListener("click", function () {
+        const checked = Array.from(document.querySelectorAll(".task-check:checked")).map(c => parseInt(c.value));
+        if (checked.length > maxTask) {
+            Swal.fire("Maksimal " + maxTask + " Task", "Anda hanya boleh pilih " + maxTask + " task.", "warning");
             return;
         }
+        selectedTasks = checked;
+        document.getElementById("taskSummary").innerText = `Dipilih: ${selectedTasks.length} task`;
+        bootstrap.Modal.getInstance(document.getElementById("taskModal")).hide();
 
-        if (data.success) {
-            // tampilkan inisiatif di Step 3
-            const inisiatifContainer = document.getElementById("inisiatifContainer");
-            inisiatifContainer.innerHTML = "";
+        // tampilkan inisiatif di Step 3
+        const inisiatifContainer = document.getElementById("inisiatifContainer");
+        inisiatifContainer.innerHTML = "";
 
-            data.inisiatifs.forEach(task => {
-                const taskDiv = document.createElement("div");
-                taskDiv.className = "mb-3";
-                taskDiv.innerHTML = `<h6 class="fw-bold">${task.task_judul}</h6>`;
-                task.inisiatifs.forEach(ini => {
-                    const iniDiv = document.createElement("div");
-                    iniDiv.className = "inisiatif-item";
-                    iniDiv.innerHTML = `<i class="bi bi-check2-circle text-success"></i> ${ini.judul}`;
-                    taskDiv.appendChild(iniDiv);
-                });
-                inisiatifContainer.appendChild(taskDiv);
-            });
-
-            // pindah ke step 3
-            goToStep(3);
-        }
-    } catch (err) {
-        console.error(err);
-        Swal.fire("Error", "Tidak dapat terhubung ke server.", "error");
-    }
+        materiTasks.forEach(m => {
+            m.tasks.forEach(t => {
+                if (selectedTasks.includes(t.id)) {
+                    const taskDiv = document.createElement("div");
+                    taskDiv.className = "mb-3";
+                    taskDiv.innerHTML = `<h6 class="fw-bold">${t.judul}</h6>`;
+                t.inisiatifs.forEach(ini => {
+    const iniDiv = document.createElement("div");
+    iniDiv.className = "inisiatif-item";
+    iniDiv.innerHTML = `<i class="bi bi-check2-circle text-success"></i> ${ini.judul}`;
+    taskDiv.appendChild(iniDiv);
 });
-
+                    inisiatifContainer.appendChild(taskDiv);
+                }
+            });
+        });
+    });
 
     // Next button
     nextBtn.addEventListener("click", function () {

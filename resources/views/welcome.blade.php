@@ -95,8 +95,8 @@
 
     /* Logo */
      .logo-circle {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background: white; /* bisa diganti #f9f9f9 atau transparan */
     display: flex;
@@ -107,8 +107,8 @@
   }
 
   .logo-circle .logo {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
 
 
@@ -165,7 +165,7 @@
     <h1>Selamat Datang di <br> Mastermind Academy MBC</h1>
     <h2>Growth Management System</h2>
 
-    <div class="typing">Membantu pengusaha Muslim untuk naik kelas </div>
+    <div class="typing">Wadah Eksklusif Membangun Pengusaha Muslim Sukses Dunia dan Akhirat. </div>
 
     <div style="margin-top: 30px;">
       <a href="{{ route('login') }}" class="btn">Login</a>
@@ -181,7 +181,7 @@
       <img src="{{ asset('img/gp13.jpg') }}" alt="Kegiatan 3">
     </div>
 <p style="margin-top: 12px; font-style: italic; font-size: 18px; color: #555;">
-   “Bersama-sama tumbuh, berilmu, bertauhid, bermental juang.”
+   “Mastermind Academy MBC adalah program Mentoring bisnis berjenjang yang menyiapkan Anda bukan hanya sukses dalam bisnis, tapi juga menjadi mentor, pemimpin , dan penggerak perubahan yang berdampak .”
 </p>
   </div>
 

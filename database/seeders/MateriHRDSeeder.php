@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\Materi;
-use App\Models\Tahapan;
+
 use App\Models\Task;
 use App\Models\Inisiatif;
 
@@ -21,15 +21,11 @@ class MateriHRDSeeder extends Seeder
         // ===============================
         // Tahap 1
         // ===============================
-        $tahap1 = Tahapan::create([
-            'materi_id' => $materi->id,
-            'judul' => 'Mindset dan Filosofi Pengelolaan SDM',
-            'deskripsi' => 'Mengubah cara pandang agar SDM dilibatkan secara strategis.'
-        ]);
+
 
         $task1 = Task::create([
             'materi_id' => $materi->id,
-            'tahapan_id' => $tahap1->id,
+
             'judul' => 'Menyadari Bahwa Karyawan adalah Aset Bisnis, Bukan Beban',
             'tujuan' => 'Mengubah mindset manajemen dan pemilik bahwa SDM adalah investasi.'
         ]);

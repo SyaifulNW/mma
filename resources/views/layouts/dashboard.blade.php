@@ -8,6 +8,8 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
   <style>
     /* Sidebar desktop */
     .sidebar {
@@ -112,7 +114,7 @@
                         <a class="nav-link {{ request()->is('task*') ? 'active' : '' }}" href="{{ route('task.index') }}">Tasks</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->is('sprint*') ? 'active' : '' }}" href="{{ route('sprint.index') }}">Sprints</a>
+                        <a class="nav-link {{ request()->is('sprints*') ? 'active' : '' }}" href="{{ route('sprints.index') }}">Sprints</a>
                     </li>
                 </ul> -->
                 <ul class="navbar-nav ms-auto">
@@ -200,24 +202,17 @@
                         @endif
                         @if(auth()->check() && auth()->user()->role == 'coach')
                         <li class="nav-item mb-2">
-                            <a class="nav-link d-flex align-items-center gap-2 {{ request()->is('sprint*') ? 'active' : '' }}"
-                                href="{{ route('sprint.index') }}">
+                            <a class="nav-link d-flex align-items-center gap-2 {{ request()->is('sprints*') ? 'active' : '' }}"
+                                href="{{ route('sprints.index') }}">
                                 <i class="fa fa-clipboard-list"></i>
                                 <span>Sprint</span>
                             </a>
                         </li>
                         @endif
 
-                        <!-- sprint.my -->
-                        @if(auth()->check() && auth()->user()->role == 'peserta')
-                        <li class="nav-item mb-2">
-                            <a class="nav-link d-flex align-items-center gap-2 {{ request()->is('sprint/my*') ? 'active' : '' }}"
-                                href="{{ route('sprint.my') }}">
-                                <i class="fa fa-clipboard-list"></i>
-                                <span>My Sprint</span>
-                            </a>
-                        </li>
-                        @endif
+                        <!-- sprint.ganchart -->
+
+                   
 
 
 

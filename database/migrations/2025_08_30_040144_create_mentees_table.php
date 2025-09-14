@@ -15,6 +15,9 @@ class CreateMenteesTable extends Migration
     {
         Schema::create('mentees', function (Blueprint $table) {
             $table->id();
+            // Relasi   dengan users
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+
             $table->string('nama');
             $table->string('level');
             $table->string('wa');

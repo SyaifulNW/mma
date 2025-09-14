@@ -4,24 +4,46 @@ namespace App\Http\Controllers;
 
 use App\Models\Mentee;
 use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;        
 use Yajra\DataTables\Facades\DataTables;
 
 class MenteeController extends Controller
 {
     public function index()
     {
-        $mentees = Mentee::all();
-        return view('peserta.index', compact('mentees'));
+        $mentees = Mentee::with('user')->get();
+    return view('mentees.index', compact('mentees'));
     }
 
     public function store(Request $request)
     {
-        $request->validate([
-            'nama' => 'required',
-            'level' => 'required',
-        ]);
+       // validasi input
+    $request->validate([
+        'nama' => 'required',
+        'email' => 'required|email|unique:users',
+        'password' => 'required|min:6',
+        'level' => 'required',
+        'wa' => 'nullable',
+        'kota' => 'nullable',
+    ]);
 
-        Mentee::create($request->all());
+    // buat user baru
+    $user = User::create([
+        'name' => $request->nama,
+        'email' => $request->email,
+        'password' => Hash::make($request->password),
+        'role' => 'mentee',
+    ]);
+
+    // buat mentee baru
+    Mentee::create([
+        'user_id' => $user->id,
+        'nama' => $request->nama,
+        'level' => $request->level,
+        'wa' => $request->wa,
+        'kota' => $request->kota,
+    ]);
         return redirect()->route('mentees.index')->with('success', 'Mentee berhasil ditambahkan');
     }
 
