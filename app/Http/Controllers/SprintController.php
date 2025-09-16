@@ -21,7 +21,7 @@ class SprintController extends Controller
         $taskIds = $request->input('tasks', []);
         $saved = collect();
 
-          $userId = Auth::id(); 
+        $userId = Auth::id();
 
         DB::beginTransaction();
         try {
@@ -33,8 +33,8 @@ class SprintController extends Controller
                 foreach ($task->inisiatifs as $inisiatif) {
                     // hindari duplikat
                     $exists = Sprint::where('task_id', $task->id)
-                                    ->where('inisiatif_id', $inisiatif->id)
-                                    ->exists();
+                        ->where('inisiatif_id', $inisiatif->id)
+                        ->exists();
                     if ($exists) continue;
 
                     $sprint = Sprint::create([
@@ -43,7 +43,7 @@ class SprintController extends Controller
                         'status' => 'pending',
                         'mulai' => now(),
                         'selesai' => null,
-                               'created_by' => $userId, // isi created_by
+                        'created_by'  => Auth::id(), // <- ini kunci
                     ]);
 
                     // eager load relations for response
@@ -55,14 +55,14 @@ class SprintController extends Controller
             DB::commit();
         } catch (\Throwable $e) {
             DB::rollBack();
-            Log::error('Sprint store error: '.$e->getMessage());
+            Log::error('Sprint store error: ' . $e->getMessage());
             return response()->json(['success' => false, 'message' => 'Server error', 'error' => $e->getMessage()], 500);
         }
 
         // Susun response: array per task dengan daftar inisiatifnya
         $response = $saved
             ->groupBy(fn($s) => $s->task->id)
-            ->map(function($group) {
+            ->map(function ($group) {
                 $task = $group->first()->task;
                 return [
                     'task_id' => $task->id,
@@ -81,57 +81,53 @@ class SprintController extends Controller
 
     public function index()
     {
-       $query = Sprint::with(['task', 'inisiatif']);
+        $sprints = Sprint::with(['task', 'inisiatif'])
+            ->where('created_by', Auth::id()) // hanya sprint milik user login
+            ->get();
 
-    if (Auth::user()->role !== 'admin') {
-        $query->where('created_by', Auth::id());
-    }
-
-    $sprints = $query->get();
-
-    return view('sprints.index', compact('sprints'));
+        return view('sprints.index', compact('sprints'));
     }
 
     public function update(Request $request, $id)
-{
-  $sprint = Sprint::findOrFail($id);
+    {
+        $sprint = Sprint::findOrFail($id);
 
-    $validated = $request->validate([
-        'mulai'   => 'nullable|date',
-        'selesai' => 'nullable|date|after_or_equal:mulai',
-        'status'  => 'nullable|in:pending,progress,done',
-    ]);
+        $validated = $request->validate([
+            'mulai'   => 'nullable|date',
+            'selesai' => 'nullable|date|after_or_equal:mulai',
+            'status'  => 'nullable|in:pending,progress,done',
+        ]);
 
-    if ($request->has('mulai')) $sprint->mulai = $validated['mulai'];
-    if ($request->has('selesai')) $sprint->selesai = $validated['selesai'];
-    if ($request->has('status')) $sprint->status = $validated['status'];
+        if ($request->has('mulai')) $sprint->mulai = $validated['mulai'];
+        if ($request->has('selesai')) $sprint->selesai = $validated['selesai'];
+        if ($request->has('status')) $sprint->status = $validated['status'];
 
-    $sprint->save();
+        $sprint->save();
 
-    if ($request->expectsJson()) {
-        return response()->json(['success' => true, 'message' => 'Sprint berhasil diperbarui']);
+        if ($request->expectsJson()) {
+            return response()->json(['success' => true, 'message' => 'Sprint berhasil diperbarui']);
+        }
+
+        return redirect()->route('sprints.index')->with('success', 'Sprint berhasil diperbarui!');
     }
 
-    return redirect()->route('sprints.index')->with('success', 'Sprint berhasil diperbarui!');
-}
-
-public function gantt()
-{
-   $sprints = Sprint::with(['task', 'inisiatif'])
-    ->whereNotNull('mulai')
-    ->whereNotNull('selesai')
-    ->get()
-    ->map(function($sprint) {
-        return [
-            'task' => $sprint->task ? $sprint->task->judul : '',
-            'inisiatif' => $sprint->inisiatif ? $sprint->inisiatif->judul : '',
-            'mulai' => $sprint->mulai ? \Carbon\Carbon::parse($sprint->mulai)->format('Y-m-d') : null,
-            'selesai' => $sprint->selesai ? \Carbon\Carbon::parse($sprint->selesai)->format('Y-m-d') : null,
-            'status' => $sprint->status,
-        ];
-    });
+    public function gantt()
+    {
+        $sprints = Sprint::with(['task', 'inisiatif'])
+        ->where('created_by', Auth::id()) // filter sprint user login
+        ->whereNotNull('mulai')
+        ->whereNotNull('selesai')
+        ->get()
+        ->map(function ($sprint) {
+            return [
+                'task' => $sprint->task ? $sprint->task->judul : '',
+                'inisiatif' => $sprint->inisiatif ? $sprint->inisiatif->judul : '',
+                'mulai' => $sprint->mulai ? \Carbon\Carbon::parse($sprint->mulai)->format('Y-m-d') : null,
+                'selesai' => $sprint->selesai ? \Carbon\Carbon::parse($sprint->selesai)->format('Y-m-d') : null,
+                'status' => $sprint->status,
+            ];
+        });
 
     return view('sprints.gantt', compact('sprints'));
-}
-
+    }
 }
