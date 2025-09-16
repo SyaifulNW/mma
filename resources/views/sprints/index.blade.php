@@ -24,38 +24,30 @@
                 </tr>
 
                 @foreach ($taskSprints as $index => $sprint)
-                    <tr>
+                    <tr data-id="{{ $sprint->id }}">
                         <td>{{ $loop->iteration }}</td>
                         <td>- {{ $sprint->inisiatif->judul ?? '-' }}</td>
 
                         {{-- Input tanggal mulai --}}
                         <td>
-                            <form action="{{ route('sprints.update', $sprint->id) }}" method="POST" class="d-flex align-items-center">
-                                @csrf
-                                @method('PUT')
-                                <input 
-                                    type="date" 
-                                    name="mulai" 
-                                    class="form-control form-control-sm"
-                                    value="{{ $sprint->mulai ? \Carbon\Carbon::parse($sprint->mulai)->format('Y-m-d') : '' }}"
-                                    onchange="this.form.submit()"
-                                >
-                            </form>
+                            <input 
+                                type="date" 
+                                name="mulai" 
+                                class="form-control form-control-sm sprint-update"
+                                data-id="{{ $sprint->id }}"
+                                value="{{ $sprint->mulai ? \Carbon\Carbon::parse($sprint->mulai)->format('Y-m-d') : '' }}"
+                            >
                         </td>
 
                         {{-- Input tanggal selesai --}}
                         <td>
-                            <form action="{{ route('sprints.update', $sprint->id) }}" method="POST" class="d-flex align-items-center">
-                                @csrf
-                                @method('PUT')
-                                <input 
-                                    type="date" 
-                                    name="selesai" 
-                                    class="form-control form-control-sm"
-                                    value="{{ $sprint->selesai ? \Carbon\Carbon::parse($sprint->selesai)->format('Y-m-d') : '' }}"
-                                    onchange="this.form.submit()"
-                                >
-                            </form>
+                            <input 
+                                type="date" 
+                                name="selesai" 
+                                class="form-control form-control-sm sprint-update"
+                                data-id="{{ $sprint->id }}"
+                                value="{{ $sprint->selesai ? \Carbon\Carbon::parse($sprint->selesai)->format('Y-m-d') : '' }}"
+                            >
                         </td>
 
                         {{-- Status dengan warna --}}
@@ -69,26 +61,22 @@
                                     $badgeClass = 'bg-danger';
                                 }
                             @endphp
-                            <span class="badge {{ $badgeClass }}">
+                            <span class="badge status-badge {{ $badgeClass }}">
                                 {{ ucfirst($sprint->status) }}
                             </span>
                         </td>
 
                         {{-- Aksi update status --}}
                         <td>
-                            <form action="{{ route('sprints.update', $sprint->id) }}" method="POST">
-                                @csrf
-                                @method('PUT')
-                                <select 
-                                    name="status" 
-                                    class="form-select form-select-sm"
-                                    onchange="this.form.submit()"
-                                >
-                                    <option value="pending"  {{ $sprint->status === 'pending' ? 'selected' : '' }}>Pending</option>
-                                    <option value="progress" {{ $sprint->status === 'progress' ? 'selected' : '' }}>Progress</option>
-                                    <option value="done"     {{ $sprint->status === 'done' ? 'selected' : '' }}>Done</option>
-                                </select>
-                            </form>
+                            <select 
+                                name="status" 
+                                class="form-select form-select-sm sprint-update"
+                                data-id="{{ $sprint->id }}"
+                            >
+                                <option value="pending"  {{ $sprint->status === 'pending' ? 'selected' : '' }}>Pending</option>
+                                <option value="progress" {{ $sprint->status === 'progress' ? 'selected' : '' }}>Progress</option>
+                                <option value="done"     {{ $sprint->status === 'done' ? 'selected' : '' }}>Done</option>
+                            </select>
                         </td>
                     </tr>
                 @endforeach
@@ -101,3 +89,49 @@
     </table>
 </div>
 @endsection
+
+@push('scripts')
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const token = "{{ csrf_token() }}";
+
+    document.querySelectorAll(".sprint-update").forEach(el => {
+        el.addEventListener("change", async (e) => {
+            const sprintId = e.target.dataset.id;
+            const field = e.target.name;
+            const value = e.target.value;
+
+            try {
+                const response = await fetch(`/sprints/${sprintId}`, {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-CSRF-TOKEN": token,
+                        "Accept": "application/json"
+                    },
+                    body: JSON.stringify({ [field]: value })
+                });
+
+                const data = await response.json();
+                if (data.success) {
+                    // update badge warna kalau status berubah
+                    if (field === "status") {
+                        const row = e.target.closest("tr");
+                        const badge = row.querySelector(".status-badge");
+
+                        badge.textContent = value.charAt(0).toUpperCase() + value.slice(1);
+
+                        badge.classList.remove("bg-success","bg-warning","text-dark","bg-danger");
+                        if (value === "done") badge.classList.add("bg-success");
+                        else if (value === "progress") badge.classList.add("bg-warning","text-dark");
+                        else badge.classList.add("bg-danger");
+                    }
+                }
+            } catch (err) {
+                console.error("Update error:", err);
+            }
+        });
+    });
+});
+</script>
+@endpush

@@ -41,9 +41,6 @@ Route::get('/home', function () {
 
 
 // Sprint Ganchart
-// Route::get('/sprints/ganchart', function () {
-//     return view('sprints.ganchart', ['sprints' => App\Models\Sprint::all()]);
-// })->name('sprints.ganchart');
 
 
 Route::get('/peserta', function () {
@@ -101,6 +98,8 @@ Route::patch('/inisiatif/{id}/toggle', [InisiatifController::class, 'toggle'])->
 // crud mentee
 
 Route::resource('mentees', MenteeController::class);
+Route::get('/peserta', [MenteeController::class, 'index'])->name('peserta.index');
+
 
 
 Route::post('/inisiatif/update-tanggal-ajax', [InisiatifController::class, 'updateTanggalAjax'])
@@ -112,10 +111,15 @@ Route::post('/inisiatif/update-tanggal-ajax', [InisiatifController::class, 'upda
 
 // Sprint
 
-Route::resource('sprints', SprintController::class);
+// Route::resource('sprints', SprintController::class);
 Route::post('/sprints/store', [SprintController::class, 'store'])->name('sprints.store');
 Route::get('/sprints', [SprintController::class, 'index'])->name('sprints.index');
 Route::put('/sprints/{id}', [SprintController::class, 'update'])->name('sprints.update');
+
+// Sprint gantt
+
+Route::get('/sprints/gantt', [SprintController::class, 'gantt'])->name('sprints.gantt');
+
 
 
 

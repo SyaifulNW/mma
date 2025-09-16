@@ -214,7 +214,16 @@
 
                    
 
-
+               @if(auth()->check() && auth()->user()->role == 'coach')
+                        <li class="nav-item mb-2">
+                            <a class="nav-link d-flex align-items-center gap-2 {{ request()->is('sprints/gantt') ? 'active' : '' }}"
+                                href="{{ route('sprints.gantt') }}">
+                                <i class="fa fa-chart-bar"></i>
+                                <span>Gantt Chart</span>
+                            </a>
+                        </li>
+                        @endif
+                   
 
 
                         <!-- Peserta -->

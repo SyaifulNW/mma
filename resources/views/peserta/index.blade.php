@@ -14,8 +14,6 @@
         <thead>
             <tr>
                 <th>Nama</th>
-                <th>Email</th>
-                <th>Password</th>
                 <th>Level</th>
                 <th>WA</th>
                 <th>Kota</th>
@@ -26,8 +24,6 @@
             @foreach ($mentees as $mentee)
             <tr>
                 <td>{{ $mentee->nama }}</td>
-                <td>{{ $mentee->user->email }}</td>
-                <td>*******</td>
                 <td>{{ $mentee->level }}</td>
                 <td>{{ $mentee->wa }}</td>
                 <td>{{ $mentee->kota }}</td>
@@ -106,31 +102,49 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
+
+                    <div class="mb-3">
+                        <label>Pilih User</label>
+                        <select name="user_id" id="user_id" class="form-control" required>
+                            <option value="">-- Pilih User --</option>
+                            @foreach($users as $user)
+                            <option value="{{ $user->id }}"
+                                data-nama="{{ $user->name }}"
+                                data-email="{{ $user->email }}">
+                                {{ $user->name }} ({{ $user->email }})
+                            </option>
+                            @endforeach
+                        </select>
+                    </div>
+
                     <div class="mb-3">
                         <label>Nama</label>
-                        <input type="text" name="nama" class="form-control" required>
+                        <input type="text" id="nama" name="nama" class="form-control" readonly>
                     </div>
 
                     <div class="mb-3">
                         <label>Email</label>
-                        <input type="email" name="email" class="form-control" required>
+                        <input type="text" id="email" name="email" class="form-control" readonly>
                     </div>
 
+                    <!-- Pilih Omset -->
                     <div class="mb-3">
-                        <label>Password</label>
-                        <input type="password" name="password" class="form-control" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label>Level</label>
-                        <select id="level" name="level" class="form-control" required>
-                            <option value="">-- Pilih Level --</option>
-                            <option>Start-Up 🚀</option>
-                            <option>Stand-Up 💪</option>
-                            <option>Step-Up 📈</option>
-                            <option>Grow-Up 🌱</option>
-                            <option>Scale-Up 🌍</option>
+                        <label>Omset</label>
+                        <select id="omset" class="form-control" required>
+                            <option value="">-- Pilih Omset --</option>
+                            <option value="0-100">0 - 100 Juta</option>
+                            <option value="100-300">100 - 300 Juta</option>
+                            <option value="300-500">300 - 500 Juta</option>
+                            <option value="500-1000">500 Juta - 1 M</option>
+                            <option value="1000-up">> 1 M</option>
                         </select>
+                    </div>
+
+                    <!-- Keterangan Level -->
+                    <div class="mb-3">
+                        <label>Keterangan Level</label>
+                        <input type="text" id="level_text" class="form-control" readonly>
+                        <input type="hidden" name="level" id="level">
                     </div>
 
                     <div class="mb-3">
@@ -139,9 +153,24 @@
                     </div>
 
                     <div class="mb-3">
-                        <label>Kota</label>
-                        <input type="text" name="kota" class="form-control">
+                        <label>Provinsi</label>
+                        <select id="provinsi" class="form-control" required>
+                            <option value="">-- Pilih Provinsi --</option>
+                            <option value="Jawa Barat">Jawa Barat</option>
+                            <option value="Jawa Tengah">Jawa Tengah</option>
+                            <option value="Jawa Timur">Jawa Timur</option>
+                            <option value="DKI Jakarta">DKI Jakarta</option>
+                            <option value="DI Yogyakarta">DI Yogyakarta</option>
+                        </select>
                     </div>
+
+                    <div class="mb-3">
+                        <label>Kota</label>
+                        <select name="kota" id="kota" class="form-control" required>
+                            <option value="">-- Pilih Kota --</option>
+                        </select>
+                    </div>
+
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-success">Simpan</button>
@@ -150,5 +179,63 @@
         </form>
     </div>
 </div>
+
+<script>
+    // Isi otomatis nama & email saat user dipilih
+    document.getElementById('user_id').addEventListener('change', function() {
+        let selected = this.options[this.selectedIndex];
+        document.getElementById('nama').value = selected.getAttribute('data-nama') || '';
+        document.getElementById('email').value = selected.getAttribute('data-email') || '';
+    });
+
+    // Tentukan level dari omset
+    document.getElementById('omset').addEventListener('change', function() {
+        let val = this.value;
+        let level = '';
+        switch (val) {
+            case '0-100':
+                level = 'Start-Up 🚀';
+                break;
+            case '100-300':
+                level = 'Stand-Up 💪';
+                break;
+            case '300-500':
+                level = 'Step-Up 📈';
+                break;
+            case '500-1000':
+                level = 'Grow-Up 🌱';
+                break;
+            case '1000-up':
+                level = 'Scale-Up 🌍';
+                break;
+        }
+        document.getElementById('level_text').value = level;
+        document.getElementById('level').value = level;
+    });
+
+  const kotaByProvinsi = {
+        "Jawa Barat": ["Bandung", "Bogor", "Depok", "Bekasi", "Cirebon"],
+        "Jawa Tengah": ["Semarang", "Solo", "Magelang", "Purwokerto", "Tegal"],
+        "Jawa Timur": ["Surabaya", "Malang", "Kediri", "Madiun", "Jember"],
+        "DKI Jakarta": ["Jakarta Selatan", "Jakarta Timur", "Jakarta Barat", "Jakarta Utara", "Jakarta Pusat"],
+        "DI Yogyakarta": ["Kota Yogyakarta", "Sleman", "Bantul", "Gunung Kidul", "Kulon Progo"]
+    };
+
+    document.getElementById('provinsi').addEventListener('change', function() {
+        let provinsi = this.value;
+        let kotaSelect = document.getElementById('kota');
+        kotaSelect.innerHTML = '<option value="">-- Pilih Kota --</option>';
+
+        if (provinsi && kotaByProvinsi[provinsi]) {
+            kotaByProvinsi[provinsi].forEach(kota => {
+                let option = document.createElement('option');
+                option.value = kota;
+                option.textContent = kota;
+                kotaSelect.appendChild(option);
+            });
+        }
+    });
+</script>
+
 
 @endsection

@@ -9,7 +9,16 @@ class Mentee extends Model
 {
     use HasFactory;
     protected $table = 'mentees';
-    protected $fillable = ['nama', 'level', 'wa', 'kota'];
+    protected $fillable = ['user_id','nama', 'level', 'wa', 'kota',   'created_by',];
+
+     public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+    public function creator()
+{
+    return $this->belongsTo(User::class, 'created_by');
+}
 
 
 }

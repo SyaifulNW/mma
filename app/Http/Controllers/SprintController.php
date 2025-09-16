@@ -81,22 +81,57 @@ class SprintController extends Controller
 
     public function index()
     {
-        $sprints = Sprint::with(['task','inisiatif'])->get();
-        return view('sprints.index', compact('sprints'));
+       $query = Sprint::with(['task', 'inisiatif']);
+
+    if (Auth::user()->role !== 'admin') {
+        $query->where('created_by', Auth::id());
+    }
+
+    $sprints = $query->get();
+
+    return view('sprints.index', compact('sprints'));
     }
 
     public function update(Request $request, $id)
 {
-    $request->validate([
-        'tanggal_mulai'   => 'nullable|date',
-        'tanggal_selesai' => 'nullable|date',
-        'status'          => 'required|string|in:pending,progress,done',
+  $sprint = Sprint::findOrFail($id);
+
+    $validated = $request->validate([
+        'mulai'   => 'nullable|date',
+        'selesai' => 'nullable|date|after_or_equal:mulai',
+        'status'  => 'nullable|in:pending,progress,done',
     ]);
 
-    $sprint = Sprint::findOrFail($id);
-    $sprint->update($request->only(['tanggal_mulai', 'tanggal_selesai', 'status']));
+    if ($request->has('mulai')) $sprint->mulai = $validated['mulai'];
+    if ($request->has('selesai')) $sprint->selesai = $validated['selesai'];
+    if ($request->has('status')) $sprint->status = $validated['status'];
 
-    return redirect()->route('sprints.index')->with('success', 'Sprint berhasil diupdate.');
+    $sprint->save();
+
+    if ($request->expectsJson()) {
+        return response()->json(['success' => true, 'message' => 'Sprint berhasil diperbarui']);
+    }
+
+    return redirect()->route('sprints.index')->with('success', 'Sprint berhasil diperbarui!');
+}
+
+public function gantt()
+{
+   $sprints = Sprint::with(['task', 'inisiatif'])
+    ->whereNotNull('mulai')
+    ->whereNotNull('selesai')
+    ->get()
+    ->map(function($sprint) {
+        return [
+            'task' => $sprint->task ? $sprint->task->judul : '',
+            'inisiatif' => $sprint->inisiatif ? $sprint->inisiatif->judul : '',
+            'mulai' => $sprint->mulai ? \Carbon\Carbon::parse($sprint->mulai)->format('Y-m-d') : null,
+            'selesai' => $sprint->selesai ? \Carbon\Carbon::parse($sprint->selesai)->format('Y-m-d') : null,
+            'status' => $sprint->status,
+        ];
+    });
+
+    return view('sprints.gantt', compact('sprints'));
 }
 
 }

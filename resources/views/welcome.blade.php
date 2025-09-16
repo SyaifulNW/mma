@@ -163,7 +163,24 @@
   <img src="{{ asset('img/mma.png') }}" alt="Logo Mastermind Academy" class="logo">
 </div>
     <h1>Selamat Datang di <br> Mastermind Academy MBC</h1>
-    <h2>Growth Management System</h2>
+   <h2 class="headline-text">“Pengusaha Langit – Mulia di dunia, bahagia di akhirat.”</h2>
+
+<style>
+.headline-text {
+  font-size: 1.8rem;
+  color: #f3f2f2;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .headline-text {
+    font-size: 1.4rem;
+  }
+}
+</style>
+
 
     <div class="typing">Wadah Eksklusif Membangun Pengusaha Muslim Sukses Dunia dan Akhirat. </div>
 

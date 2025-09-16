@@ -5,47 +5,48 @@ namespace App\Http\Controllers;
 use App\Models\Mentee;
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+
 use Illuminate\Support\Facades\Hash;        
 use Yajra\DataTables\Facades\DataTables;
 
 class MenteeController extends Controller
 {
-    public function index()
-    {
-        $mentees = Mentee::with('user')->get();
-    return view('mentees.index', compact('mentees'));
-    }
+   public function index()
+{
+     $mentees = Mentee::with('user')
+        ->where('created_by', Auth::id()) // pastikan kamu punya kolom created_by di tabel mentees
+        ->get();
 
-    public function store(Request $request)
-    {
-       // validasi input
+    // ambil semua user dengan role mentee
+    $users = User::where('role', 'coach')->get();
+
+    return view('peserta.index', compact('mentees', 'users'));
+}
+
+
+ public function store(Request $request)
+{
     $request->validate([
-        'nama' => 'required',
-        'email' => 'required|email|unique:users',
-        'password' => 'required|min:6',
-        'level' => 'required',
-        'wa' => 'nullable',
-        'kota' => 'nullable',
+        'user_id' => 'required|exists:users,id',
+        'nama'    => 'required',
+        'level'   => 'required',
+        'wa'      => 'nullable',
+        'kota'    => 'nullable',
+
     ]);
 
-    // buat user baru
-    $user = User::create([
-        'name' => $request->nama,
-        'email' => $request->email,
-        'password' => Hash::make($request->password),
-        'role' => 'mentee',
-    ]);
-
-    // buat mentee baru
     Mentee::create([
-        'user_id' => $user->id,
-        'nama' => $request->nama,
-        'level' => $request->level,
-        'wa' => $request->wa,
-        'kota' => $request->kota,
+        'user_id' => $request->user_id,
+        'nama'    => $request->nama,
+        'level'   => $request->level,
+        'wa'      => $request->wa,
+        'kota'    => $request->kota,
+         'created_by' => Auth::id(), // otomatis simpan siapa yang inpu
     ]);
-        return redirect()->route('mentees.index')->with('success', 'Mentee berhasil ditambahkan');
-    }
+
+    return redirect()->route('peserta.index')->with('success', 'Mentee berhasil ditambahkan');
+}
 
     public function update(Request $request, Mentee $mentee)
     {
