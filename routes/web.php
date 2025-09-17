@@ -112,17 +112,19 @@ Route::post('/inisiatif/update-tanggal-ajax', [InisiatifController::class, 'upda
 // Sprint
 
 // Route::resource('sprints', SprintController::class);
-Route::post('/sprints/store', [SprintController::class, 'store'])->name('sprints.store');
 Route::get('/sprints', [SprintController::class, 'index'])->name('sprints.index');
+Route::post('/sprints', [SprintController::class, 'store'])->name('sprints.store');
 Route::put('/sprints/{id}', [SprintController::class, 'update'])->name('sprints.update');
-
-// Sprint gantt
-
 Route::get('/sprints/gantt', [SprintController::class, 'gantt'])->name('sprints.gantt');
 
-Route::resource('sprints', SprintController::class)->only(['index','store','update']);
+// Dashboard
+// use App\Http\Controllers\CoachDashboardController;
 
-// api
+// Route::middleware(['auth','role:coach'])
+//     ->get('/coach/dashboard', [CoachDashboardController::class, 'index'])
+//     ->name('coach.dashboard');
+
+
 
 
 

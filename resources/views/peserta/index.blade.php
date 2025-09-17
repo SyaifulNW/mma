@@ -9,13 +9,50 @@
         Tambah Mentee
     </button>
 
+<!-- Tambah Tombol Buat Grup -->
+<button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#modalGroup">
+    Buat Grup
+</button>
+
+
+
+<!-- Modal Buat Grup -->
+<div class="modal fade" id="modalGroup" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Buat Grup (maks. 10 mentee)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="checkboxMentees">
+                    @foreach ($mentees as $mentee)
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="{{ $mentee->nama }}" id="mentee{{ $mentee->id }}">
+                            <label class="form-check-label" for="mentee{{ $mentee->id }}">
+                                {{ $mentee->nama }} - {{ $mentee->level }}
+                            </label>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" onclick="simpanGroup()">Simpan Grup</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
     <!-- Table -->
     <table class="table table-bordered">
         <thead>
             <tr>
-                <th>Nama</th>   
+                <th>Nama</th>
                 <th>Level</th>
                 <th>WA</th>
+                <!-- <th>Provinsi</th> -->
                 <th>Kota</th>
                 <th>Aksi</th>
             </tr>
@@ -26,6 +63,7 @@
                 <td>{{ $mentee->nama }}</td>
                 <td>{{ $mentee->level }}</td>
                 <td>{{ $mentee->wa }}</td>
+                <!-- <td>{{ $mentee->provinsi }}</td> -->
                 <td>{{ $mentee->kota }}</td>
                 <td>
                     <!-- Tombol Edit -->
@@ -57,25 +95,31 @@
                             <div class="modal-body">
                                 <div class="mb-3">
                                     <label>Nama</label>
-                                    <input type="text" name="nama" class="form-control" value="{{ $mentee->nama }}" required>
+                                    <input type="text" name="nama" class="form-control" value="{{ $mentee->nama }}" readonly>
                                 </div>
                                 <div class="mb-3">
-                                    <label>Level</label>
-                                    <select id="level" name="level" class="form-control" required>
-                                        <option {{ $mentee->level == 'Start-Up' ? 'selected' : '' }}>Start-Up 🚀</option>
-                                        <option {{ $mentee->level == 'Stand-Up' ? 'selected' : '' }}>Stand-Up 💪</option>
-                                        <option {{ $mentee->level == 'Step-Up' ? 'selected' : '' }}>Step-Up 📈</option>
-                                        <option {{ $mentee->level == 'Grow-Up' ? 'selected' : '' }}>Grow-Up 🌱</option>
-                                        <option {{ $mentee->level == 'Scale-Up' ? 'selected' : '' }}>Scale-Up 🌍</option>
-                                    </select>
+                                    <label>Email</label>
+                                    <input type="text" name="email" class="form-control" value="{{ $mentee->email }}" readonly>
+                                </div>
+                                <div class="mb-3">
+                                    <label>Omset</label>
+                                    <input type="text" name="omset" class="form-control" value="{{ $mentee->omset }}" readonly>
+                                </div>
+                                <div class="mb-3">
+                                    <label>Keterangan Level</label>
+                                    <input type="text" name="level" class="form-control" value="{{ $mentee->level }}" readonly>
                                 </div>
                                 <div class="mb-3">
                                     <label>No. WA</label>
                                     <input type="text" name="wa" class="form-control" value="{{ $mentee->wa }}">
                                 </div>
                                 <div class="mb-3">
+                                    <label>Provinsi</label>
+                                    <input type="text" name="provinsi" class="form-control" value="{{ $mentee->provinsi }}" readonly>
+                                </div>
+                                <div class="mb-3">
                                     <label>Kota</label>
-                                    <input type="text" name="kota" class="form-control" value="{{ $mentee->kota }}">
+                                    <input type="text" name="kota" class="form-control" value="{{ $mentee->kota }}" readonly>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -90,7 +134,15 @@
     </table>
 </div>
 
-<!-- Modal Tambah -->
+
+<!-- Daftar Grup -->
+<div class="card mt-4">
+    <div class="card-header fw-bold">Daftar Grup</div>
+    <div class="card-body">
+        <ul id="listGroups"></ul>
+    </div>
+</div>
+
 <!-- Modal Tambah -->
 <div class="modal fade" id="modalTambah" tabindex="-1">
     <div class="modal-dialog">
@@ -104,13 +156,18 @@
                 <div class="modal-body">
 
                     <div class="mb-3">
-                        <label>Pilih User</label>
+                        <label class="form-label">Pilih User</label>
                         <select name="user_id" id="user_id" class="form-control" required>
                             <option value="">-- Pilih User --</option>
                             @foreach($users as $user)
                             <option value="{{ $user->id }}"
                                 data-nama="{{ $user->name }}"
-                                data-email="{{ $user->email }}">
+                                data-email="{{ $user->email }}"
+                                data-omset="{{ $user->omset }}"
+                                data-level="{{ $user->level }}"
+                                data-wa="{{ $user->wa }}"
+                                data-provinsi="{{ $user->provinsi }}"
+                                data-kota="{{ $user->kota }}">
                                 {{ $user->name }} ({{ $user->email }})
                             </option>
                             @endforeach
@@ -127,48 +184,29 @@
                         <input type="text" id="email" name="email" class="form-control" readonly>
                     </div>
 
-                    <!-- Pilih Omset -->
                     <div class="mb-3">
                         <label>Omset</label>
-                        <select id="omset" class="form-control" required>
-                            <option value="">-- Pilih Omset --</option>
-                            <option value="0-100">0 - 100 Juta</option>
-                            <option value="100-300">100 - 300 Juta</option>
-                            <option value="300-500">300 - 500 Juta</option>
-                            <option value="500-1000">500 Juta - 1 M</option>
-                            <option value="1000-up">> 1 M</option>
-                        </select>
+                        <input type="text" id="omset" name="omset" class="form-control" readonly>
                     </div>
 
-                    <!-- Keterangan Level -->
                     <div class="mb-3">
                         <label>Keterangan Level</label>
-                        <input type="text" id="level_text" class="form-control" readonly>
-                        <input type="hidden" name="level" id="level">
+                        <input type="text" id="level" name="level" class="form-control" readonly>
                     </div>
 
                     <div class="mb-3">
                         <label>No. WA</label>
-                        <input type="text" name="wa" class="form-control">
+                        <input type="text" id="wa" name="wa" class="form-control" readonly>
                     </div>
 
                     <div class="mb-3">
                         <label>Provinsi</label>
-                        <select id="provinsi" class="form-control" required>
-                            <option value="">-- Pilih Provinsi --</option>
-                            <option value="Jawa Barat">Jawa Barat</option>
-                            <option value="Jawa Tengah">Jawa Tengah</option>
-                            <option value="Jawa Timur">Jawa Timur</option>
-                            <option value="DKI Jakarta">DKI Jakarta</option>
-                            <option value="DI Yogyakarta">DI Yogyakarta</option>
-                        </select>
+                        <input type="text" id="provinsi" name="provinsi" class="form-control" readonly>
                     </div>
 
                     <div class="mb-3">
                         <label>Kota</label>
-                        <select name="kota" id="kota" class="form-control" required>
-                            <option value="">-- Pilih Kota --</option>
-                        </select>
+                        <input type="text" id="kota" name="kota" class="form-control" readonly>
                     </div>
 
                 </div>
@@ -181,61 +219,55 @@
 </div>
 
 <script>
-    // Isi otomatis nama & email saat user dipilih
     document.getElementById('user_id').addEventListener('change', function() {
         let selected = this.options[this.selectedIndex];
         document.getElementById('nama').value = selected.getAttribute('data-nama') || '';
         document.getElementById('email').value = selected.getAttribute('data-email') || '';
+        document.getElementById('omset').value = selected.getAttribute('data-omset') || '';
+        document.getElementById('level').value = selected.getAttribute('data-level') || '';
+        document.getElementById('wa').value = selected.getAttribute('data-wa') || '';
+        document.getElementById('provinsi').value = selected.getAttribute('data-provinsi') || '';
+        document.getElementById('kota').value = selected.getAttribute('data-kota') || '';
     });
 
-    // Tentukan level dari omset
-    document.getElementById('omset').addEventListener('change', function() {
-        let val = this.value;
-        let level = '';
-        switch (val) {
-            case '0-100':
-                level = 'Start-Up 🚀';
-                break;
-            case '100-300':
-                level = 'Stand-Up 💪';
-                break;
-            case '300-500':
-                level = 'Step-Up 📈';
-                break;
-            case '500-1000':
-                level = 'Grow-Up 🌱';
-                break;
-            case '1000-up':
-                level = 'Scale-Up 🌍';
-                break;
-        }
-        document.getElementById('level_text').value = level;
-        document.getElementById('level').value = level;
-    });
+    // Tambah group
+    let groups = [];
+function simpanGroup() {
+    let checked = [...document.querySelectorAll('#checkboxMentees input:checked')].map(cb => cb.value);
 
-  const kotaByProvinsi = {
-        "Jawa Barat": ["Bandung", "Bogor", "Depok", "Bekasi", "Cirebon"],
-        "Jawa Tengah": ["Semarang", "Solo", "Magelang", "Purwokerto", "Tegal"],
-        "Jawa Timur": ["Surabaya", "Malang", "Kediri", "Madiun", "Jember"],
-        "DKI Jakarta": ["Jakarta Selatan", "Jakarta Timur", "Jakarta Barat", "Jakarta Utara", "Jakarta Pusat"],
-        "DI Yogyakarta": ["Kota Yogyakarta", "Sleman", "Bantul", "Gunung Kidul", "Kulon Progo"]
-    };
+    if (checked.length === 0) {
+        alert("Pilih minimal 1 mentee!");
+        return;
+    }
+    if (checked.length > 10) {
+        alert("Maksimal 10 mentee per grup!");
+        return;
+    }
 
-    document.getElementById('provinsi').addEventListener('change', function() {
-        let provinsi = this.value;
-        let kotaSelect = document.getElementById('kota');
-        kotaSelect.innerHTML = '<option value="">-- Pilih Kota --</option>';
+    groups.push(checked);
+    renderGroups();
 
-        if (provinsi && kotaByProvinsi[provinsi]) {
-            kotaByProvinsi[provinsi].forEach(kota => {
-                let option = document.createElement('option');
-                option.value = kota;
-                option.textContent = kota;
-                kotaSelect.appendChild(option);
-            });
-        }
-    });
+    // Tutup modal dengan cara yang aman
+    let modalEl = document.getElementById('modalGroup');
+    let modal = bootstrap.Modal.getInstance(modalEl);
+    if (modal) {
+        modal.hide();
+    }
+
+    // Hapus backdrop manual kalau masih ada
+    document.querySelectorAll('.modal-backdrop').forEach(el => el.remove());
+
+    // Reset centang
+    document.querySelectorAll('#checkboxMentees input').forEach(cb => cb.checked = false);
+}
+
+    function renderGroups() {
+        let ul = document.getElementById('listGroups');
+        ul.innerHTML = "";
+        groups.forEach((g, i) => {
+            ul.innerHTML += `<li><strong>Grup ${i+1}:</strong> ${g.join(", ")}</li>`;
+        });
+    }
 </script>
-
 
 @endsection

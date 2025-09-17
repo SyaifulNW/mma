@@ -37,19 +37,29 @@
 <script>
 document.addEventListener('DOMContentLoaded', function(){
 
-    // ==== Data Dummy (bisa ganti dari API nanti) ====
+    // ==== Data Dashboard Pribadi ====
     const personalTasks = {
-        totalMentee: 1,
-        aktif: 2,
-        selesai: 12,
+        totalMentee: 2,
+        aktif: 4,
+        selesai: 8,
         overdue: 1
     };
-    const mentee = {
-        name: 'Bintang',
-        progress: 55,
-        tasks: { Selesai: 3, Berjalan: 2, Overdue: 1 },
-        activities: ['Sedang mengerjakan Task 4']
-    };
+
+    // ==== Data Mentee ====
+    const mentees = [
+        {
+            name: 'Yasmin',
+            progress: 70,
+            tasks: { Selesai: 5, Berjalan: 2, Overdue: 1 },
+            activities: ['Selesai Task 3', 'Sedang Task 4']
+        },
+        {
+            name: 'Linda',
+            progress: 40,
+            tasks: { Selesai: 3, Berjalan: 4, Overdue: 0 },
+            activities: ['Sedang Task 2']
+        }
+    ];
 
     // ==== Dashboard Pribadi ====
     const dashboardStats = document.getElementById('dashboard-stats');
@@ -94,9 +104,11 @@ document.addEventListener('DOMContentLoaded', function(){
         overdueAlert.innerHTML = `<div class="alert alert-danger p-2">⚠️ ${personalTasks.overdue} Task Anda sudah jatuh tempo!</div>`;
     }
 
-    // ==== Mentee ====
+    // ==== Monitoring Mentee ====
     const menteeDashboard = document.getElementById('mentee-dashboard');
-    menteeDashboard.innerHTML = `
+    menteeDashboard.innerHTML = "";
+    mentees.forEach(mentee => {
+        menteeDashboard.innerHTML += `
         <div class="col-12 col-md-6 col-lg-4 mb-4 flex-shrink-0">
             <div class="card shadow-sm h-100 border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between">
@@ -143,7 +155,8 @@ document.addEventListener('DOMContentLoaded', function(){
                 </div>
             </div>
         </div>
-    `;
+        `;
+    });
 });
 </script>
 @endpush
