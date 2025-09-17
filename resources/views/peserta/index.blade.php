@@ -13,7 +13,7 @@
     <table class="table table-bordered">
         <thead>
             <tr>
-                <th>Nama</th>
+                <th>Nama</th>   
                 <th>Level</th>
                 <th>WA</th>
                 <th>Kota</th>

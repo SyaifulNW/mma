@@ -14,7 +14,9 @@ class AddCreatedByToMenteesTable extends Migration
     public function up()
     {
         Schema::table('mentees', function (Blueprint $table) {
-              $table->unsignedBigInteger('created_by')->after('id');
+         if (!Schema::hasColumn('mentees', 'created_by')) {
+    $table->unsignedBigInteger('created_by')->after('id');
+}
 
             // relasi ke users
             $table->foreign('created_by')->references('id')->on('users')->onDelete('cascade');

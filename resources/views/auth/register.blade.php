@@ -125,22 +125,55 @@
       <h1>Daftar Akun Baru</h1>
       <h2>Mastermind Academy MBC</h2>
 
-      <form method="POST" action="{{ route('register') }}">
-        @csrf
-        <input id="name" type="text" name="name" placeholder="Nama Lengkap" value="{{ old('name') }}" required autofocus>
-        @error('name') <small style="color:red">{{ $message }}</small> @enderror
+  <form method="POST" action="{{ route('register') }}">
+    @csrf
+    <input id="name" type="text" name="name" placeholder="Nama Lengkap" value="{{ old('name') }}" required autofocus>
+    @error('name') <small style="color:red">{{ $message }}</small> @enderror
 
-        <input id="email" type="email" name="email" placeholder="Email" value="{{ old('email') }}" required>
-        @error('email') <small style="color:red">{{ $message }}</small> @enderror
+    <input id="email" type="email" name="email" placeholder="Email" value="{{ old('email') }}" required>
+    @error('email') <small style="color:red">{{ $message }}</small> @enderror
 
-        <input id="password" type="password" name="password" placeholder="Password" required>
-        @error('password') <small style="color:red">{{ $message }}</small> @enderror
+    <input id="password" type="password" name="password" placeholder="Password" required>
+    @error('password') <small style="color:red">{{ $message }}</small> @enderror
 
-        <input id="password-confirm" type="password" name="password_confirmation" placeholder="Konfirmasi Password" required>
+    <input id="password-confirm" type="password" name="password_confirmation" placeholder="Konfirmasi Password" required>
 
-        <button type="submit" class="btn">Register</button>
-        <a href="{{ route('login') }}" class="login-link">Sudah punya akun? Login di sini</a>
-      </form>
+    <!-- Omset -->
+    <select id="omset" name="omset" class="form-control" required>
+        <option value="">-- Pilih Omset --</option>
+        <option value="0-100">0 - 100 Juta</option>
+        <option value="100-300">100 - 300 Juta</option>
+        <option value="300-500">300 - 500 Juta</option>
+        <option value="500-1000">500 Juta - 1 M</option>
+        <option value="1000-up">> 1 M</option>
+    </select>
+
+    <!-- Keterangan Level -->
+    <input type="text" id="level_text" class="form-control" placeholder="Level" readonly>
+    <input type="hidden" name="level" id="level">
+
+    <!-- No. WA -->
+    <input type="text" name="wa" placeholder="Nomor WhatsApp" value="{{ old('wa') }}" required>
+
+    <!-- Provinsi -->
+    <select id="provinsi" name="provinsi" class="form-control" required>
+        <option value="">-- Pilih Provinsi --</option>
+        <option value="Jawa Barat">Jawa Barat</option>
+        <option value="Jawa Tengah">Jawa Tengah</option>
+        <option value="Jawa Timur">Jawa Timur</option>
+        <option value="DKI Jakarta">DKI Jakarta</option>
+        <option value="DI Yogyakarta">DI Yogyakarta</option>
+    </select>
+
+    <!-- Kota -->
+    <select name="kota" id="kota" class="form-control" required>
+        <option value="">-- Pilih Kota --</option>
+    </select>
+
+    <button type="submit" class="btn">Register</button>
+    <a href="{{ route('login') }}" class="login-link">Sudah punya akun? Login di sini</a>
+</form>
+
     </div>
   </div>
 
@@ -155,3 +188,40 @@
   </div>
 </body>
 </html>
+<script>
+document.getElementById('omset').addEventListener('change', function() {
+    let val = this.value;
+    let level = '';
+    switch (val) {
+        case '0-100': level = 'Start-Up 🚀'; break;
+        case '100-300': level = 'Stand-Up 💪'; break;
+        case '300-500': level = 'Step-Up 📈'; break;
+        case '500-1000': level = 'Grow-Up 🌱'; break;
+        case '1000-up': level = 'Scale-Up 🌍'; break;
+    }
+    document.getElementById('level_text').value = level;
+    document.getElementById('level').value = level;
+});
+
+const kotaByProvinsi = {
+    "Jawa Barat": ["Bandung", "Bogor", "Depok", "Bekasi", "Cirebon"],
+    "Jawa Tengah": ["Semarang", "Solo", "Magelang", "Purwokerto", "Tegal"],
+    "Jawa Timur": ["Surabaya", "Malang", "Kediri", "Madiun", "Jember"],
+    "DKI Jakarta": ["Jakarta Selatan", "Jakarta Timur", "Jakarta Barat", "Jakarta Utara", "Jakarta Pusat"],
+    "DI Yogyakarta": ["Kota Yogyakarta", "Sleman", "Bantul", "Gunung Kidul", "Kulon Progo"]
+};
+
+document.getElementById('provinsi').addEventListener('change', function() {
+    let provinsi = this.value;
+    let kotaSelect = document.getElementById('kota');
+    kotaSelect.innerHTML = '<option value="">-- Pilih Kota --</option>';
+    if (provinsi && kotaByProvinsi[provinsi]) {
+        kotaByProvinsi[provinsi].forEach(kota => {
+            let option = document.createElement('option');
+            option.value = kota;
+            option.textContent = kota;
+            kotaSelect.appendChild(option);
+        });
+    }
+});
+</script>
