@@ -14,6 +14,10 @@ class Task extends Model
     {
         return $this->belongsTo(Materi::class, 'materi_id');
     }
+       public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 
 
     public function inisiatifs()

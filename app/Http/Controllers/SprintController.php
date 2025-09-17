@@ -13,6 +13,15 @@ class SprintController extends Controller
 {
     public function store(Request $request)
     {
+        // pastikan user login
+        if (!Auth::check()) {
+            return response()->json([
+                'success' => false,
+                'message' => 'User belum login!'
+            ], 401);
+        }
+
+
         $request->validate([
             'tasks' => 'required|array|min:1',
             // 'materi' => 'sometimes|array' // opsional
@@ -30,26 +39,28 @@ class SprintController extends Controller
                 $task = Task::with('inisiatifs')->find($taskId);
                 if (! $task) continue;
 
-                foreach ($task->inisiatifs as $inisiatif) {
-                    // hindari duplikat
-                    $exists = Sprint::where('task_id', $task->id)
-                        ->where('inisiatif_id', $inisiatif->id)
-                        ->exists();
-                    if ($exists) continue;
+              foreach ($task->inisiatifs as $inisiatif) {
+    // hindari duplikat per user saja
+    $exists = Sprint::where('task_id', $task->id)
+        ->where('inisiatif_id', $inisiatif->id)
+        ->where('created_by', $userId)
+        ->exists();
 
-                    $sprint = Sprint::create([
-                        'task_id' => $task->id,
-                        'inisiatif_id' => $inisiatif->id,
-                        'status' => 'pending',
-                        'mulai' => now(),
-                        'selesai' => null,
-                        'created_by'  => Auth::id(), // <- ini kunci
-                    ]);
+    if ($exists) continue;
 
-                    // eager load relations for response
-                    $sprint->load('task.inisiatifs');
-                    $saved->push($sprint);
-                }
+    $sprint = Sprint::create([
+        'task_id'     => $task->id,
+        'inisiatif_id'=> $inisiatif->id,
+        'status'      => 'pending',
+        'mulai'       => now(),
+        'selesai'     => null,
+        'created_by'  => $userId,
+    ]);
+
+    $sprint->load('task.inisiatifs');
+    $saved->push($sprint);
+}
+
             }
 
             DB::commit();
@@ -84,6 +95,8 @@ class SprintController extends Controller
         $sprints = Sprint::with(['task', 'inisiatif'])
             ->where('created_by', Auth::id()) // hanya sprint milik user login
             ->get();
+
+         $tasks = Task::all();
 
         return view('sprints.index', compact('sprints'));
     }

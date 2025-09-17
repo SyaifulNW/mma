@@ -120,6 +120,9 @@ Route::put('/sprints/{id}', [SprintController::class, 'update'])->name('sprints.
 
 Route::get('/sprints/gantt', [SprintController::class, 'gantt'])->name('sprints.gantt');
 
+Route::resource('sprints', SprintController::class)->only(['index','store','update']);
+
+// api
 
 
 
