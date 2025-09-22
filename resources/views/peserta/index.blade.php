@@ -4,55 +4,34 @@
 <div class="container">
     <h1 class="mb-4">Daftar Mentee</h1>
 
+    <!-- Alert -->
+    @if(session('success'))
+        <div class="alert alert-success">{{ session('success') }}</div>
+    @endif
+    @if($errors->any())
+        <div class="alert alert-danger">
+            <ul class="mb-0">
+                @foreach($errors->all() as $err)
+                    <li>{{ $err }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
     <!-- Tombol Tambah -->
     <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modalTambah">
         Tambah Mentee
     </button>
-
-<!-- Tambah Tombol Buat Grup -->
-<button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#modalGroup">
-    Buat Grup
-</button>
-
-
-
-<!-- Modal Buat Grup -->
-<div class="modal fade" id="modalGroup" tabindex="-1">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Buat Grup (maks. 10 mentee)</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <div id="checkboxMentees">
-                    @foreach ($mentees as $mentee)
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="{{ $mentee->nama }}" id="mentee{{ $mentee->id }}">
-                            <label class="form-check-label" for="mentee{{ $mentee->id }}">
-                                {{ $mentee->nama }} - {{ $mentee->level }}
-                            </label>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-success" onclick="simpanGroup()">Simpan Grup</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
 
     <!-- Table -->
     <table class="table table-bordered">
         <thead>
             <tr>
                 <th>Nama</th>
+                <th>Email</th>
                 <th>Level</th>
+                <!-- <th>Omset</th> -->
                 <th>WA</th>
-                <!-- <th>Provinsi</th> -->
                 <th>Kota</th>
                 <th>Aksi</th>
             </tr>
@@ -60,10 +39,11 @@
         <tbody>
             @foreach ($mentees as $mentee)
             <tr>
-                <td>{{ $mentee->nama }}</td>
+                <td>{{ $mentee->user->name }}</td>
+                <td>{{ $mentee->user->email }}</td>
                 <td>{{ $mentee->level }}</td>
+                <!-- <td>{{ $mentee->omset }}</td> -->
                 <td>{{ $mentee->wa }}</td>
-                <!-- <td>{{ $mentee->provinsi }}</td> -->
                 <td>{{ $mentee->kota }}</td>
                 <td>
                     <!-- Tombol Edit -->
@@ -95,31 +75,40 @@
                             <div class="modal-body">
                                 <div class="mb-3">
                                     <label>Nama</label>
-                                    <input type="text" name="nama" class="form-control" value="{{ $mentee->nama }}" readonly>
+                                    <input type="text" name="name" class="form-control" 
+                                           value="{{ $mentee->user->name }}">
                                 </div>
                                 <div class="mb-3">
                                     <label>Email</label>
-                                    <input type="text" name="email" class="form-control" value="{{ $mentee->email }}" readonly>
+                                    <input type="email" name="email" class="form-control" 
+                                           value="{{ $mentee->user->email }}">
                                 </div>
                                 <div class="mb-3">
                                     <label>Omset</label>
-                                    <input type="text" name="omset" class="form-control" value="{{ $mentee->omset }}" readonly>
+                                    <select name="omset" class="form-control omset-select" data-target="{{ $mentee->id }}">
+                                        <option value="">-- Pilih Omset --</option>
+                                        <option value="0-100" {{ $mentee->omset == '0-100' ? 'selected' : '' }}>0 - 100 Juta</option>
+                                        <option value="100-300" {{ $mentee->omset == '100-300' ? 'selected' : '' }}>100 - 300 Juta</option>
+                                        <option value="300-500" {{ $mentee->omset == '300-500' ? 'selected' : '' }}>300 - 500 Juta</option>
+                                        <option value="500-1000" {{ $mentee->omset == '500-1000' ? 'selected' : '' }}>500 Juta - 1 M</option>
+                                        <option value="1000-up" {{ $mentee->omset == '1000-up' ? 'selected' : '' }}>> 1 M</option>
+                                    </select>
                                 </div>
                                 <div class="mb-3">
-                                    <label>Keterangan Level</label>
-                                    <input type="text" name="level" class="form-control" value="{{ $mentee->level }}" readonly>
+                                    <label>Level</label>
+                                    <input type="text" id="level_text_{{ $mentee->id }}" class="form-control" 
+                                           value="{{ $mentee->level }}" readonly>
+                                    <input type="hidden" name="level" id="level_{{ $mentee->id }}" value="{{ $mentee->level }}">
                                 </div>
                                 <div class="mb-3">
                                     <label>No. WA</label>
-                                    <input type="text" name="wa" class="form-control" value="{{ $mentee->wa }}">
-                                </div>
-                                <div class="mb-3">
-                                    <label>Provinsi</label>
-                                    <input type="text" name="provinsi" class="form-control" value="{{ $mentee->provinsi }}" readonly>
+                                    <input type="text" name="wa" class="form-control" 
+                                           value="{{ $mentee->wa }}">
                                 </div>
                                 <div class="mb-3">
                                     <label>Kota</label>
-                                    <input type="text" name="kota" class="form-control" value="{{ $mentee->kota }}" readonly>
+                                    <input type="text" name="kota" class="form-control" 
+                                           value="{{ $mentee->kota }}">
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -132,15 +121,6 @@
             @endforeach
         </tbody>
     </table>
-</div>
-
-
-<!-- Daftar Grup -->
-<div class="card mt-4">
-    <div class="card-header fw-bold">Daftar Grup</div>
-    <div class="card-body">
-        <ul id="listGroups"></ul>
-    </div>
 </div>
 
 <!-- Modal Tambah -->
@@ -156,57 +136,46 @@
                 <div class="modal-body">
 
                     <div class="mb-3">
-                        <label class="form-label">Pilih User</label>
-                        <select name="user_id" id="user_id" class="form-control" required>
-                            <option value="">-- Pilih User --</option>
-                            @foreach($users as $user)
-                            <option value="{{ $user->id }}"
-                                data-nama="{{ $user->name }}"
-                                data-email="{{ $user->email }}"
-                                data-omset="{{ $user->omset }}"
-                                data-level="{{ $user->level }}"
-                                data-wa="{{ $user->wa }}"
-                                data-provinsi="{{ $user->provinsi }}"
-                                data-kota="{{ $user->kota }}">
-                                {{ $user->name }} ({{ $user->email }})
-                            </option>
-                            @endforeach
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
                         <label>Nama</label>
-                        <input type="text" id="nama" name="nama" class="form-control" readonly>
+                        <input type="text" name="name" class="form-control" required>
                     </div>
 
                     <div class="mb-3">
                         <label>Email</label>
-                        <input type="text" id="email" name="email" class="form-control" readonly>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Password</label>
+                        <input type="password" name="password" class="form-control" required>
                     </div>
 
                     <div class="mb-3">
                         <label>Omset</label>
-                        <input type="text" id="omset" name="omset" class="form-control" readonly>
+                        <select id="omsetTambah" name="omset" class="form-control" required>
+                            <option value="">-- Pilih Omset --</option>
+                            <option value="0-100">0 - 100 Juta</option>
+                            <option value="100-300">100 - 300 Juta</option>
+                            <option value="300-500">300 - 500 Juta</option>
+                            <option value="500-1000">500 Juta - 1 M</option>
+                            <option value="1000-up">> 1 M</option>
+                        </select>
                     </div>
 
                     <div class="mb-3">
-                        <label>Keterangan Level</label>
-                        <input type="text" id="level" name="level" class="form-control" readonly>
+                        <label>Level</label>
+                        <input type="text" id="level_text_tambah" class="form-control" readonly>
+                        <input type="hidden" name="level" id="level_tambah">
                     </div>
 
                     <div class="mb-3">
                         <label>No. WA</label>
-                        <input type="text" id="wa" name="wa" class="form-control" readonly>
-                    </div>
-
-                    <div class="mb-3">
-                        <label>Provinsi</label>
-                        <input type="text" id="provinsi" name="provinsi" class="form-control" readonly>
+                        <input type="text" name="wa" class="form-control">
                     </div>
 
                     <div class="mb-3">
                         <label>Kota</label>
-                        <input type="text" id="kota" name="kota" class="form-control" readonly>
+                        <input type="text" name="kota" class="form-control">
                     </div>
 
                 </div>
@@ -218,56 +187,36 @@
     </div>
 </div>
 
+@endsection
+
+@push('scripts')
 <script>
-    document.getElementById('user_id').addEventListener('change', function() {
-        let selected = this.options[this.selectedIndex];
-        document.getElementById('nama').value = selected.getAttribute('data-nama') || '';
-        document.getElementById('email').value = selected.getAttribute('data-email') || '';
-        document.getElementById('omset').value = selected.getAttribute('data-omset') || '';
-        document.getElementById('level').value = selected.getAttribute('data-level') || '';
-        document.getElementById('wa').value = selected.getAttribute('data-wa') || '';
-        document.getElementById('provinsi').value = selected.getAttribute('data-provinsi') || '';
-        document.getElementById('kota').value = selected.getAttribute('data-kota') || '';
-    });
-
-    // Tambah group
-    let groups = [];
-function simpanGroup() {
-    let checked = [...document.querySelectorAll('#checkboxMentees input:checked')].map(cb => cb.value);
-
-    if (checked.length === 0) {
-        alert("Pilih minimal 1 mentee!");
-        return;
+function getLevel(val) {
+    switch (val) {
+        case '0-100': return 'Start-Up 🚀';
+        case '100-300': return 'Stand-Up 💪';
+        case '300-500': return 'Step-Up 📈';
+        case '500-1000': return 'Grow-Up 🌱';
+        case '1000-up': return 'Scale-Up 🌍';
+        default: return '';
     }
-    if (checked.length > 10) {
-        alert("Maksimal 10 mentee per grup!");
-        return;
-    }
-
-    groups.push(checked);
-    renderGroups();
-
-    // Tutup modal dengan cara yang aman
-    let modalEl = document.getElementById('modalGroup');
-    let modal = bootstrap.Modal.getInstance(modalEl);
-    if (modal) {
-        modal.hide();
-    }
-
-    // Hapus backdrop manual kalau masih ada
-    document.querySelectorAll('.modal-backdrop').forEach(el => el.remove());
-
-    // Reset centang
-    document.querySelectorAll('#checkboxMentees input').forEach(cb => cb.checked = false);
 }
 
-    function renderGroups() {
-        let ul = document.getElementById('listGroups');
-        ul.innerHTML = "";
-        groups.forEach((g, i) => {
-            ul.innerHTML += `<li><strong>Grup ${i+1}:</strong> ${g.join(", ")}</li>`;
-        });
-    }
-</script>
+// Untuk modal tambah
+document.getElementById('omsetTambah').addEventListener('change', function() {
+    let level = getLevel(this.value);
+    document.getElementById('level_text_tambah').value = level;
+    document.getElementById('level_tambah').value = level;
+});
 
-@endsection
+// Untuk modal edit (dinamis banyak mentee)
+document.querySelectorAll('.omset-select').forEach(select => {
+    select.addEventListener('change', function() {
+        let id = this.dataset.target;
+        let level = getLevel(this.value);
+        document.getElementById('level_text_' + id).value = level;
+        document.getElementById('level_' + id).value = level;
+    });
+});
+</script>
+@endpush
